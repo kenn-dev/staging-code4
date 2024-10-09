@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.mobile-slide {
+
+
+  /* transform: translate(-50%, 0%); */
+}
+
+.flat-call-back {
+  padding: 80px 0;
+}
+
+.flat-call-back {
+  padding: 100px 0 100px;
+  background: url(../images/call-action.jpg) center center no-repeat;
+  position: relative;
+  z-index: 99;
+}
+
+.flat-call-back:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: #8ECAE6;
+}
+
+.flat-call-back .title {
+  float: left;
+}
+
+.flat-call-back .title h1 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 111px;
+  position: relative;
+}
+
+.flat-call-back p {
+  color: #fff;
+
+}
+
+.flat-call-back .title h1:before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../img/bulb-light.png) center center no-repeat;
+  background-color: #fff;
+  line-height: 60px;
+  border-radius: 3px;
+}
+
+.button-call-back {
+  float: right;
+  margin-top: 15px;
+}
+
+.button-call-back a {
+  color: #333;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 30px;
+  background-color: #fff;
+  width: 100px;
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  box-shadow: 0px 10px 39.6px 0.4px rgba(0, 0, 0, 0.3);
+}
+
+.sticky .button-call-back {
+  margin-top: 5px;
+}
+
+.sticky .button-call-back a {
+  background-color: #219EBC;
+  color: white;
+}
+
+.button-call-back a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+
+.img_sticky {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+#sticky {
+  position: absolute;
+  right: 5%;
+  z-index: 1001;
+  margin-top: -400px;
+}
+
+#sticky.fixed {
+  position: fixed;
+  top: 50px;
+  right: 5%;
+  margin-top: 0;
+}
+
+.main_li {
+  font-size: 20px;
+  font-weight: 300;
+  color: #555;
+}
+
+.p-56 {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+
+.mobile-slide .image {
+  width: 600px;
+  height: 756px;
+  filter: blur(30px);
+  opacity: 0;
+  mix-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.mobile-slide .image.active {
+  opacity: 1;
+  filter: blur(0);
+}
+
+
+.intro_title {
+  position: absolute;
+  top:0;
+  text-align: center;
+  width: 100%;
+	margin-top: 25%;
+}
+
+
+.textwrapper {
+  margin: 400px 0 400px 0;
+  padding-left: 100px;
+}
+
+.flow {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 1001;
+  margin-top: 500px;
+  pointer-events: none;
+
+}
+
+.flow.sticky {
+  position: fixed;
+  top: 35px;
+  margin-top: 0;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.image {
+  filter: blur(30px);
+  opacity: 0;
+  mix-blend-mode: multiply;
+  transition: filter 1s ease, opacity 1s ease;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.image.active {
+  opacity: 1;
+  filter: blur(0);
+
+}

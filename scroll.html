@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Code4Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+        .textwrapper {
+            margin: 500px 0 500px 0;
+            padding-left: 200px;
+        }
+
+        .flow {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            z-index: 1001;
+            margin-top: 400px;
+        }
+
+        .flow.sticky {
+            position: fixed;
+            top: 20px;
+            margin-top: 0;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .image {
+            filter: blur(30px);
+            opacity: 0;
+            mix-blend-mode: multiply;
+
+            transition: filter 0.5s ease, opacity 0.5s ease;
+        }
+
+        .image1 {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .image2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+        .image.active {
+            opacity: 1;
+            filter: blur(0);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="flow">
+            <div class="image-container">
+                <img class="image image1 active" src="img/2804745.jpg" style="width:600px" />
+                <img class="image image2 " src="img/6927689.jpg" style="width:600px" />
+                <img class="image image2 " src="img/heartbeat.jpg" style="width:600px" />
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <div style="width: 50%">
+                <div class="textwrapper anchor">
+                    <h2>text 1</h2>
+                </div>
+                <div class="textwrapper anchor">
+                    <h2>text 2</h2>
+                </div>
+                <div class="textwrapper anchor">
+                    <h2>text 3</h2>
+                </div>
+            </div>
+            <div style="width: 50%">
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div style="width: 50%">
+                <div class="textwrapper">
+                    <h2>text 5</h2>
+                </div>
+                <div class="textwrapper">
+                    <h2>text 6</h2>
+                </div>
+                <div class="textwrapper">
+                    <h2>text 7</h2>
+                </div>
+            </div>
+            <div style="width: 50%">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const sticky = () => {
+            const threshold = $(".flow").offset().top - 20;
+            $(window).scroll(() => {
+                const distanceFromTop = $(document).scrollTop();
+                if (distanceFromTop >= threshold) {
+                    $('.flow').fadeIn(400).addClass('sticky');
+                }
+                else {
+                    $('.flow').removeClass('sticky');
+                }
+            });
+        };
+
+        let state = 0;
+        let prevState = 0;
+        /*
+            0 -> top
+            1 -> 1 
+            2 -> 2
+            3 -> 3
+            4 -> bottom
+        */
+
+        const showHideImages = () => {
+            const thresholds = Array.from(document.getElementsByClassName("anchor")).map(x => $(x).offset().top);
+            const images = Array.from(document.getElementsByClassName("image"));
+
+            $(window).scroll(() => {
+                const distanceFromTop = $(document).scrollTop();
+
+                if (distanceFromTop >= thresholds[2] + 1000) {
+                    state = 4;
+                }
+                else if (distanceFromTop >= thresholds[2]) {
+                    state = 3;
+                } else if (distanceFromTop >= thresholds[1]) {
+                    state = 2;
+                } else if (distanceFromTop >= thresholds[0]) {
+                    state = 1;
+                } else {
+                    state = 0;
+                }
+
+                if (state != prevState) {
+                    console.log("State changed " + state);
+
+                    if (state == 1) {
+                        $(images[1]).removeClass('active');
+                        $(images[2]).removeClass('active');
+
+                        $(images[0]).addClass('active');
+                    } else if (state == 2) {
+                        $(images[0]).removeClass('active');
+                        $(images[2]).removeClass('active');
+
+                        $(images[1]).addClass('active');
+                    } else if (state == 3) {
+                        $(images[0]).removeClass('active');
+                        $(images[1]).removeClass('active');
+
+                        $(images[2]).addClass('active');
+                    } else if (state == 4) {
+                        $(images[0]).removeClass('active');
+                        $(images[1]).removeClass('active');
+                        $(images[2]).removeClass('active');
+                    }
+                }
+
+                prevState = state;
+            });
+        };
+
+        $(document).ready(() => {
+            sticky();
+            showHideImages();
+        });
+    </script>
+</body>
+
+</html>
