@@ -26,6 +26,8 @@ $(window).on('scroll', function () {
 $('a.open_close').on('click', function () {
 	$('.main-menu').toggleClass('show');
 	$('.layer').toggleClass('layer-is-visible');
+	$(".submenu.dropdown").toggleClass("hide");
+	$(".submenu.dropdown-mobile").toggleClass("show");
 });
 $('a.show-submenu').on('click', function () {
 	$(this).next().toggleClass("show_normal");

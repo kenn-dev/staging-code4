@@ -137,10 +137,10 @@ body {
 	font-size: 14px;
 	line-height: 1.5;
 	font-family: "Maison", sans-serif;
-    font-size: 16px;
+	font-size: 16px;
 	color: #2a2a2a;
-	color: #777;
-    font-weight: 300;
+	color: #333;
+	font-weight: 300;
 }
 
 h1,
@@ -158,9 +158,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Eina', sans-serif;
-    color: #222222;
-    font-weight: 400;
+	font-family: 'Eina', sans-serif;
+	color: #222222;
+	font-weight: 400;
 }
 
 h3 {
@@ -187,6 +187,7 @@ h3 {
 .main_title h2 {
 	/* text-transform: uppercase; */
 	font-weight: 400;
+	color: #023047;
 	/* letter-spacing: -1px; */
 	font-size: 35px;
 	margin-bottom: 10px;
@@ -586,14 +587,15 @@ header.sticky #logo .logo_sticky {
 header.sticky #logo_home h1 a,
 header#plain #logo_home h1 a,
 header#colored #logo_home h1 a {
-	width: 50px;
+	width: 90px;
 	height: 34px;
 	display: block;
-	background-image: url(../img/logo.png);
+	background-image: url(../img/logo_2x.png);
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: cover;
 	text-indent: -9999px;
+	background-size: contain;
 }
 
 header.sticky #logo_home h1 {
@@ -602,15 +604,18 @@ header.sticky #logo_home h1 {
 }
 
 header.sticky #logo_home h1 a {
-	background-image: url(../img/logo_sticky.png);
+	background-image: url(../img/logo_sticky_2x.png);
+	background-size: contain;
 }
 
 header#plain #logo_home h1 a {
-	background-image: url(../img/logo_sticky.png);
+	background-image: url(../img/logo_2x.png);
+	background-size: contain;
 }
 
 header.sticky#colored #logo_home h1 a {
-	background-image: url(../img/logo_sticky_colored.png);
+	background-image: url(../img/logo_sticky_colored_2x.png);
+	background-size: contain;
 }
 
 @media only screen and (min--moz-device-pixel-ratio: 2),
@@ -1138,7 +1143,7 @@ a#email_footer:before {
 
 /*First level styles */
 .main-menu>ul>li>a {
-	color: #023047;
+	color: #fff;
 	padding: 0 8px 15px 8px;
 	font-size: 14px;
 	font-weight: 500;
@@ -1764,24 +1769,28 @@ a.dropdown-toggle.icon-search {
 }
 
 .intro_title {
-	margin-top: 20%;
+	margin-top: 40%;
 	height: 100%;
 	text-align: center;
-	line-height: 60px;
+	line-height: 90px;
 	font-weight: 300;
 }
 
 .intro_title h3 {
 	font-size: 45px;
 	margin-bottom: 5px;
-	color: #023047;
-
+	color: white;
+	/* margin-left: 12px; */
+	padding-left: 12px;
 	/* font-weight: bold; */
 	/* text-transform: uppercase; */
 }
 
 .intro_title h3 strong span {
 	color: #fff;
+}
+.intro_title_h3 {
+	width: 45%;
 }
 
 /* New v1.2*/
@@ -4605,7 +4614,7 @@ ul.list_order li span {
 
 .card-header a {
 	display: block;
-	color: #777;
+	color: #333;
 }
 
 .card-body {
@@ -4802,8 +4811,8 @@ blockquote.styled {
 /* 4.1 Home 7: search function */
 #search_container {
 	position: relative;
-	height: 700px;
-	background: #4d536d url(../img/slide_hero.jpg) no-repeat center top;
+	height: 800px;
+	background: #4d536d url(../assets/images/code4-main-image.jpg) no-repeat center top;
 	background-size: cover;
 	color: #fff;
 	width: 100%;
@@ -4922,7 +4931,7 @@ blockquote.styled {
 	border-bottom: solid 1px #ddd;
 	overflow: hidden;
 	text-decoration: none;
-	color: #777 !important;
+	color: #333 !important;
 	cursor: pointer;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
@@ -6401,7 +6410,7 @@ header.sticky nav.full-horizontal {
 }
 
 .list_tours_tabs ul li a small {
-	color: #777;
+	color: #333;
 	margin: 0;
 	padding: 0;
 	font-size: 12px;
@@ -6610,7 +6619,7 @@ header.sticky nav.full-horizontal {
 /* Popup close button*/
 #sign-in-dialog .mfp-close,
 #small-dialog .mfp-close {
-	color: #666;
+	color: #333;
 	background-color: #e4e4e4;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -6625,7 +6634,7 @@ header.sticky nav.full-horizontal {
 #sign-in-dialog .mfp-close:hover,
 #small-dialog .mfp-close:hover {
 	color: #fff;
-	background-color: #66676b;
+	background-color: #33376b;
 }
 
 #sign-in-dialog .mfp-close:before {
@@ -6659,7 +6668,7 @@ header.sticky nav.full-horizontal {
 #sign-in-dialog .mfp-close:hover,
 #small-dialog .mfp-close:hover {
 	color: #fff;
-	background-color: #66676b;
+	background-color: #33376b;
 }
 
 #sign-in-dialog .form-group {
@@ -7530,8 +7539,8 @@ a.box_news ul li:after {
 #search_container_2 {
 	position: relative;
 	height: 100vh;
-	background: #ccc url(../img/2804745.jpg) no-repeat center top;
-	background: #ccc url(../img/6927689.jpg) no-repeat center top;
+	background: #ccc url(../assets/images/code4-main-image.jpg) no-repeat center top;
+	/* background: #ccc url(../img/6927689.jpg) no-repeat center top; */
 	background-size: cover;
 	color: #fff;
 	width: 100%;
@@ -7925,7 +7934,7 @@ a.box_news ul li:after {
 }
 
 .qtyTotal {
-	background-color: #66676b;
+	background-color: #33376b;
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
@@ -8673,7 +8682,7 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 991px) {
 	}
 
 	.parallax-content-1 {
-		height: 360px;
+		height: 75vh;
 	}
 
 	.parallax-content-1>div {
@@ -8758,7 +8767,7 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 991px) {
 		margin-bottom: 5px;
 		color: #fff;
 		font-weight: bold;
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 	}
 
 	.item_cart {
@@ -8981,3 +8990,10 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 991px) {
 }
 
 /* END MEDIA QUERIES max-width 480px - MOBILE PORTRAIT  */
+
+.section-hero {
+	background: rgb(142, 202, 230);
+	background: linear-gradient(45deg, rgba(142, 202, 230, 1) 0%, rgba(49, 195, 230, 0.9976584383753502) 24%, rgba(2, 48, 71, 1) 100%);
+	margin: auto;
+	margin-top:5rem;
+}

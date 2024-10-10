@@ -73,3 +73,9 @@ webservers should be tuned. Here is list of mime types for our file extentions:
 - `application/x-font-woff` - woff
 - `application/x-font-ttf` - ttf
 - `image/svg+xml` - svg
+
+
+```sh
+aws s3 sync ./ s3://code4pro-static-ui-prod/ --exclude ".git/*" --delete 
+aws cloudfront create-invalidation --distribution-id E3EYSY7CCSRDJV --paths "/*"
+```
