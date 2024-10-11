@@ -299,11 +299,7 @@ a.button_intro.outilne,
 	padding: 6px 23px;
 }
 
-a.button_intro:hover,
-.button_intro:hover {
-	background: #fff;
-	color: #219EBC;
-}
+
 
 a.button_drop,
 .button_drop {
