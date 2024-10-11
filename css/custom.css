@@ -447,7 +447,7 @@
 }
 
 .parallax-window-new {
-  min-height: 75vh;
+  min-height: 55vh;
   background: transparent;
   position: relative;
   object-fit: cover;
