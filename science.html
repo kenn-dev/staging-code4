@@ -39,6 +39,70 @@
 
   gtag('config', 'G-FBWQ28KR6S');
 </script>
+
+<style>
+    /* Left column (tabs) */
+    .tabs-container {
+        width: 100%;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 10px;
+    }
+
+    .tab {
+        background-color: #ddd;
+        border-radius: 6px;
+        padding: 8px 20px;
+        cursor: pointer;
+    }
+
+    .tab:hover {
+        background-color: #023047;
+        color: #fff;
+    }
+
+    .tab.active {
+        background-color: #023047;
+        color: #fff;
+    }
+
+    /* Tab content */
+    .tab-content {
+        display: none;
+        margin-top: 5px;
+        padding: 0px;
+        border: none;
+        background: transparent;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        .container {
+            padding-block: 60px !important;
+        }
+
+        .container.second-container {
+            padding-top: 0 !important;
+        }
+
+        .first-container .first-column {
+            margin-bottom: 40px;
+        }
+
+        .second-container .row {
+            flex-direction: column-reverse;
+        }
+
+        .second-container .second-column {
+            margin-bottom: 40px;
+        }
+    }
+</style>
 </head>
 
 
@@ -125,100 +189,84 @@
         </div>
     </section>
 
+
     <main>
-        <div>
-            <div style="display: flex; flex-direction: row;">
-                <div style="width: 100%">
-                    <div class="anchor main_title wow fadeInUp" data-wow-delay="0.6s">
-                        <h2 id="stress-1">The Best Way to Measure Stress</h2>
-                        <p>The best and only way to measure stress is by monitoring heart rate variability (HRV).
-                            Stress
-                            levels are inversely proportional to HRV levels: the lower the HRV, the higher the
-                            stress.
-                        </p>
-                        <ul class="main_li">
-                            <li>A low HRV indicates stress, when the sympathetic ('fight or flight') system is
-                                dominating, which can severely compromise decision-making and job performance.
-                                Unmitigated, chronic stress can lead to psychological disorders such as PTSD (Post
-                                Traumatic Stress Disorder) and a shortened life expectancy. </li>
-                            <li>A high HRV indicates that the parasympathetic (rest, relax and recovery) system is
-                                better engaged. Studies show that individuals with higher HRV levels make better
-                                decisions - even under stress.</li>
-                        </ul>
-                        <p>In most cases, workers with higher HRV rates have better performance scores than those
-                            with
-                            lower HRV levels.
-                        </p>
-                    </div>
-                </div>
+        <div class="container first-container" style="padding-block: 120px;">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center first-column">
+                    <img src="img/front-view-man-dealing-with-imposter-syndrome.jpg" class="img-fluid" style="border-radius: 20px;">
+                </div> 
+                <div class="col-md-6 d-flex flex-column justify-content-center second-column" style="padding-left: 40px;">
+                    <h2 class="mt-0 mb-5">The Best Way to Measure Stress</h2>
+                    <p>The best and only way to measure stress is by monitoring heart rate variability (HRV).
+                        Stress
+                        levels are inversely proportional to HRV levels: the lower the HRV, the higher the
+                        stress.
+                    </p>
+                    <ul class="main_li">
+                        <li>A low HRV indicates stress, when the sympathetic ('fight or flight') system is
+                            dominating, which can severely compromise decision-making and job performance.
+                            Unmitigated, chronic stress can lead to psychological disorders such as PTSD (Post
+                            Traumatic Stress Disorder) and a shortened life expectancy. </li>
+                        <li>A high HRV indicates that the parasympathetic (rest, relax and recovery) system is
+                            better engaged. Studies show that individuals with higher HRV levels make better
+                            decisions - even under stress.</li>
+                    </ul>
+                    <p>In most cases, workers with higher HRV rates have better performance scores than those
+                        with
+                        lower HRV levels.
+                    </p>
+                </div> 
             </div>
-            <div class="gsap-animation">
-                <div class="zoom-out-image">
-                    <img src="assets/images/polar.jpg" alt="" srcset="">
-                </div>
-                <div class="zoom-out-text text">
-                    <div class="anchor main_title wow fadeInUp" data-wow-delay="0.6s">
-                        <h2 id="stress-2">Low Cost, Huge Benefits</h2>
-                        <p>Is the market ready for wearable devices that can track and predict stress? Consider
-                            these
-                            statistics:</p>
-                        <ul class="main_li">
-                            <li>40% of Americans own a smartwatch or wearable fitness tracker; 75% want to own one
-                            </li>
+        </div>
+
+        <div class="container second-container" style="padding-block: 0 120px;">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                    <div class="tabs-container">
+                        <div class="tabs">
+                          <div class="tab active" data-tab="tab1">Low Cost, Huge Benefits</div>
+                          <div class="tab" data-tab="tab2">A Unique Window into Stress</div>
+                        </div>
+                    
+                        <!-- Tab Content -->
+                        <div id="tab1" class="tab-content active">
+                          <h2>Low Cost, Huge Benefits</h2>
+                          <p>Is the market ready for wearable devices that can track and predict stress? Consider these statistics:</p>
+                          <ul>
+                            <li>0% of Americans own a smartwatch or wearable fitness tracker; 75% want to own one</li>
                             <li>51% of U.S. workers already own at least one wearable device</li>
-                            <li>81% of U.S. public safety workers would consider wearing a device to track at-work
-                                risks
-                            </li>
+                            <li>81% of U.S. public safety workers would consider wearing a device to track at-work risks</li>
                             <li>93% of enterprises are evaluating the use of wearable sensors</li>
-                        </ul>
-                        <p>Tracking HRV via a wearable monitor is already being used by top athletes and their
-                            trainers
-                            in their quest to optimize performance. These wearable devices are becoming commonplace
-                            as
-                            individuals measure biometrics such as heart rate and glucose levels to track fitness
-                            progress and optimize health.</p>
-                    </div>
-
-                    <div class="anchor main_title wow fadeInUp" data-wow-delay="0.6s">
-                        <h2 id="stress-3">A Unique Window into Stress</h2>
-
-                        <p>Monitoring and measuring HRV offers workers a unique window into their stress levels so
-                            they
-                            can take necessary steps to reduce stress, which can:</p>
-                        <ul class="main_li">
+                          </ul>
+                          <p>Tracking HRV via a wearable monitor is already being used by top athletes and their trainers in their quest to optimize performance. These wearable devices are becoming commonplace as individuals measure biometrics such as heart rate and glucose levels to track fitness progress and optimize health.</p>
+                        </div>
+                    
+                        <div id="tab2" class="tab-content">
+                          <h2>A Unique Window into Stress</h2>
+                          <p>Monitoring and measuring HRV offers workers a unique window into their stress levels so they can take necessary steps to reduce stress, which can:</p>
+                          <ul>
                             <li>Enhance decision-making abilities</li>
                             <li>Boost productivity and performance</li>
                             <li>Prevent costly and deadly mistakes</li>
-                        </ul>
-                        <p>
-                            With an estimated 27 million data captures so far, Code4Pro is collecting a wealth of
-                            data
-                            across a wide cross-section of first responders.
-                        </p>
-                        <p>
-                            Although stress impacts everyone differently, knowing how stress affects the individual
-                            can
-                            be used to forecast how they may react in a stressful situation.
-                        </p>
-                        <p>
-                            This data can also help administrators make informed decisions on scheduling, duty
-                            assignments, etc. In addition, dispatchers can contact officers to check on their
-                            status,
-                            advise supervisors of an emerging or urgent issue, and/or dispatch a replacement and/or
-                            additional resources.
-                        </p>
-                        <p>
-                            Code4Pro can also be used as a key component in wellness activities. Trainers can
-                            address
-                            the triggers that create the most stress, arming officers with techniques that help them
-                            recover more quickly. Stress-reducing therapies range from simple breathing techniques
-                            to
-                            therapeutic services conducted by qualified mental health professionals.
-                        </p>
-
-                    </div>
+                          </ul>
+                          <p>With an estimated 27 million data captures so far, Code4Pro is collecting a wealth of data across a wide cross-section of first responders.
+                                <br><br>
+                            Although stress impacts everyone differently, knowing how stress affects the individual can be used to forecast how they may react in a stressful situation.
+                            <br><br>
+                            This data can also help administrators make informed decisions on scheduling, duty assignments, etc. In addition, dispatchers can contact officers to check on their status, advise supervisors of an emerging or urgent issue, and/or dispatch a replacement and/or additional resources.
+                            <br><br>
+                            Code4Pro can also be used as a key component in wellness activities. Trainers can address the triggers that create the most stress, arming officers with techniques that help them recover more quickly. Stress-reducing therapies range from simple breathing techniques to therapeutic services conducted by qualified mental health professionals.</p>
+                          
+                        </div>
+                    </div> 
                 </div>
-                <!-- End white_bg -->
+                <div class="col-md-6 second-column">
+                    <img src="assets/images/polar.jpg" class="img-fluid" style="border-radius: 20px;">
+                </div> 
+            </div>
+        </div>
+
     </main>
     <!-- End main -->
     <footer class="revealed">
@@ -285,6 +333,25 @@
                 markers: false
             }
         })
+    </script>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+    
+        tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // Remove active class from all tabs and contents
+            tabs.forEach(t => t.classList.remove('active'));
+            tabContents.forEach(tc => tc.classList.remove('active'));
+    
+            // Add active class to the clicked tab and corresponding content
+            this.classList.add('active');
+            const tabContent = document.getElementById(this.getAttribute('data-tab'));
+            tabContent.classList.add('active');
+        });
+        });
     </script>
 </body>
 
