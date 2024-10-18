@@ -82,6 +82,89 @@
             margin-bottom: 40px;
         }
     }
+
+
+    /* Left column (tabs) */
+    .tabs-container {
+        width: 100%;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 10px;
+    }
+
+    .tab {
+        background-color: #ddd;
+        border-radius: 6px;
+        padding: 8px 20px;
+        cursor: pointer;
+    }
+
+    .tab:hover {
+        background-color: #023047;
+        color: #fff;
+    }
+
+    .tab.active {
+        background-color: #023047;
+        color: #fff;
+    }
+
+    /* Tab content */
+    .tab-content {
+        display: none;
+        margin-top: 5px;
+        padding: 0px;
+        border: none;
+        background: transparent;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        .container {
+            padding-block: 60px !important;
+        }
+
+        .container.second-container {
+            padding-top: 0 !important;
+        }
+
+        .first-container .first-column {
+            margin-bottom: 40px;
+        }
+
+        .second-container .row {
+            flex-direction: column-reverse;
+        }
+
+        .second-container .second-column {
+            margin-bottom: 40px;
+        }
+    }
+    .section-top-container {
+        display: flex;
+    }
+
+    .section-left-col-1, .section-left-col-2{
+        width: 100%;
+    }
+
+    .section-top-container {
+        width: 100%;
+        display: flex;
+        gap: 60px;
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 200px){
+        .section-top-container {
+            flex-direction: column;
+            gap: 0px;
+        }   
+    }
 </style>
 </head>
 
@@ -124,7 +207,7 @@
                         <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
                         <ul>
                             <li class="submenu">
-                                <a href="solution.html" class="show-submenu">Solution</a>
+                                <a href="platform.html" class="show-submenu">The Platform</a>
                             </li>
                             <li class="submenu">
                                 <a href="science.html" class="show-submenu">Science</a>
@@ -224,78 +307,68 @@
             </div>
         </div>
 
-        <div class="container third-container" style="padding-block: 0 60px;">
-            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
-                <div class="col-lg-4 col-sm-12 section-left">
-                    <figure>
-                        <img src="img/mobile-slide-0.png" class="img-fluid" alt="image">
-                    </figure>
+        <div class="container second-container" style="padding-block: 0 120px;">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                    <div class="tabs-container">
+                        <div class="tabs">
+                          <div class="tab active" data-tab="tab1">Low Cost, Huge Benefits</div>
+                          <div class="tab" data-tab="tab2">A Unique Window into Stress</div>
+                        </div>
+                    
+                        <!-- Tab Content -->
+                        <div id="tab1" class="tab-content active">
+                          <h2>Low Cost, Huge Benefits</h2>
+                          <p>Is the market ready for wearable devices that can track and predict stress? Consider these statistics:</p>
+                          <ul>
+                            <li>0% of Americans own a smartwatch or wearable fitness tracker; 75% want to own one</li>
+                            <li>51% of U.S. workers already own at least one wearable device</li>
+                            <li>81% of U.S. public safety workers would consider wearing a device to track at-work risks</li>
+                            <li>93% of enterprises are evaluating the use of wearable sensors</li>
+                          </ul>
+                          <p>Tracking HRV via a wearable monitor is already being used by top athletes and their trainers in their quest to optimize performance. These wearable devices are becoming commonplace as individuals measure biometrics such as heart rate and glucose levels to track fitness progress and optimize health.</p>
+                        </div>
+                    
+                        <div id="tab2" class="tab-content">
+                          <h2>A Unique Window into Stress</h2>
+                          <p>Monitoring and measuring HRV offers workers a unique window into their stress levels so they can take necessary steps to reduce stress, which can:</p>
+                          <ul>
+                            <li>Enhance decision-making abilities</li>
+                            <li>Boost productivity and performance</li>
+                            <li>Prevent costly and deadly mistakes</li>
+                          </ul>
+                          <p>With an estimated 27 million data captures so far, Code4Pro is collecting a wealth of data across a wide cross-section of first responders.
+                                <br><br>
+                            Although stress impacts everyone differently, knowing how stress affects the individual can be used to forecast how they may react in a stressful situation.
+                            <br><br>
+                            This data can also help administrators make informed decisions on scheduling, duty assignments, etc. In addition, dispatchers can contact officers to check on their status, advise supervisors of an emerging or urgent issue, and/or dispatch a replacement and/or additional resources.
+                            <br><br>
+                            Code4Pro can also be used as a key component in wellness activities. Trainers can address the triggers that create the most stress, arming officers with techniques that help them recover more quickly. Stress-reducing therapies range from simple breathing techniques to therapeutic services conducted by qualified mental health professionals.</p>
+                          
+                        </div>
+                    </div> 
                 </div>
-                <div class="col-lg-8 col-sm-12 section-right" style="text-align: left; margin: auto;">
-                    <h2 id="stress-3">How It Works to Reduce Stress</h2>
-
-                    <p>
-                        Using off-the-shelf hardware, Code 4 Pro’s software is easily uploaded onto a mobile
-                        phone.
-                        The individual’s biometric data is then encrypted and inputted into a secure proprietary
-                        cloud where participants can view the data in real time.
-                    </p>
-                    <p>
-                        Using A.I. (Artificial Intelligence), we analyze a massive amount of data to measure and
-                        ultimately predict the future direction and duration of the individual’s stress level.
-                    </p>
-                    <p>
-                        By observing objective data showing how their HRV responds to stress, users gain
-                        life-saving
-                        insights into their biometrics. In time, they can see and predict how various situations
-                        affect not just their HRV levels but how they tend to respond.
-                    </p>
-                    <p>
-                        After the fact, Code 4 Pro offers invaluable feedback and insights into the impact of
-                        stress
-                        – as measured by HRV – on the worker’s job performance.
-
-                        Eventually, workers can learn to avoid and/or mitigate stress to optimize not just their
-                        decision-making skills but their overall health and job performance.
-                    </p>
-                </div>
+                <div class="col-md-6 second-column">
+                    <img src="assets/images/polar.jpg" class="img-fluid" style="border-radius: 20px;">
+                </div> 
             </div>
         </div>
 
         <div class="container fourth-container" style="padding-block: 0 120px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
                 <div class="col-lg-4 col-sm-12 section-right mobile">
-                    <figure>
-                        <img src="img/mobile-slide-2.png" class="img-fluid" alt="image">
-                    </figure>
                 </div>
-                <div class="col-lg-8 col-sm-12 section-left" style="text-align: left; margin: auto;">
-
-                    <h2 id="stress-3">Pairing Data with Artificial Intelligence</h2>
-
-                    <p>
-                        Code 4 Pro is unique in pairing A.I. with biometric data. To date, there have been
-                        little to
-                        no breakthroughs in the application of A.I. in this arena.
-
-                        Although stress impacts everyone differently, knowing how stress affects an individual
-                        can
-                        be used to forecast how they may react in a stressful situation.
-                    </p>
-                    <p>
-                        Armed with this powerful data, individuals and their supervisors can make informed
-                        decisions
-                        on scheduling, job assignments, etc. Workers can check their status, advise supervisors
-                        of
-                        an emerging or urgent issue, and/or request a replacement and/or additional resources.
-                    </p>
-                    <p>
-                        Over time, this valuable feedback may even fend off the long-term effects of stress such
-                        as
-                        Post-Traumatic Stress Disorder (PTSD).
-                    </p>
+                <div class="section-top-container" style="text-align: left; margin: auto;">
+                    <div class="section-left-col-1"><h2 id="stress-3">Pairing Data with Artificial Intelligence</h2>
+                    </div>
+                    
+                    <div class="section-left-col-2">
+                        <p>
+                            Our platform centralizes data from end users equipped with HR monitors, allowing for real-time insights and enhanced decision-making. The Command Module acts as the hub, integrating all user data efficiently. With AI at its core, it transforms complex information into actionable strategies for your success.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-sm-12 section-right remove">
+                <div class="section-bottom-container">
                     <figure>
                         <img src="img/mobile-slide-2.png" alt="image">
                     </figure>
@@ -433,7 +506,22 @@
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 
     <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
 
+        tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // Remove active class from all tabs and contents
+            tabs.forEach(t => t.classList.remove('active'));
+            tabContents.forEach(tc => tc.classList.remove('active'));
+
+            // Add active class to the clicked tab and corresponding content
+            this.classList.add('active');
+            const tabContent = document.getElementById(this.getAttribute('data-tab'));
+            tabContent.classList.add('active');
+        });
+        });
     </script>
 </body>
 
