@@ -62,7 +62,7 @@
 
             .first-container .first-column,
             .second-container .first-column {
-                margin-bottom: 40px;
+                margin-bottom: 20px;
             }
 
             .third-container .row {
@@ -73,6 +73,29 @@
                 margin-bottom: 40px;
             }
 
+        }
+
+        .container.first-container .second-column{
+            padding-left: 50px;
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 200px){
+            .container.first-container{
+                padding-left: 20px;
+                padding-right: 20px;   
+            }
+
+            .container.first-container .second-column{
+                padding-left: 0px;
+            }
+
+            .container.first-container{
+                padding-bottom: 0px !important;
+            }
+
+            .container.second-container .row{
+                padding: 50px 20px !important;
+            }
         }
     </style>
 
@@ -120,10 +143,10 @@
                                     <a href="platform.html" class="show-submenu">The Platform</a>
                                 </li>
                                 <li class="submenu">
-                                    <a href="science.html" class="show-submenu">Science</a>
+                                    <a href="science.html" class="show-submenu">The Science</a>
                                 </li>
                                 <li class="submenu dropdown">
-                                    <a href="customer.html" class="show-submenu">Customers<i
+                                    <a href="customer.html" class="show-submenu">Occupations<i
                                             class="icon-down-open-mini"></i></a>
                                     <ul>
                                         <li><a href="law-enforcement.html">Law Enforcement</a></li>
@@ -156,7 +179,7 @@
         <section class="parallax-window-new" data-parallax="scroll" data-image-src="assets/images/customers.jpg">
             <div class="parallax-content-1 opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.4)">
                 <div class="animated fadeInDown">
-                    <h1>Our Customers</h1>
+                    <h1>Occupations</h1>
                 </div>
             </div>
         </section>
@@ -167,13 +190,27 @@
                     <div class="col-md-6 p-0 first-column">
                         <img class="img-fluid" style="border-radius: 20px;" src="img/police.jpg">
                     </div> 
-                    <div class="col-md-6 d-flex flex-column justify-content-center second-column" style="padding-left: 40px;">
+                    <div class="col-md-6 d-flex flex-column justify-content-center second-column" >
                         <h2>First responders aren’t the only ones who must make split-second, critical decisions.</h2>
                             <br>
                         <p>
                             The type of careers that require swift thinking is limitless. Both line workers and professionals in a wide variety of careers must think – and act – quickly. Knowing if they’re already under stress can make all the difference.
                         </p>
 
+                    </div> 
+                </div>
+            </div>
+
+            <div class="container third-container" style="padding-block: 0 120px;">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                        <h2 class="mb-5 mt-0">Healthcare Professionals</h2>
+                        <p>
+                            We are dedicated to supporting health professionals in their mission to provide the best possible care. Whether you're a doctor, nurse, therapist, or healthcare administrator, our platform offers valuable resources, continuing education, and tools designed to help you excel in your field.
+                        </p>
+                    </div>
+                    <div class="col-md-6 second-column">
+                        <img class="img-fluid" style="border-radius: 20px;" src="img/healthcare.jpg">
                     </div> 
                 </div>
             </div>
@@ -186,7 +223,7 @@
                             <img src="img/mobile-slide-3.png" class="img-fluid" alt="image">
                         </figure>
                     </div>
-                    <div class="col-md-6 second-column" style="padding-left: 20px;">
+                    <div class="col-md-6 second-column" style="">
                         <ul class="main_li text-light">
                             <li>Law enforcement (18,000+ local police departments with over 700,000 officers)</li>
                             <li>Other first responders and public safety workers: firefighters, security guards, EMTs, air traffic controllers, prisons guards, etc.</li>
