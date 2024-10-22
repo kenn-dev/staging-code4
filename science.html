@@ -102,6 +102,71 @@
             margin-bottom: 40px;
         }
     }
+
+
+    /* White Papers - Key Research */
+    .section-title {
+            background-color: #023047;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .white-papers, .key-research {
+            margin-top: 20px;
+        }
+        .white-papers ul, .key-research ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .white-papers ul li, .key-research ul li {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .summary {
+            color: #555;
+        }
+        .white-papers a, .key-research a {
+            color: #023047;
+            text-decoration: none;
+        }
+        .white-papers a:hover, .key-research a:hover {
+            text-decoration: underline;
+        }
+
+        section.white-papers {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+            padding: 0px 50px 100px 50px;
+        }
+
+        section.key-research {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+            padding: 0px 50px 100px 50px;
+        }
+
+        @media only screen and (max-width: 767px) and (min-width: 200px){
+            section.white-papers {
+                width: 100%;
+                max-width: 1400px;
+                margin: auto;
+                padding: 0px 20px 50px 20px;
+            }
+            
+            section.key-research {
+                width: 100%;
+                max-width: 1400px;
+                margin: auto;
+                padding: 0px 20px 50px 20px;
+            }    
+        }
+
+   /* White Papers - Key Research */
 </style>
 </head>
 
@@ -266,6 +331,42 @@
                 </div> 
             </div>
         </div>
+
+
+    <!-- Section for White Papers -->
+    <section class="white-papers">
+        <h2 class="section-title">Our White Papers</h2>
+        <ul>
+            <!-- Example white paper, replace with actual data -->
+            <li>
+                <h3><a href="whitepaper1.pdf" target="_blank">Understanding Climate Change Impacts</a></h3>
+                <p class="summary">This white paper explores the long-term impacts of climate change on global ecosystems and human societies, providing detailed projections and mitigation strategies.</p>
+            </li>
+            <li>
+                <h3><a href="whitepaper2.pdf" target="_blank">Innovations in Renewable Energy Technology</a></h3>
+                <p class="summary">An analysis of the latest advancements in renewable energy, focusing on solar, wind, and geothermal technologies and their potential to reduce carbon emissions.</p>
+            </li>
+            <!-- Add more white papers here -->
+        </ul>
+    </section>
+
+    <!-- Section for Key Research Links -->
+    <section class="key-research">
+        <h2 class="section-title">Key Research Links</h2>
+        <ul>
+            <!-- Example research link, replace with actual data -->
+            <li>
+                <h3><a href="https://researchlink1.com" target="_blank">Global Temperature Trends Over the Last Century</a></h3>
+                <p class="summary">A comprehensive study on the rise of global temperatures, highlighting the significant increase in average temperatures and the factors contributing to this trend.</p>
+            </li>
+            <li>
+                <h3><a href="https://researchlink2.com" target="_blank">Biodiversity Loss and Its Effect on Ecosystems</a></h3>
+                <p class="summary">This research examines the rapid loss of biodiversity and its profound impact on various ecosystems around the world, providing solutions for conservation.</p>
+            </li>
+            <!-- Add more research links here -->
+        </ul>
+    </section>
+
 
         <div class="container" style="padding-block: 0 120px;">
             <div class="banner_2">
