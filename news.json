@@ -14,5 +14,13 @@
         "author": "Code4Pro",
         "content": "This is the content of the second blog post.",
         "image": "/img/ai-executive-runs-code-data-center-2.png"
+    },
+    {
+        "id": 3,
+        "title": "Third Blog Post",
+        "date": "2024-10-24",
+        "author": "Code4Pro",
+        "content": "This is the content of the third blog post.",
+        "image": "/img/ai-executive-runs-code-data-center-2.png"
     }
 ]
