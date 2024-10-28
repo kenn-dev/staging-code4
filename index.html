@@ -108,6 +108,41 @@ a.btn_1.white, .btn_1.white {
         flex-direction: column-reverse;
     }
 }
+
+
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.button-btn a{
+    padding: 12px 20px 10px 20px;
+    color: #fff;
+}
 </style>
 </head>
 
@@ -183,19 +218,61 @@ a.btn_1.white, .btn_1.white {
                 </nav>
             </div>
         </div><!-- container -->
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     </header><!-- End Header -->
 
-    <section id="hero" class="background-image vh-100" data-background="url(assets/images/breakaway.png)" style="background-repeat: no-repeat; background-position: center top;">
-        <div class="opacity-mask d-flex justify-content-center" data-opacity-mask="rgba(0, 0, 0, 0.6)">
-            <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5" style="line-height: unset;">
-                <h1 class="animated fadeInDown text-light fw-bold">Enhance performance and decrease stress by regulating your physiology.</h1>
-                <div class="d-flex justify-content-center gap-3" style=" margin-top: 40px; ">
-                    <a href="#some-good-reasons" class="animated fadeInUp button_intro" style="border-radius: 30px; background: #023047;">Learn More</a> 
+    <section id="hero" class="vh-100">
+        <div class="slider">
+            <div class="slide active" style="background-image: url(assets/images/doctoratoperatingroom.jpg);">
+                <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
+                    <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
+                        <h1 class="text-light fw-bold">Enhance performance and decrease stress by regulating your physiology.</h1>
+                        <div class="button-btn">
+                            <a href="#some-good-reasons" class="" style="border-radius: 30px; background: #023047;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url(assets/images/professionalgolfer.jpg);">
+                <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
+                    <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
+                        <h1 class="text-light fw-bold">Enhance performance and decrease stress by regulating your physiology.</h1>
+                        <div class="button-btn">
+                            <a href="#some-good-reasons" class="" style="border-radius: 30px; background: #023047;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url(assets/images/teacherteachingstudents.jpg);">
+                <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
+                    <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
+                        <h1 class="text-light fw-bold">Enhance performance and decrease stress by regulating your physiology.</h1>
+                        <div class="button-btn">
+                            <a href="#some-good-reasons" class="" style="border-radius: 30px; background: #023047;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url(assets/images/breakaway.png);">
+                <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
+                    <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
+                        <h1 class="text-light fw-bold">Enhance performance and decrease stress by regulating your physiology.</h1>
+                        <div class="button-btn">
+                            <a href="#some-good-reasons" class="" style="border-radius: 30px; background: #023047;">Learn More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- End opacity-mask-->
     </section>
+    
+    
     <!-- End section -->
 
 	<main>
@@ -778,6 +855,28 @@ a.btn_1.white, .btn_1.white {
             link.click();
         }
     </script>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Set interval for automatic sliding
+        setInterval(nextSlide, 5000); // Change every 5 seconds
+    </script>
+
+
 </body>
 
 </html>
