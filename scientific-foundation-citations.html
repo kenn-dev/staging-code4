@@ -116,7 +116,7 @@
      .faq-question {
       background-color: #023047;
       padding: 15px;
-      margin: 5px 0;
+      margin: 10px 0;
       cursor: pointer;
       font-weight: 500;
       border: 1px solid #ddd;
@@ -169,6 +169,79 @@
     .third-sect-sfc-section1 .sfc-section-col2{
         width: 50%;
     }
+
+    body, html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .sfc-container.first-sect {
+        padding: 75px 50px 75px 50px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .second-sect-sfc-section1 {
+        flex-direction: column;
+    }
+
+    .second-sect-sfc-section1 .sfc-section-col1, .second-sect-sfc-section1 .sfc-section-col2, .second-sect-sfc-section1 .sfc-section-col3 {
+        width: 100%;
+    }
+
+    .sfc-container.second-sect {
+        padding: 0px 50px 75px 50px;
+    }
+
+    .sfc-container.third-sect {
+        padding: 0px 50px 75px 50px;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .sfc-container.first-sect {
+        padding: 50px 20px 50px 20px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .sfc-container.second-sect {
+        padding: 0px 20px 50px 20px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .second-sect-sfc-section1 {
+        flex-direction: column;
+    }
+
+    .second-sect-sfc-section1 .sfc-section-col1, .second-sect-sfc-section1 .sfc-section-col2, .second-sect-sfc-section1 .sfc-section-col3 {
+        width: 100%;
+    }
+
+    .sfc-container.third-sect {
+        padding: 0px 20px 50px 20px;
+        justify-content: center;
+        display: flex;
+    }
+
+    .third-sect-sfc-section1 {
+        flex-direction: column;
+    }
+
+    .third-sect-sfc-section1 .sfc-section-col1, .third-sect-sfc-section1 .sfc-section-col2 {
+        width: 100%;
+    }
+
+    .third-sect-sfc-section1 {
+        display: flex;
+        gap: 0px;
+    }
+}
 </style>
 </head>
 
@@ -407,6 +480,122 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Resilience
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Porges, S. W. (2007). The Polyvagal Perspective. Biological Psychology, 74(2), 116–143.</h3>
+                                <ul class="main_li">
+                                    <li>This work discusses the polyvagal theory, which links HRV to resilience and stress recovery. It highlights how autonomic flexibility, reflected by HRV, supports the capacity to recover from stress and adapt to challenges.</li>
+                                </ul>
+                                <h3>Kim, H. G., Cheon, E. J., Bai, D. S., Lee, Y. H., & Koo, B. H. (2018). Stress and Heart Rate Variability: A Meta-Analysis and Review of the Literature. Psychiatry Investigation, 15(3), 235–245.</h3>
+                                <ul class="main_li">
+                                    <li>A comprehensive review that examines the relationship between stress and HRV, noting how HRV is a key marker of resilience and the ability to manage stress effectively.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                Autonomic Balance and HRV
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Berntson, G. G., Cacioppo, J. T., & Quigley, K. S. (1993). Respiratory Sinus Arrhythmia: Autonomic Origins, Physiological Mechanisms, and Psychophysiological Implications. Psychophysiology, 30(2), 183–196.</h3>
+                                <ul class="main_li">
+                                    <li>This paper discusses how HRV reflects autonomic balance, focusing on how sympathetic and parasympathetic activity interact, especially in relation to stress and recovery.</li>
+                                </ul>
+                                <h3>Geisler, F. C., Vennewald, N., Kubiak, T., & Weber, H. (2010). The Impact of Heart Rate Variability on Subjective Well-Being is Mediated by Emotion Regulation. Personality and Individual Differences, 49(7), 723–728.</h3>
+                                <ul class="main_li">
+                                    <li>This study explores how HRV impacts emotional regulation and overall well-being, linking higher HRV with better stress management and resilience.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 6 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Health Outcomes
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Kemp, A. H., Quintana, D. S., Felmingham, K. L., Matthews, S., & Jelinek, H. F. (2012). Depression, Comorbid Anxiety Disorders, and Heart Rate Variability in Physically Healthy, Unmedicated Patients: Implications for Cardiovascular Risk. PLOS ONE, 7(2), e30777.</h3>
+                                <ul class="main_li">
+                                    <li>This study explores how HRV is impacted by psychological factors like anxiety and depression, with a focus on the link between autonomic imbalance and cardiovascular risk. It provides insight into how stress affects HRV and health outcomes.</li>
+                                </ul>
+                                <h3>Tsuji, H., Venditti, F. J., Manders, E. S., Evans, J. C., Larson, M. G., Feldman, C. L., & Levy, D. (1996). Reduced Heart Rate Variability and Mortality Risk in an Elderly Cohort: The Framingham Heart Study. Circulation, 94(11), 2850–2855.</h3>
+                                <ul class="main_li">
+                                    <li>This classic epidemiological study found that lower HRV is associated with increased mortality risk, emphasizing the health implications of HRV and how it reflects the body’s ability to manage stress and recover.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 7 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV, Cognitive Performance, and Stress
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Hansen, A. L., Johnsen, B. H., & Thayer, J. F. (2003). Vagal Influence on Working Memory and Attention. International Journal of Psychophysiology, 48(3), 263–274.</h3>
+                                <ul class="main_li">
+                                    <li>This study links HRV (specifically vagal tone) to cognitive performance, showing that higher HRV is associated with better working memory and attentional control, highlighting the cognitive benefits of autonomic balance under low stress.</li>
+                                </ul>
+                                <h3>Luque-Casado, A., Perales, J. C., Cárdenas, D., & Sanabria, D. (2016). Heart Rate Variability and Cognitive Processing: The Role of Resources Allocation, Motivation, and Individual Differences. International Journal of Psychophysiology, 119, 1–6.</h3>
+                                <ul class="main_li">
+                                    <li>This research shows how HRV influences cognitive function, especially under stress, linking higher HRV with better cognitive flexibility and decision-making. It reinforces how high physiological activation with low stress can support focus and performance.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 8 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Emotion Regulation
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Appelhans, B. M., & Luecken, L. J. (2006). Heart Rate Variability as an Index of Regulated Emotional Responding. Review of General Psychology, 10(3), 229–240.</h3>
+                                <ul class="main_li">
+                                    <li>This review paper focuses on HRV as a marker of emotional regulation, suggesting that individuals with higher HRV are better able to regulate their emotions and manage stress, supporting emotional balance during physiological arousal.</li>
+                                </ul>
+                                <h3>Gross, J. J., & John, O. P. (2003). Individual Differences in Two Emotion Regulation Processes: Implications for Affect, Relationships, and Well-Being. Journal of Personality and Social Psychology, 85(2), 348–362.</h3>
+                                <ul class="main_li">
+                                    <li>This paper doesn’t focus solely on HRV but is foundational in emotion regulation theory. It relates to HRV research by showing that effective emotional regulation (which is reflected in higher HRV) is key to well-being and reduced stress.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 9 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Resilience in Performance
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Laborde, S., Mosley, E., & Mertgen, A. (2018). A Unifying Conceptual Framework of Factors Associated With HRV in Athletes. Frontiers in Psychology, 9, 1488.</h3>
+                                <ul class="main_li">
+                                    <li>This paper discusses how HRV is used to monitor stress, recovery, and performance in athletes, providing a comprehensive framework for understanding how HRV correlates with physical performance and resilience to stress.</li>
+                                </ul>
+                                <h3>Lehrer, P. M., & Gevirtz, R. (2014). Heart Rate Variability Biofeedback: How and Why Does It Work?. Frontiers in Psychology, 5, 756.</h3>
+                                <ul class="main_li">
+                                    <li>This article covers HRV biofeedback and its effectiveness in improving emotional regulation, stress management, and resilience by increasing HRV and optimizing autonomic balance.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
                     </div>   
 
                     <div class="sfc-section-col2">
@@ -430,8 +619,173 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <!-- FAQ Item 11 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Recovery
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Seiler, S., & Kjerland, G. Ø. (2006). Quantifying Training Intensity Distribution in Elite Endurance Athletes: Is There Evidence for an “Optimal” Distribution?. Scandinavian Journal of Medicine & Science in Sports, 16(1), 49–56.</h3>
+                                <ul class="main_li">
+                                    <li>This research highlights the role of HRV in tracking recovery and training balance, showing how moderate to high activation without stress can reflect optimal states of physical performance and readiness for athletes.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 12 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Emotional Regulation
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Thayer, J. F., & Lane, R. D. (2009). Claude Bernard and the Heart-Brain Connection: Further Elaboration of a Model of Neurovisceral Integration. Neuroscience & Biobehavioral Reviews, 33(2), 81-88.</h3>
+                                <ul class="main_li">
+                                    <li>This study elaborates on the neurovisceral integration model, which explains how HRV is connected to emotional regulation, stress response, and autonomic nervous system function.
+                                    </li>
+                                </ul>
+                                <h3>Kok, B. E., & Fredrickson, B. L. (2010). Upward Spirals of the Heart: Autonomic Flexibility, as Indexed by Vagal Tone, Reciprocally and Prospectively Predicts Positive Emotions and Social Connectedness. Biological Psychology, 85(3), 432-436.</h3>
+                                <ul class="main_li">
+                                    <li>This research discusses the role of vagal tone (a key component of HRV) in emotional regulation and social engagement, showing how higher HRV is linked to better emotional control and reduced stress.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 13 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Fatigue/Exhaustion
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Kivimäki, M., & Steptoe, A. (2018). Effects of Stress on the Development and Progression of Cardiovascular Disease. Nature Reviews Cardiology, 15(4), 215-229.</h3>
+                                <ul class="main_li">
+                                    <li>This review focuses on how chronic stress and sustained low HRV can lead to cardiovascular risks, fatigue, and burnout. It explores how low activation during stress reflects emotional and physiological exhaustion.
+                                    </li>
+                                </ul>
+                                <h3>Collins, S. M., Karasek, R. A., & Costas, K. (2005). Job Strain and Autonomic Nervous System Activity. American Journal of Public Health, 95(2), 207-213.</h3>
+                                <ul class="main_li">
+                                    <li>This study highlights how low physiological activation during moderate to high stress situations (such as job strain) can indicate chronic stress and reduced autonomic flexibility, often leading to fatigue and exhaustion.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 14 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Burnout
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Melamed, S., Shirom, A., Toker, S., Berliner, S., & Shapira, I. (2006). Burnout and Risk of Cardiovascular Disease: Evidence, Possible Causal Paths, and Plausible Mechanisms. Psychological Bulletin, 132(3), 327-353.</h3>
+                                <ul class="main_li">
+                                    <li>This paper discusses burnout and its physiological correlates, showing how low activation in response to stress is a hallmark of emotional exhaustion and burnout, as the body becomes less responsive to stressors over time.
+                                    </li>
+                                </ul>
+                                <h3>Maslach, C., & Leiter, M. P. (2016). Understanding the Burnout Experience: Recent Research and Its Implications for Psychiatry. World Psychiatry, 15(2), 103-111.</h3>
+                                <ul class="main_li">
+                                    <li>This paper explores how burnout manifests through a combination of psychological stress and low physiological response, where individuals feel emotionally depleted but unable to fully activate the body to cope with stressors.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 15 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Cognitive Performance Under Stress
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Mather, M., & Harley, C. W. (2016). The Locus Coeruleus: Essential for Maintaining Cognitive Function and the Aging Brain. Trends in Cognitive Sciences, 20(3), 214-226.</h3>
+                                <ul class="main_li">
+                                    <li>This research explains how moderate stress combined with low physiological activation may reduce cognitive flexibility, as the brain fails to engage fully due to diminished sympathetic response.
+                                    </li>
+                                </ul>
+                                <h3>Sandi, C. (2013). Stress and Cognition. Nature Reviews Neuroscience, 14(9), 522-533.</h3>
+                                <ul class="main_li">
+                                    <li>Sandi provides a comprehensive overview of how stress impacts cognition, explaining that when stress is moderate but physiological activation is low, cognitive performance tends to suffer as the brain struggles to engage with tasks under perceived pressure.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 16 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV, Autonomic Imbalance, and Fatigue
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Goldstein, D. S. (2013). Adrenal Responses to Stress. Cellular and Molecular Neurobiology, 33(2), 241-248.</h3>
+                                <ul class="main_li">
+                                    <li>This paper discusses how sustained low physiological activation during stress reflects a maladaptive stress response, often leading to adrenal fatigue and autonomic imbalance, as seen in individuals experiencing burnout or chronic stress.
+                                    </li>
+                                </ul>
+                                <h3>Brosschot, J. F., Gerin, W., & Thayer, J. F. (2006). The Perseverative Cognition Hypothesis: A Review of Worry, Prolonged Stress-Related Physiological Activation, and Health. Journal of Psychosomatic Research, 60(2), 113-124.</h3>
+                                <ul class="main_li">
+                                    <li>This hypothesis explains how continuous mental stress without adequate physiological activation (such as rumination or worry) leads to prolonged autonomic imbalance, with low activation being a sign of chronic stress or emotional fatigue.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 17 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV and Autonomic Flexibility in Stress
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Friedman, B. H. (2007). An Autonomic Flexibility–Neurovisceral Integration Model of Anxiety and Cardiac Vagal Tone. Biological Psychology, 74(2), 185-199.</h3>
+                                <ul class="main_li">
+                                    <li>This model demonstrates how low HRV and low physiological activation during moderate stress reflect reduced autonomic flexibility, which makes it difficult to cope with stress effectively and leads to emotional fatigue.
+                                    </li>
+                                </ul>
+                                <h3>Kosslyn, S. M., & Rosenberg, R. S. (2006). Psychology: The Brain, the Person, the World. Pearson Education.</h3>
+                                <ul class="main_li">
+                                    <li>This book includes detailed information on the interaction between stress, cognition, and physiological responses, noting how under-activation in the presence of stress can lead to cognitive impairment and emotional dysregulation.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 18 -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                HRV, Autonomic Balance, and Emotional Fatigue
+                            <span class="icon close-icon">-</span>
+                            <span class="icon open-icon">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <h3>Porges, S. W. (2011). The Polyvagal Theory: Neurophysiological Foundations of Emotions, Attachment, Communication, and Self-Regulation. W. W. Norton & Company.</h3>
+                                <ul class="main_li">
+                                    <li>Porges’ polyvagal theory is a foundational work explaining how HRV is a marker of autonomic regulation, showing how low physiological activation during stress indicates a parasympathetic over-dominance and reduced capacity to cope with stress, potentially leading to emotional fatigue.
+                                    </li>
+                                </ul>
+                                <h3>McEwen, B. S. (2007). Physiology and Neurobiology of Stress and Adaptation: Central Role of the Brain. Physiological Reviews, 87(3), 873-904.</h3>
+                                <ul class="main_li">
+                                    <li>McEwen explains how chronic stress leads to imbalances in the autonomic nervous system, where individuals experience moderate stress but are unable to physiologically activate, leading to poor stress responses and long-term health consequences.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>  
                 </div> 
+
+                <p style="margin-top: 20px;">These citations provide further scientific support for the relationship between HRV, stress, and physiological responses, specifically highlighting how low physiological activation during moderate stress can indicate fatigue, burnout, or maladaptive stress responses. They contribute to understanding the interaction between stress levels, autonomic regulation, and performance outcomes.</p>
             </div>
         </div> 
     </main>
