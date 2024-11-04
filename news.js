@@ -17,9 +17,7 @@ fetch('news.json')
                             </div>
                         </div>
                         <h2>${post.title}</h2>
-                        <p>
-                            ${post.content}
-                        </p>
+
                         <a href="single-news.html?id=${post.id}" class="btn_1">Read more</a>
                     </div><hr>
             `;
