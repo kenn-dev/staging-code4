@@ -132,6 +132,25 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.main-menu li a{
+    font-size: 18px !important;
+}
+
+div.col-6 {
+    width: 30% !important;
+}
+
+/* Targeting the nav element with class col-6 */
+nav.col-6 {
+    width: 70% !important;
+}
+
+.main-menu ul{
+    justify-content: end !important;
+    display: flex !important;
+    padding-right: 10px !important;
+}
+
 body {
 	background: #f9f9f9;
 	font-size: 14px;
