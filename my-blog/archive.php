@@ -1,7 +1,7 @@
 <?php
-// Load JSON file
-$json = file_get_contents('posts.json');
-$posts = json_decode($json, true);
+    // Load JSON file
+    $json = file_get_contents('posts.json');
+    $posts = json_decode($json, true);
 ?>
 <!DOCTYPE html>
 <html lang="en">
