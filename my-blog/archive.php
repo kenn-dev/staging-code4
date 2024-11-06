@@ -1,5 +1,5 @@
 <?php
-    // Load JSON file
+    // Load JSON file for Posts
     $json = file_get_contents('posts.json');
     $posts = json_decode($json, true);
 ?>
