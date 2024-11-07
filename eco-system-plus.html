@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Code4pro">
+    <meta name="author" content="Code4pro">
+    <title>Solution - Code4Pro</title>
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+        href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+        href="img/apple-touch-icon-144x144-precomposed.png">
+    <!-- GOOGLE WEB FONT -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- COMMON CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/vendors.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <link rel="canonical" href="https://www.code4pro.com/solution.html">
+    <meta property="og:site_name" content="Code4Pro" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.code4pro.com/solution.html" />
+    <meta name="description" content="The first to use A.I. to manage and predict stress levels, Code 4 Pro is an extremely
+    accurate and versatile tool for stress management and mitigation | Code4Pro">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FBWQ28KR6S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FBWQ28KR6S');
+</script>
+
+
+<style>
+    @media only screen and (max-width: 5000px) and (min-width: 768px){
+        .anchor{
+            margin: 50px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 200px){
+        .anchor{
+            margin: 20px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .container.first-container {
+            padding-block: 60px !important;
+        }
+
+        .container.second-container,
+        .container.third-container,
+        .container.fourth-container {
+            padding-bottom: 60px !important;
+        }
+
+        .first-container .first-column,
+        .third-container .first-column {
+            margin-bottom: 40px;
+        }
+
+        .second-container .row,
+        .fourth-container .row {
+            flex-direction: column-reverse;
+        }
+
+        .second-container .second-column,
+        .fourth-container .second-column {
+            margin-bottom: 40px;
+        }
+    }
+
+
+    /* Left column (tabs) */
+    .tabs-container {
+        width: 100%;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 10px;
+    }
+
+    .tab {
+        background-color: #ddd;
+        border-radius: 6px;
+        padding: 8px 20px;
+        cursor: pointer;
+    }
+
+    .tab:hover {
+        background-color: #023047;
+        color: #fff;
+    }
+
+    .tab.active {
+        background-color: #023047;
+        color: #fff;
+    }
+
+    /* Tab content */
+    .tab-content {
+        display: none;
+        margin-top: 5px;
+        padding: 0px;
+        border: none;
+        background: transparent;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        .container {
+            padding-block: 60px !important;
+        }
+
+        .container.second-container {
+            padding-top: 0 !important;
+        }
+
+        .first-container .first-column {
+            margin-bottom: 40px;
+        }
+
+        .second-container .row {
+            flex-direction: column-reverse;
+        }
+
+        .second-container .second-column {
+            margin-bottom: 40px;
+        }
+    }
+    .section-top-container {
+        display: flex;
+    }
+
+    .section-left-col-1, .section-left-col-2{
+        width: 100%;
+    }
+
+    .section-top-container {
+        width: 100%;
+        display: flex;
+        gap: 60px;
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 200px){
+        .section-top-container {
+            flex-direction: column;
+            gap: 0px;
+        }   
+    }
+</style>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+    <!-- Header================================================== -->
+    <header>
+        <div class="container">
+            <div class="button-call-back center login-button">
+                <a href="https://app.code4pro.com/login" target="_blank" id="sub-button">Login</a>
+            </div>
+
+
+            <div class="row">
+                <div class="col-6">
+                    <div id="logo_home">
+                        <h1><a href="index.html" title="Code4Pro">Code4Pro</a></h1>
+                    </div>
+                </div>
+                <nav class="col-6">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu
+                            mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <a href="index.html">
+                                <img src="img/logo_sticky_2x.png" width="30" alt="Code4Pro">
+                            </a>
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="submenu">
+                                <a href="platform.html" class="show-submenu">The Platform</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="science.html" class="show-submenu">The Science</a>
+                            </li>
+                            <li class="submenu dropdown">
+                                <a href="occupations.html" class="show-submenu">Occupations<i
+                                        class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="law-enforcement.html">Law Enforcement</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu dropdown-mobile">
+                                <a href="javascript:void(0);" class="show-submenu">Customers<i
+                                        class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="customer.html">Customers</a></li>
+                                    <li><a href="law-enforcement.html">Law Enforcement</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="teams.html" class="show-submenu">Team</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="news.html" class="show-submenu">News</a>
+                            </li>
+                            <li class="submenu">
+                                <a href="getting-started.html" class="show-submenu">Getting Started</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+
+    <section class="parallax-window-new" data-parallax="scroll" data-image-src="img/heartbeat.jpg">
+        <div class="parallax-content-1 opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
+            <div class="animated fadeInDown">
+                <h1>Eco System Plus</h1>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container second-container" style="padding-block: 120px 120px;">
+            <h2 class="mt-0 mb-5 text-center">Code 4 Pro Suite</h2>
+            <div class="row gap-4 d-flex justify-content-center">
+                <div class="col-md-6 shadow p-5 bg-white rounded" style="width: 48%;">
+                    <img src="img/a-diagram-illustrating-multiple-devices.png" class="img-fluid" style="border-radius: 20px;">
+                </div> 
+                <div class="col-md-6 shadow p-5 bg-white rounded" style="width: 48%;">
+                    <img src="img/a-cutting-edge-AI-traffic-management-system.png" class="img-fluid" style="border-radius: 20px;">
+                </div> 
+            </div>
+        </div>
+
+        <div class="container first-container" style="padding-block: 0 60px;">
+            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-lg-8 col-sm-12 section-left">
+                    <figure>
+                        <img src="img/a-visual-representation-of-an-AI-driven-traffic-management-system.png" class="img-fluid" alt="image">
+                    </figure>       
+                </div>
+                <div class="col-lg-4 col-sm-12 section-right" style="text-align: left; margin: auto;">
+                    <h2 id="stress-1">The Technology</h2>
+                    <p>
+                        We have built the worlds first tool that objectively measures and helps manage stress in real time.
+                    </p>
+                    <p>
+                        Our AI models are at the core of our solution; they uniquely combine multiple inputs and produce multiple outputs: current + predicted stress assessments.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container first-container" style="padding-block: 0px 120px;">
+            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-lg-4 col-sm-12 section-right" style="text-align: left; margin: auto;">
+                    <h2 id="stress-1">The Solution</h2>
+                    <p>
+                        The most accurate and versatile tool to improve decision making  under stress.
+                    </p>
+                </div>
+                <div class="col-lg-8 col-sm-12 section-left">
+                    <figure>
+                        <img src="img/diagram-illustrating-the-product-process-flow.png" class="img-fluid" alt="image">
+                    </figure>       
+                </div>
+            </div>
+        </div>
+
+        <div class="container second-container" style="padding-block: 0 120px;">
+            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-md-12">
+                    <h2>Biometrics and BWC Video</h2>
+                    <h3 class="mb-3">Turning Video into Data</h3>
+                    <p class="mb-5">This is one of the most unique, one-of-a-kind projects in artificial intelligence
+                    </p>
+                    <img src="img/visual-representation-of-the-training-process-for-video-and-robotic.png" class="img-fluid" style="border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-block: 0 120px;">
+            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-lg-5 col-sm-12">
+                    <figure>
+                        <img class="img-fluid" style="border-radius: 20px;" src="img/security-guard-workspace.jpg" alt="image">
+                    </figure>       
+                </div>
+                <div class="col-lg-7 col-sm-12 text-start my-auto" style="padding-left: 20px;">
+                    <h2 id="stress-1">Quotes Collected from Pasco PD Personnel February 28, 2024</h2>
+                    <ul class="main_li">
+                        <li>“I’d like something to help calm me if I’m in a bad spot or getting close to being in a bad spot.”</li>
+                        <li>“If I knew it would help, I’d definitely offer feedback after an incident”</li>
+                        <li>“I’d like to know how long it takes for me to recover, and is it different for different situations”</li>
+                        <li>“All officers may not like them, but I would want notifications if stress is beginning to increasing.. for sure if it was in the red”</li>
+                        <li>“It would be better to look back at the end of shift recall days’ incidents and add some color”</li>
+                        <li>“What are my triggers?”</li>
+                        <li>“How do I compare to others in my department, or similar police agencies in my ability to adapt to stress on the job?”</li>
+                        <li>“Will I be able to know how my numbers compared to police officers in aggregate”</li>
+                        <li>“We could use this information to negotiate for more and different personnel, changing staffing policy or altering the structure of shifts”</li>
+                        <li>“If this helps in any way prevent burnout, don’t care about privacy or who sees the data”</li>
+                        <li>“Am I more susceptible to stress certain times of the day, shift start and shift end?”</li>
+                        <li>“I see a lot of benefits aiding Dispatch - stress characteristics, what calls are difficult for one person to take, send multiple cops”</li>
+                        <li>“I see a lot of benefits aiding Dispatch - stress characteristics, what calls are difficult for one person to take, send multiple cops”</li>
+                        <li>“Will this help with officer performance?  Officer wellness? Community transparency?”</li>
+                        <li>“Is it easy to learn how to use this information?”</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container second-container" style="padding-block: 0 120px;">
+            <div class="row gap-4 d-flex justify-content-center">
+                <div class="col-md-6 shadow p-5 bg-white rounded" style="width: 48%;">
+                    <h2 class="mt-0 mb-5 text-center">Impact of Stress in Real Time</h2>
+                    <img src="img/a-visual-representation-of-the-various-task.png" class="img-fluid" style="border-radius: 20px;">
+                </div> 
+                <div class="col-md-6 shadow p-5 bg-white rounded" style="width: 48%;">
+                    <h2 class="mt-0 mb-5 text-center">Impact of Stress at Varying Levels</h2>
+                    <img src="img/a-visual-representation-of-an-AI-driven-traffic-management-system.png" class="img-fluid" style="border-radius: 20px;">
+                </div> 
+            </div>
+        </div>
+
+        <div class="container third-container" style="padding-block: 0 120px;">
+            <div class="row">
+                <div class="col-md-6 second-column">
+                    <img class="img-fluid" style="border-radius: 20px;" src="img/police.jpg">
+                </div> 
+                <div class="col-md-6 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                    <h2 class="mb-5 mt-0">Public Safety Mission</h2>
+                    <p>
+                        Our ultimate goal is to help individual first responders, supervisors, and department heads detect and prevent stress from harming both the individual responders as well as the community members they serve. 
+                    </p>
+                    <p>
+                        Research has shown that police officers who can control their physiology will their do better during stressful scenarios and are more likely to be protected against the short- and long-term risks of PTSD.
+                    </p>
+                    <p>
+                        Code4Pro empowers you with the data to transform the health of public safety in your community.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container second-container" style="padding-block: 0 120px;">
+            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-md-12">
+                    <h2>Evidentiary (Meta Data)</h2>
+                    <h3 class="mb-3">Similar to WSU Labeling Project</h3>
+                    <img src="img/dashboard-screenshot-featuring-a-video.png" class="img-fluid" style="border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+  
+        <div class="container" style="padding-block: 0 120px;">
+            <div class="banner_2">
+                <div class="wrapper d-flex align-items-center opacity-mask banner colored">
+                    <div>
+                        <h3>Code 4 Pro <br>Leads the Way</h3>
+                        <p class="mb-3">	By pairing biometric HRV sensors with sophisticated A.I.-based tools <br> our unique solution can be used in any job setting.</p>
+                        <a href="single_tour.html" class="btn_1 white" style="border-radius: 30px; position: static;">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <!-- End main -->
+
+    <footer class="revealed">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Need help?</h3>
+                    <a href="mailto:support@code4pro.com" id="email_footer">support@code4pro.com</a>
+                </div>
+                <div class="col-md-3">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="teams.html">Team</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="trobuleshooting.html">Troubleshooting</a></li>
+                        <li><a href="privacy.html">Privacy Statement</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Discover</h3>
+                    <ul>
+                        <li><a href="https://www.emerald.com/insight/content/doi/10.1108/PIJPSM-04-2020-0060/full/html"
+                                target="_blank">Published
+                                Paper</a></li>
+                    </ul>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="https://linkedin.com/company/code4pro"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                        <p>© Code4Pro 2024</p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+    <div id="toTop"></div><!-- Back to top button -->
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get">
+            <input value="" name="q" type="text" placeholder="Search..." />
+            <button type="submit"><i class="icon_set_1_icon-78"></i>
+            </button>
+        </form>
+    </div><!-- End Search Menu -->
+    <!-- Sign In Popup -->
+    <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+        <div class="small-dialog-header">
+            <h3>Sign In</h3>
+        </div>
+        <form>
+            <div class="sign-in-wrapper">
+                <a href="#0" class="social_bt facebook">Login with Facebook</a>
+                <a href="#0" class="social_bt google">Login with Google</a>
+                <div class="divider"><span>Or</span></div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                    <i class="icon_mail_alt"></i>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password" id="password" value="">
+                    <i class="icon_lock_alt"></i>
+                </div>
+                <div class="clearfix add_bottom_15">
+                    <div class="checkboxes float-start">
+                        <label class="container_check">Remember me
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="float-end"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
+                </div>
+                <div class="text-center"><input type="submit" value="Log In" class="btn_login"></div>
+                <div class="text-center">
+                    Don’t have an account? <a href="javascript:void(0);">Sign up</a>
+                </div>
+                <div id="forgot_pw">
+                    <div class="form-group">
+                        <label>Please confirm login email below</label>
+                        <input type="email" class="form-control" name="email_forgot" id="email_forgot">
+                        <i class="icon_mail_alt"></i>
+                    </div>
+                    <p>You will receive an email containing a link allowing you to reset your password to a new
+                        preferred one.</p>
+                    <div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+                </div>
+            </div>
+        </form>
+        <!--form -->
+    </div>
+    <!-- /Sign In Popup -->
+    <!-- Common scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+    <!-- Video header scripts -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/video_header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
+        integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // Remove active class from all tabs and contents
+            tabs.forEach(t => t.classList.remove('active'));
+            tabContents.forEach(tc => tc.classList.remove('active'));
+
+            // Add active class to the clicked tab and corresponding content
+            this.classList.add('active');
+            const tabContent = document.getElementById(this.getAttribute('data-tab'));
+            tabContent.classList.add('active');
+        });
+        });
+    </script>
+</body>
+
+</html>
