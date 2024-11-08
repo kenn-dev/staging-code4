@@ -165,6 +165,22 @@
             gap: 0px;
         }   
     }
+
+    @media (min-width: 768px) {
+        .first-container .col-md-6,
+        .sixth-container .col-md-6 {
+            width: 48%;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .first-container .col-md-6,
+        .sixth-container .col-md-6 {
+            width: 100%;
+        }
+    }
+
+
 </style>
 </head>
 
@@ -201,7 +217,7 @@
                     <div class="main-menu">
                         <div id="header_menu">
                             <a href="index.html">
-                                <img src="img/logo_sticky_2x.png" width="30" alt="Code4Pro">
+                                <img src="img/logo_sticky_2x.png" width="120" alt="Code4Pro">
                             </a>
                         </div>
                         <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
@@ -220,10 +236,9 @@
                                 </ul>
                             </li>
                             <li class="submenu dropdown-mobile">
-                                <a href="javascript:void(0);" class="show-submenu">Customers<i
+                                <a href="occupations.html" class="show-submenu">Occupations<i
                                         class="icon-down-open-mini"></i></a>
                                 <ul>
-                                    <li><a href="customer.html">Customers</a></li>
                                     <li><a href="law-enforcement.html">Law Enforcement</a></li>
                                 </ul>
                             </li>
@@ -240,6 +255,13 @@
                 </nav>
             </div>
         </div><!-- container -->
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     </header><!-- End Header -->
 
     <section class="parallax-window-new" data-parallax="scroll" data-image-src="img/heartbeat.jpg">
@@ -251,19 +273,19 @@
     </section>
 
     <main>
-        <div class="container second-container" style="padding-block: 120px 120px;">
+        <div class="container first-container" style="padding-block: 120px 120px;">
             <h2 class="mt-0 mb-5 text-center">Code 4 Pro Suite</h2>
             <div class="row gap-4 d-flex justify-content-center">
-                <div class="col-md-6 shadow p-5 bg-white rounded" style="width: 48%;">
+                <div class="col-md-6 shadow p-5 bg-white rounded">
                     <img src="img/a-diagram-illustrating-multiple-devices.png" class="img-fluid" style="border-radius: 20px;">
                 </div> 
-                <div class="col-md-6 shadow p-5 bg-white rounded" style="width: 48%;">
+                <div class="col-md-6 shadow p-5 bg-white rounded">
                     <img src="img/a-cutting-edge-AI-traffic-management-system.png" class="img-fluid" style="border-radius: 20px;">
                 </div> 
             </div>
         </div>
 
-        <div class="container first-container" style="padding-block: 0 60px;">
+        <div class="container second-container" style="padding-block: 0 60px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
                 <div class="col-lg-8 col-sm-12 section-left">
                     <figure>
@@ -282,7 +304,7 @@
             </div>
         </div>
 
-        <div class="container first-container" style="padding-block: 0px 120px;">
+        <div class="container third-container" style="padding-block: 0px 120px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
                 <div class="col-lg-4 col-sm-12 section-right" style="text-align: left; margin: auto;">
                     <h2 id="stress-1">The Solution</h2>
@@ -298,7 +320,7 @@
             </div>
         </div>
 
-        <div class="container second-container" style="padding-block: 0 120px;">
+        <div class="container fourth-container" style="padding-block: 0 120px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
                 <div class="col-md-12">
                     <h2>Biometrics and BWC Video</h2>
@@ -310,7 +332,7 @@
             </div>
         </div>
 
-        <div class="container" style="padding-block: 0 120px;">
+        <div class="container fifth-container" style="padding-block: 0 120px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
                 <div class="col-lg-5 col-sm-12">
                     <figure>
@@ -340,20 +362,20 @@
             </div>
         </div>
         
-        <div class="container second-container" style="padding-block: 0 120px;">
+        <div class="container sixth-container" style="padding-block: 0 120px;">
             <div class="row gap-4 d-flex justify-content-center">
-                <div class="col-md-6 shadow p-5 bg-white rounded" style="width: 48%;">
+                <div class="col-md-6 shadow p-5 bg-white rounded">
                     <h2 class="mt-0 mb-5 text-center">Impact of Stress in Real Time</h2>
                     <img src="img/a-visual-representation-of-the-various-task.png" class="img-fluid" style="border-radius: 20px;">
                 </div> 
-                <div class="col-md-6 shadow p-5 bg-white rounded" style="width: 48%;">
+                <div class="col-md-6 shadow p-5 bg-white rounded">
                     <h2 class="mt-0 mb-5 text-center">Impact of Stress at Varying Levels</h2>
                     <img src="img/a-visual-representation-of-an-AI-driven-traffic-management-system.png" class="img-fluid" style="border-radius: 20px;">
                 </div> 
             </div>
         </div>
 
-        <div class="container third-container" style="padding-block: 0 120px;">
+        <div class="container seventh-container" style="padding-block: 0 120px;">
             <div class="row">
                 <div class="col-md-6 second-column">
                     <img class="img-fluid" style="border-radius: 20px;" src="img/police.jpg">
@@ -373,7 +395,7 @@
             </div>
         </div>
 
-        <div class="container second-container" style="padding-block: 0 120px;">
+        <div class="container eithth-container" style="padding-block: 0 120px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
                 <div class="col-md-12">
                     <h2>Evidentiary (Meta Data)</h2>
@@ -383,7 +405,7 @@
             </div>
         </div>
   
-        <div class="container" style="padding-block: 0 120px;">
+        <div class="container ninth-container" style="padding-block: 0 120px;">
             <div class="banner_2">
                 <div class="wrapper d-flex align-items-center opacity-mask banner colored">
                     <div>
@@ -401,20 +423,28 @@
     <footer class="revealed">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h3>Need help?</h3>
                     <a href="mailto:support@code4pro.com" id="email_footer">support@code4pro.com</a>
                 </div>
                 <div class="col-md-3">
-                    <h3>About</h3>
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="teams.html">Team</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="trobuleshooting.html">Troubleshooting</a></li>
-                        <li><a href="privacy.html">Privacy Statement</a></li>
+                        <li><a href="platform.html">The Platform</a></li>
+                        <li><a href="science.html">The Science</a></li>
+                        <li><a href="occupations.html">Occupations</a></li>
+                        <li><a href="law-enforcement.html">Law Enforcement</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
+                    <h3>&nbsp</h3>
+                    <ul>
+                        <li><a href="teams.html">Team</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
                     <h3>Discover</h3>
                     <ul>
                         <li><a href="https://www.emerald.com/insight/content/doi/10.1108/PIJPSM-04-2020-0060/full/html"
