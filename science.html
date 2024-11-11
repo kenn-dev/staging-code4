@@ -88,7 +88,7 @@
         display: block;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         .container {
             padding-block: 60px !important;
         }
@@ -99,6 +99,10 @@
 
         .first-container .first-column {
             margin-bottom: 40px;
+        }
+        
+        .first-container .second-column {
+            padding-left: 0 !important;
         }
 
         .second-container .row {
@@ -111,8 +115,8 @@
     }
 
 
-    /* White Papers - Key Research */
-    .section-title {
+        /* White Papers - Key Research */
+        .section-title {
             background-color: #023047;
             color: white;
             padding: 10px;
@@ -274,10 +278,10 @@
     <main>
         <div class="container first-container" style="padding-block: 120px;">
             <div class="row">
-                <div class="col-md-6 d-flex flex-column justify-content-center first-column">
+                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column">
                     <img src="img/front-view-man-dealing-with-imposter-syndrome.jpg" class="img-fluid" style="border-radius: 20px;">
                 </div> 
-                <div class="col-md-6 d-flex flex-column justify-content-center second-column" style="padding-left: 40px;">
+                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center second-column" style="padding-left: 40px;">
                     <h2 class="mt-0 mb-5">Understanding HRV</h2>
                     <p>Heart Rate Variability (HRV) measures the variation in time between consecutive heartbeats. It reflects the balance between the sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) branches of the autonomic nervous system (ANS). Unlike heart rate, which focuses on beats per minute, HRV focuses on the millisecond fluctuations between heartbeats, revealing the adaptability of the nervous system to physiological or environmental changes.
                     </p>
@@ -307,7 +311,7 @@
 
         <div class="container second-container" style="padding-block: 0 120px;">
             <div class="row">
-                <div class="col-md-6 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
                     <div class="tabs-container">
                         <div class="tabs">
                           <div class="tab active" data-tab="tab1">AI and HRV: A New Frontier</div>
@@ -358,43 +362,43 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-md-6 second-column">
+                <div class="col-lg-6 col-md-12 second-column">
                     <img src="assets/images/dashboard-code4.png" class="img-fluid" style="border-radius: 20px;">
                 </div> 
             </div>
         </div>
 
+        <div class="container third-container" style="padding-block: 0 120px;">
+            <!-- Section for White Papers -->
+            <div class="white-papers">
+                <h2 class="section-title">Our White Papers</h2>
+                <ul>
+                    <!-- Example white paper, replace with actual data -->
+                    <li>
+                        <h3><a href="https://kenn-dev.github.io/staging-code4/scientific-foundation-citations.html\assets\Testing-the-impact of-physiological-stress-response-on-police-performance-during-critical-job-tasks.pdf" target="_blank">Testing the impact of physiological stress response on police performance during critical job tasks</a></h3>
+                        <p class="summary">This white paper is for Testing the impact of physiological stress response on police performance during critical job tasks</p>
+                    </li>
+                    <!-- Add more white papers here -->
+                </ul>
+            </div>
 
-    <!-- Section for White Papers -->
-    <section class="white-papers">
-        <h2 class="section-title">Our White Papers</h2>
-        <ul>
-            <!-- Example white paper, replace with actual data -->
-            <li>
-                <h3><a href="https://kenn-dev.github.io/staging-code4/scientific-foundation-citations.html\assets\Testing-the-impact of-physiological-stress-response-on-police-performance-during-critical-job-tasks.pdf" target="_blank">Testing the impact of physiological stress response on police performance during critical job tasks</a></h3>
-                <p class="summary">This white paper is for Testing the impact of physiological stress response on police performance during critical job tasks</p>
-            </li>
-            <!-- Add more white papers here -->
-        </ul>
-    </section>
-
-    <!-- Section for Key Research Links -->
-    <section class="key-research">
-        <h2 class="section-title">Key Research Links</h2>
-        <ul>
-            <!-- Example research link, replace with actual data -->
-            <li>
-                <h3><a href="https://researchlink1.com" target="_blank">Global Temperature Trends Over the Last Century</a></h3>
-                <p class="summary">A comprehensive study on the rise of global temperatures, highlighting the significant increase in average temperatures and the factors contributing to this trend.</p>
-            </li>
-            <li>
-                <h3><a href="https://researchlink2.com" target="_blank">Biodiversity Loss and Its Effect on Ecosystems</a></h3>
-                <p class="summary">This research examines the rapid loss of biodiversity and its profound impact on various ecosystems around the world, providing solutions for conservation.</p>
-            </li>
-            <!-- Add more research links here -->
-        </ul>
-    </section>
-
+            <!-- Section for Key Research Links -->
+            <div class="key-research">
+                <h2 class="section-title">Key Research Links</h2>
+                <ul>
+                    <!-- Example research link, replace with actual data -->
+                    <li>
+                        <h3><a href="https://researchlink1.com" target="_blank">Global Temperature Trends Over the Last Century</a></h3>
+                        <p class="summary">A comprehensive study on the rise of global temperatures, highlighting the significant increase in average temperatures and the factors contributing to this trend.</p>
+                    </li>
+                    <li>
+                        <h3><a href="https://researchlink2.com" target="_blank">Biodiversity Loss and Its Effect on Ecosystems</a></h3>
+                        <p class="summary">This research examines the rapid loss of biodiversity and its profound impact on various ecosystems around the world, providing solutions for conservation.</p>
+                    </li>
+                    <!-- Add more research links here -->
+                </ul>
+            </div>
+        </div>
 
         <div class="container" style="padding-block: 0 120px;">
             <div class="banner_2">

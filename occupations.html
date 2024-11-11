@@ -50,7 +50,7 @@
             font-size: 32px;
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
             .container {
                 padding-block: 60px !important;
             }
@@ -59,13 +59,18 @@
                 padding-block: 0 !important;
             }
 
+            .first-container .second-column {
+                padding-left: 0 !important;
+            }
 
             .first-container .first-column,
-            .second-container .first-column {
+            .second-container .first-column,
+            .fourth-container .second-column {
                 margin-bottom: 20px;
             }
 
-            .third-container .row {
+            .third-container .row,
+            .fourth-container .row {
                 flex-direction: column-reverse;
             }
 
@@ -192,10 +197,10 @@
         <main>
             <div class="container first-container" style="padding-block: 120px;">
                 <div class="row mb-5">
-                    <div class="col-md-6 p-0 first-column">
+                    <div class="col-lg-6 col-md-12 p-0 first-column">
                         <img class="img-fluid" style="border-radius: 20px;" src="img/police.jpg">
                     </div> 
-                    <div class="col-md-6 d-flex flex-column justify-content-center second-column" >
+                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center second-column" >
                         <h2>First responders aren’t the only ones who must make split-second, critical decisions.</h2>
                             <br>
                         <p>
@@ -208,13 +213,13 @@
 
             <div class="container third-container" style="padding-block: 0 120px;">
                 <div class="row">
-                    <div class="col-md-6 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
                         <h2 class="mb-5 mt-0">Healthcare Professionals</h2>
                         <p>
                             We are dedicated to supporting health professionals in their mission to provide the best possible care. Whether you're a doctor, nurse, therapist, or healthcare administrator, our platform offers valuable resources, continuing education, and tools designed to help you excel in your field.
                         </p>
                     </div>
-                    <div class="col-md-6 second-column">
+                    <div class="col-lg-6 col-md-12 second-column">
                         <img class="img-fluid" style="border-radius: 20px;" src="img/healthcare.jpg">
                     </div> 
                 </div>
@@ -222,13 +227,13 @@
 
             <div class="container second-container" style="padding-block: 0 120px;">
                 <div class="row" style="background-color: #023047; padding: 60px; border-radius: 40px;">
-                    <div class="col-md-6 first-column">
+                    <div class="col-lg-6 col-md-12 first-column">
                         <h3 class="text-light fw-bold m-0 mb-3">The first tool to objectively measure and manage stress in real time, Code 4 Pro offers tremendous benefits to many types of careers:</h3>   
                         <figure>
                             <img src="img/mobile-slide-3.png" class="img-fluid" alt="image">
                         </figure>
                     </div>
-                    <div class="col-md-6 second-column">
+                    <div class="col-lg-6 col-md-12 second-column">
                         <ul class="main_li text-light">
                             <li>Law enforcement (18,000+ local police departments with over 700,000 officers)</li>
                             <li>Other first responders and public safety workers: firefighters, security guards, EMTs, air traffic controllers, prisons guards, etc.</li>
@@ -246,9 +251,9 @@
                 </div>
             </div>
 
-            <div class="container third-container" style="padding-block: 0 120px;">
+            <div class="container fourth-container" style="padding-block: 0 120px;">
                 <div class="row">
-                    <div class="col-md-6 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
                         <h2 class="mb-5 mt-0">Wellness and Stress Mitigation</h2>
                         <p>
                             Stress is a trillion-dollar issue that’s behind an estimated 60 percent of all health issues. Unmanaged, stress can be dangerous and lead to disastrous and even fatal mistakes.
@@ -264,7 +269,7 @@
                             Can Code 4 Pro work in your job setting? Get in touch with us to see if we can help your team reduce stress. 
                         </p>
                     </div>
-                    <div class="col-md-6 second-column">
+                    <div class="col-lg-6 col-md-12 second-column">
                         <img class="img-fluid" style="border-radius: 20px;" src="img/wellness.jpg">
                     </div> 
                 </div>

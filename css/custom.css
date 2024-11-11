@@ -97,6 +97,15 @@
   background-color: #219EBC;
 }
 
+@media (max-width: 991px) {
+	.button-call-back {
+		margin-top: 6px !important;
+	}
+
+	.sticky .button-call-back {
+		margin-top: 0px !important;
+	}
+}
 
 .img_sticky {
   position: -webkit-sticky;
