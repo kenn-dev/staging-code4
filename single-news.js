@@ -15,7 +15,11 @@ fetch('news.json')
                     ${item.heading ? `<h2>${item.heading}</h2>` : ''} 
                     ${item.heading3 ? `<h3>${item.heading3}</h3>` : ''} 
                     <p>${item.paragraph}</p>
-                    ${item.paragraph2 ? `<p>${item.paragraph2}</p>` : ''} 
+                    ${item.paragraph2 ? `<p>${item.paragraph2}</p>` : ''}
+                    ${item.paragraph3 ? `<p>${item.paragraph3}</p>` : ''}
+                    ${item.paragraph4 ? `<p>${item.paragraph4}</p>` : ''}
+                    ${item.paragraph5 ? `<p>${item.paragraph5}</p>` : ''}
+                    ${item.paragraph6 ? `<p>${item.paragraph6}</p>` : ''} 
                 `;
             });
 
@@ -27,6 +31,7 @@ fetch('news.json')
 
                     .post h2 {
                         font-weight: 700;
+                        margin-block: 30px;
                     }
 
                     .post h3 {
@@ -35,6 +40,7 @@ fetch('news.json')
 
                     .post p {
                         font-size: 18px;
+                        margin-bottom: 20px;
                     }
                 </style>
                 <div class="post nopadding">
