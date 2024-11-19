@@ -179,9 +179,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Eina', sans-serif;
+	/* font-family: 'Eina', sans-serif; */
+	font-family: 'Verdana', sans-serif;
 	color: #222222;
 	font-weight: 400;
+	text-transform: capitalize;
 }
 
 h3 {
@@ -197,6 +199,7 @@ h2,
 h3 {
 	margin-top: 20px;
 	margin-bottom: 10px;
+	letter-spacing: 2px;
 }
 
 .main_title {
@@ -595,15 +598,15 @@ header.sticky #logo .logo_sticky {
 }
 
 /* logo home with h1 */
-#logo_home h1 {
+#logo_home h2 {
 	margin: 10px 0 0 0;
 	padding: 0;
 }
 
-#logo_home h1 a,
-header.sticky #logo_home h1 a,
-header#plain #logo_home h1 a,
-header#colored #logo_home h1 a {
+#logo_home h2 a,
+header.sticky #logo_home h2 a,
+header#plain #logo_home h2 a,
+header#colored #logo_home h2 a {
 	width: 90px;
 	height: 34px;
 	display: block;
@@ -615,22 +618,22 @@ header#colored #logo_home h1 a {
 	background-size: contain;
 }
 
-header.sticky #logo_home h1 {
+header.sticky #logo_home h2 {
 	margin: 0 0 10px 0;
 	padding: 0;
 }
 
-header.sticky #logo_home h1 a {
+header.sticky #logo_home h2 a {
 	background-image: url(../img/logo_sticky_2x.png);
 	background-size: contain;
 }
 
-header#plain #logo_home h1 a {
+header#plain #logo_home h2 a {
 	background-image: url(../img/logo_2x.png);
 	background-size: contain;
 }
 
-header.sticky#colored #logo_home h1 a {
+header.sticky#colored #logo_home h2 a {
 	background-image: url(../img/logo_sticky_colored_2x.png);
 	background-size: contain;
 }
@@ -640,19 +643,19 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 
-	#logo_home h1 a,
-	header#colored #logo_home h1 a {
+	#logo_home h2 a,
+	header#colored #logo_home h2 a {
 		background-image: url(../img/logo_2x.png);
 		background-size: contain;
 	}
 
-	header.sticky #logo_home h1 a,
-	header#plain #logo_home h1 a {
+	header.sticky #logo_home h2 a,
+	header#plain #logo_home h2 a {
 		background-image: url(../img/logo_sticky_2x.png);
 		background-size: contain;
 	}
 
-	header.sticky#colored #logo_home h1 a {
+	header.sticky#colored #logo_home h2 a {
 		background-image: url(../img/logo_sticky_colored_2x.png);
 		background-size: contain;
 	}
@@ -3949,7 +3952,7 @@ ul.list_order li span {
 .parallax-content-1 div h1,
 .parallax-content-1 div h3 {
 	font-size: 42px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	/* font-weight: bold; */
 	color: #fff;
 }
@@ -8223,19 +8226,19 @@ only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 991px),
 only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 991px),
 only screen and (min-device-pixel-ratio: 2) and (max-width: 991px) {
 
-	#logo_home h1 a,
-	header#colored #logo_home h1 a {
+	#logo_home h2 a,
+	header#colored #logo_home h2 a {
 		background-image: url(../img/logo_2x.png);
 		background-size: auto 30px;
 	}
 
-	header.sticky #logo_home h1 a,
-	header#plain #logo_home h1 a {
+	header.sticky #logo_home h2 a,
+	header#plain #logo_home h2 a {
 		background-image: url(../img/logo_sticky_2x.png);
 		background-size: auto 30px;
 	}
 
-	header.sticky#colored #logo_home h1 a {
+	header.sticky#colored #logo_home h2 a {
 		background-image: url(../img/logo_sticky_colored_2x.png);
 		background-size: auto 30px;
 	}
@@ -8273,10 +8276,10 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 991px) {
 		height: 30px;
 	}
 
-	#logo_home h1 a,
-	header.sticky #logo_home h1 a,
-	header#plain #logo_home h1 a,
-	header#colored #logo_home h1 a {
+	#logo_home h2 a,
+	header.sticky #logo_home h2 a,
+	header#plain #logo_home h2 a,
+	header#colored #logo_home h2 a {
 		width: 180px;
 		height: 30px;
 		background-size: auto 30px;

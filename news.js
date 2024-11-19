@@ -6,8 +6,8 @@ fetch('news.json')
             const postElement = document.createElement('article');
             postElement.innerHTML = `
                     <div class="post">
-                        <a href="single-news.html?id=${post.id}"><img src="${post.image}" alt="Image" class="img-fluid">
-                        </a>
+                        <!-- <a href="single-news.html?id=${post.id}"><img src="${post.image}" alt="Image" class="img-fluid">
+                        </a> -->
                         <div class="post_info clearfix">
                             <div class="post-left">
                                 <ul>
@@ -17,7 +17,7 @@ fetch('news.json')
                             </div>
                         </div>
                         <h2>${post.title}</h2>
-
+                        <p>${post.content[1].paragraph}</p>
                         <a href="single-news.html?id=${post.id}" class="btn_1">Read more</a>
                     </div><hr>
             `;

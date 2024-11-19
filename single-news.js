@@ -44,7 +44,7 @@ fetch('news.json')
                     }
                 </style>
                 <div class="post nopadding">
-                    <img src="${post.image}" alt="Image" class="img-fluid">
+                    <!-- <img src="${post.image}" alt="Image" class="img-fluid"> -->
                     <div class="post_info clearfix">
                         <h1>${post.title}</h1>
                         <p class="author">${post.author} | ${post.date}</p>
@@ -52,6 +52,20 @@ fetch('news.json')
                     ${contentHtml} <!-- Include the structured content here -->
                 </div>
             `;
+
+
+            const recentPosts = document.getElementById('recent-posts');
+            posts.forEach(post => {
+                const postElement = document.createElement('article');
+                postElement.innerHTML = `
+                    <li>
+                        <i class="icon-calendar-empty"></i> ${post.date}
+                        <div><a href="single-news.html?id=${post.id}">${post.title}</a>
+                        </div>
+                    </li><hr >
+                `;
+                recentPosts.appendChild(postElement);
+            });
         }
     })
     .catch(error => console.error('Error fetching the posts:', error));
