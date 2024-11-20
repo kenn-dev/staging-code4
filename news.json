@@ -1,6 +1,26 @@
 [
     {
         "id": 1,
+        "title": "New AI-Powered Tool Designed to Enhance First Responders’ Decision Making and Improve Public Safety",
+        "date": "July 12, 2024",
+        "author": "Pasco, Wash",
+        "content": [
+            {
+                "heading": "Code 4 Pro Completes First Phase of the Stress Mitigating Initiative"  
+            },
+            {
+                "paragraph" : "<strong>Pasco, Wash</strong>., July 12, 2024 – A new program designed to monitor and ultimately mitigate the stress of police officers and other first responders is one step closer to becoming a reality. Code 4 Pro (C4P), an AI and biometrics company based in Minneapolis, has completed a month-long pilot project of the program.<br /><br />",
+                "paragraph2": "In possibly the largest stress initiative in the area of public safety, thirty three officers from the Pasco, Wash. Police Department (PD) wore sensors that monitored their heart rate variability (HRV) both on and off duty. While HRV fluctuates throughout the day, research has linked low HRV to high stress levels, because lower HRV usually means the body is consistently leaning toward a sympathetic “fight or flight” response.<br /><br />This study is innovative for several reasons. While the research related to stress, especially officer stress, is extensive, this research studies officers where they are: out in the field. It explores several aspects of stress research by combining the data collected in the generative AI-enabled C4P app with body-worn camera (BWC) footage at the exact moment officers are stressed.<br /><br />“With this methodology, we can put ourselves in the officer's shoes to see what they are experiencing at different stress points. We can also explore stress-state changes and see what triggers these changes and what can be done to help them de-stress on the job,” said Steve Mase, Code 4 Pro President and CEO. “The program can also identify the types of calls or situations that cause officers the most or least stress, which could help in delegating calls. For example, if an officer is in a high-stress state, a system could be created that could re-direct certain calls to another officer until the officer is back in the green.”<br /><br />The C4P approach combined insights gathered from biometric sensors data with proprietary methodology and software for labeling Body Worn Camera (BWC) video. This allowed researchers to validate the intensity of each event that generated a stress response.<br /><br />This methodology, which gave C4P greater accuracy with which to predict the officers’ past, present and future stress levels, was published in the International Journal of Social Research Methodology. It has been shown to improve responses to domestic violence and mental health crisis incidents. HRV data can uncover patterns in the use of force vs. de-escalation techniques. This cutting-edge research and technology will provide revolutionary insights into police practices.<br /><br />The study revealed measurable insights into variability in stress intensity and duration associated with different call types and incidents. The information from the study will be used to design algorithms and new software to help public safety agencies improve police-community relations, plus reduce conflict, cost and liability that can ultimately enhance the health and well-being of law officers and members in the communities they serve.<br /><br />“Code 4 Pro Inc. was founded to help workers improve performance, increase safety and reduce stress for workers in a wide variety of careers, and particularly those in any dangerous, complex and/or stressful job,” said Mase. “While other systems measure heart rates at intervals of a few times an hour, ours measures continually, which creates accurate predictions.”<br /><br />“By pairing biometric sensors with AI-based tools, Code 4 Pro helps workers optimize decision-making and reduce both the short-term and long-term effects of stress such as PTSD,” said Mase. “As the Code 4 Pro AI engine adds data, we will unlock even more insights and increase the accuracy of our analytical models.”"
+            },
+            {
+                "heading": "About Code 4 Pro",
+                "paragraph": "The mission of Code 4 Pro Inc. is to help workers improve performance, increase safety and reduce stress for workers in a wide variety of careers and particularly those in any dangerous, complex and/or stressful job. By pairing biometric sensors with A.I.-based tools, Code 4 Pro helps workers optimize decision-making and reduce both the short-term and long-term effects of stress such as PTSD. For more information, visit <a href='http://127.0.0.1:5500/getting-started.html'> www.code4pro.com</a>."
+            }
+        ],
+        "image": "img/2151003745 (1).jpg"
+    },
+    {
+        "id": 2,
         "title": "AI-Backed HRV Tools Transform Policing, Boosting Officer Well-Being and Community",
         "date": "October 24, 2024",
         "author": "Stephen Mase, CEO Code 4 Pro",
@@ -69,7 +89,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "AI in Public Safety: Balancing Potential with Practicality",
         "date": "2024-11-15",
         "author": "Stephen Mase",
@@ -127,7 +147,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "How AI is Transforming Physician Health: Addressing Burnout, Enhancing Performance, and Strengthening Healthcare Communication",
         "date": "October 24, 2024",
         "author": "Stephen Mase, CEO Code 4 Pro",
@@ -162,7 +182,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "AI Startups: The Promise, Challenges, and Societal Impact of Emerging Technologies",
         "date": "2024-10-24",
         "author": "Stephen Mase",
