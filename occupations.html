@@ -55,22 +55,37 @@
                 padding-block: 60px !important;
             }
 
-            .container.second-container {
+            .container-fluid {
+                padding-block: 60px !important;
+            }
+
+            .container-fluid .container {
+                padding-block: 0px !important;
+            }
+
+            .container.second-container,
+            .container.fifth-container {
                 padding-block: 0 !important;
             }
 
-            .first-container .second-column {
-                padding-left: 0 !important;
+            .container.first-container {
+                padding-bottom: 0px !important;
             }
 
             .first-container .first-column,
             .second-container .first-column,
-            .fourth-container .second-column {
+            .fourth-container .second-column,
+            .fifth-container .first-column,
+            .sixth-container .second-column {
                 margin-bottom: 20px;
             }
 
             .third-container .row,
-            .fourth-container .row {
+            .fourth-container .row:nth-child(3),
+            .fourth-container .row:nth-child(5),
+            .fourth-container .row:nth-child(7),
+            .fourth-container .row:nth-child(9),
+            .sixth-container .row {
                 flex-direction: column-reverse;
             }
 
@@ -78,28 +93,17 @@
                 margin-bottom: 40px;
             }
 
-        }
-
-        .container.first-container .second-column{
-            padding-left: 50px;
-        }
-
-        @media only screen and (max-width: 767px) and (min-width: 200px){
-            .container.first-container{
+            .container.first-containe r{
                 padding-left: 20px;
                 padding-right: 20px;   
             }
 
-            .container.first-container .second-column{
-                padding-left: 0px;
-            }
-
-            .container.first-container{
-                padding-bottom: 0px !important;
-            }
-
-            .container.second-container .row{
+            .container.second-container .row {
                 padding: 50px 20px !important;
+            }
+
+            .sticky .container {
+                padding: 30px 20px !important;
             }
         }
     </style>
@@ -198,13 +202,14 @@
 
         <main>
             <div class="container first-container" style="padding-block: 120px;">
-                <div class="row mb-5">
-                    <div class="col-lg-6 col-md-12 p-0 first-column">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 first-column">
                         <figure>
                             <img class="img-fluid" style="border-radius: 20px;" src="img/police.jpg">
                         </figure>
                     </div> 
-                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center second-column" >
+
+                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center second-column my-auto px-lg-5 pe-lg-0">
                         <h2>Police Officers</h2>
                             <br>
                         <p>
@@ -217,12 +222,13 @@
 
             <div class="container third-container" style="padding-block: 0 120px;">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column my-auto my-auto pe-lg-5">
                         <h2 class="mb-5 mt-0">Healthcare Professionals</h2>
                         <p>
                             We are dedicated to supporting health professionals in their mission to provide the best possible care. Whether you're a doctor, nurse, therapist, or healthcare administrator, our platform offers valuable resources, continuing education, and tools designed to help you excel in your field.
                         </p>
                     </div>
+
                     <div class="col-lg-6 col-md-12 second-column">
                         <figure>
                             <img class="img-fluid" style="border-radius: 20px;" src="img/healthcare.jpg">
@@ -231,8 +237,9 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="padding-block: 120px; background-color: #f0f0f0;">
+            <div class="container-fluid fourth-container" style="padding-block: 120px; background-color: #f0f0f0;">
                 <div class="container">
+
                     <div class="row">
                         <div class="col-lg-12 col-md-12 mb-5">
                             <h2 class="mb-5 mt-0">High Value Occupations and Their Use Cases for Code 4 Pro’s HRV/AI</h2>
@@ -240,14 +247,16 @@
                                 For an AI-led HRV platform like Code 4 Pro, the most valuable occupational use cases center around optimizing health, performance, safety, and productivity, particularly in industries where real-time insights and proactive interventions are critical. Here are key use cases across high-impact professions:
                             </p>
                         </div>
+                    </div>
 
-
-                        <!-- 1. First Responders (Police, Firefighters, EMTs) -->
+                    <!-- 1. First Responders (Police, Firefighters, EMTs) -->
+                    <div class="row">
                         <div class="col-lg-4 col-sm-12 mb-5">
                             <figure>
                                 <img class="img-fluid" style="border-radius: 20px;" src="img/two-firefighters-stand-side-by-side-in-front-of-a-fire-truck.jpg">
                             </figure>
                         </div>
+
                         <div class="col-lg-8 col-sm-12 d-flex align-items-start flex-column justify-content-center mb-5">
                             <h3 class="fw-bold mb-3">1. First Responders (Police, Firefighters, EMTs)</h3>   
 
@@ -257,9 +266,10 @@
                                 <li><strong>Incident Recovery Support</strong>: AI-driven HRV insights can inform post-incident recovery protocols, helping responders effectively de-stress and prepare for the next call.</li>
                             </ul>
                         </div>
+                    </div>
 
-
-                        <!-- 2. Healthcare Providers (Doctors, Nurses, Technicians) -->
+                    <!-- 2. Healthcare Providers (Doctors, Nurses, Technicians) -->
+                    <div class="row">
                         <div class="col-lg-8 col-sm-12 d-flex align-items-start flex-column justify-content-center mb-5">
                             <h3 class="fw-bold mb-3">2. Healthcare Providers (Doctors, Nurses, Technicians)</h3>   
 
@@ -269,14 +279,16 @@
                                 <li><strong>Acute Stress Response</strong>: During high-stress scenarios, such as surgeries or emergencies, HRV data can help teams manage stress in real-time.</li>
                             </ul>
                         </div>
+                        
                         <div class="col-lg-4 col-sm-12 mb-5">
                             <figure>
                                 <img class="img-fluid" style="border-radius: 20px;" src="img/a-group-of-doctors-standing-together-in-a-hospital-hallway.jpg">
                             </figure>
                         </div>
+                    </div>
 
-
-                        <!-- 3. Military and Defense -->
+                    <!-- 3. Military and Defense -->
+                    <div class="row">
                         <div class="col-lg-4 col-sm-12 mb-5">
                             <figure>
                                 <img class="img-fluid" style="border-radius: 20px;" src="img/soldiers-in-camouflage-uniforms.jpg">
@@ -291,9 +303,10 @@
                                 <li><strong>Post-Traumatic Support</strong>: For veterans and active service members, AI-driven HRV can help in tracking recovery from PTSD or trauma, providing personalized health insights.</li>
                             </ul>
                         </div>
+                    </div>
 
-
-                        <!-- 4. Corporate Workforces -->
+                    <!-- 4. Corporate Workforces -->
+                    <div class="row">
                         <div class="col-lg-8 col-sm-12 d-flex align-items-start flex-column justify-content-center mb-5">
                             <h3 class="fw-bold mb-3">4. Corporate Workforces</h3>   
 
@@ -308,9 +321,10 @@
                                 <img class="img-fluid" style="border-radius: 20px;" src="img/a-group-of-business-professionals-smiling-while-holding-a-book.jpg">
                             </figure>
                         </div>
+                    </div>
 
-
-                        <!-- 5. Transportation and Logistics (Pilots, Drivers, Operators) -->
+                    <!-- 5. Transportation and Logistics (Pilots, Drivers, Operators) -->
+                    <div class="row">
                         <div class="col-lg-4 col-sm-12 mb-5">
                             <figure>
                                 <img class="img-fluid" style="border-radius: 20px;" src="img/a-man-seated-in-the-drivers-seat-of-a-car.jpg">
@@ -325,9 +339,10 @@
                                 <li><strong>Stress Reduction for Long Shifts</strong>: AI-guided HRV interventions (e.g., guided breathing or stretching breaks) can help drivers and operators manage stress on extended routes.</li>
                             </ul>
                         </div>
+                    </div>
 
-
-                        <!-- 6. Construction and Industrial Work -->
+                    <!-- 6. Construction and Industrial Work -->
+                    <div class="row">
                         <div class="col-lg-8 col-sm-12 d-flex align-items-start flex-column justify-content-center mb-5">
                             <h3 class="fw-bold mb-3">6. Construction and Industrial Work</h3>   
 
@@ -342,9 +357,10 @@
                                 <img class="img-fluid" style="border-radius: 20px;" src="img/a-construction-worker-wearing-a-yellow-hard-hat.jpg">
                             </figure>
                         </div>
+                    </div>
 
-
-                        <!-- 7. Sports and Athletics -->
+                    <!-- 7. Sports and Athletics -->
+                    <div class="row">
                         <div class="col-lg-4 col-sm-12 mb-5">
                             <figure>
                                 <img class="img-fluid" style="border-radius: 20px;" src="img/a-group-of-female-athletes-sprinting-on-a-track.jpg">
@@ -359,9 +375,10 @@
                                 <li><strong>Injury Recovery and Mental Health</strong>: For athletes recovering from injury or mental health struggles, AI-led HRV tracking offers tailored recovery guidance.</li>
                             </ul>
                         </div>
+                    </div>
 
-
-                        <!-- 8. Education Professionals -->
+                    <!-- 8. Education Professionals -->
+                    <div class="row">
                         <div class="col-lg-8 col-sm-12 d-flex align-items-start flex-column justify-content-center mb-5">
                             <h3 class="fw-bold mb-3">8. Education Professionals</h3>   
 
@@ -376,19 +393,20 @@
                                 <img class="img-fluid" style="border-radius: 20px;" src="img/a-professional-woman-in-a-suit-and-glasses-working.jpg">
                             </figure>
                         </div>
+                    </div>
 
-
-                        <div class="col-lg-12 col-md-12 mt-5">
+                    <div class="row mt-5">
+                        <div class="col-lg-12 col-sm-12">
                             <p>
                                 An AI-led HRV platform serves as a real-time health, performance, and safety tool, especially for high-stress, high-stakes, and physically demanding occupations. It enables organizations to safeguard their workforce, drive productivity, and promote long-term well-being.
                             </p>
                         </div>
-
                     </div>
+
                 </div>
             </div>
 
-            <div class="container second-container" style="padding-block: 120px;">
+            <div class="container fifth-container" style="padding-block: 120px;">
                 <div class="row" style="background-color: #023047; padding: 60px; border-radius: 40px;">
                     <div class="col-lg-6 col-md-12 first-column">
                         <h3 class="text-light fw-bold m-0 mb-3">The first tool to objectively measure and manage stress in real time, Code 4 Pro offers tremendous benefits to many types of careers:</h3>   
@@ -396,6 +414,7 @@
                             <img src="img/mobile-slide-3.png" class="img-fluid" alt="image">
                         </figure>
                     </div>
+
                     <div class="col-lg-6 col-md-12 second-column">
                         <ul class="main_li text-light">
                             <li>Law enforcement (18,000+ local police departments with over 700,000 officers)</li>
@@ -414,9 +433,9 @@
                 </div>
             </div>
 
-            <div class="container fourth-container" style="padding-block: 0 120px;">
+            <div class="container sixth-container" style="padding-block: 0 120px;">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column" style="padding-right: 40px;">
+                    <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column my-auto my-auto pe-lg-5">
                         <h2 class="mb-5 mt-0">Wellness and Stress Mitigation</h2>
                         <p>
                             Stress is a trillion-dollar issue that’s behind an estimated 60 percent of all health issues. Unmanaged, stress can be dangerous and lead to disastrous and even fatal mistakes.

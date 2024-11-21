@@ -44,46 +44,6 @@
 
 
 <style>
-    @media only screen and (max-width: 5000px) and (min-width: 768px){
-        .anchor{
-            margin: 50px;
-        }
-    }
-
-    @media only screen and (max-width: 767px) and (min-width: 200px){
-        .anchor{
-            margin: 20px;
-        }
-    }
-
-    @media (max-width: 991px) {
-        .container.first-container {
-            padding-block: 60px !important;
-        }
-
-        .container.second-container,
-        .container.third-container,
-        .container.fourth-container {
-            padding-bottom: 60px !important;
-        }
-
-        .first-container .first-column,
-        .third-container .first-column {
-            margin-bottom: 40px;
-        }
-
-        .second-container .row,
-        .third-container .row {
-            flex-direction: column-reverse;
-        }
-
-        .second-container .second-column,
-        .third-container .second-column {
-            margin-bottom: 40px;
-        }
-    }
-
-
     /* Left column (tabs) */
     .tabs-container {
         width: 100%;
@@ -124,32 +84,11 @@
         display: block;
     }
 
-    @media (max-width: 767px) {
-        .container {
-            padding-block: 60px !important;
-        }
-
-        .container.second-container {
-            padding-top: 0 !important;
-        }
-
-        .first-container .first-column {
-            margin-bottom: 40px;
-        }
-
-        .second-container .row {
-            flex-direction: column-reverse;
-        }
-
-        .second-container .second-column {
-            margin-bottom: 40px;
-        }
-    }
     .section-top-container {
         display: flex;
     }
 
-    .section-left-col-1, .section-left-col-2{
+    .first-column-col-1, .first-column-col-2 {
         width: 100%;
     }
 
@@ -159,7 +98,67 @@
         gap: 60px;
     }
 
-    @media only screen and (max-width: 767px) and (min-width: 200px){
+    @media (min-width: 992px){
+        .anchor{
+            margin: 50px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .anchor{
+            margin: 20px;
+        }
+
+        .sticky .container {
+            padding: 30px 20px !important;
+        }
+
+        .container-fluid.first-container {
+            padding-block: 60px !important;
+        }
+
+        .container.second-container,
+        .container.third-container,
+        .container.fourth-container,
+        .container.fifth-container {
+            padding-bottom: 60px !important;
+        }
+
+        .second-container .first-column,
+        .fourth-container .first-column {
+            margin-bottom: 40px;
+        }
+
+        .third-container .row,
+        .fourth-container .row {
+            flex-direction: column-reverse;
+        }
+
+        .third-container .second-column,
+        .fourth-container .second-column {
+            margin-bottom: 40px;
+        }
+
+        .container {
+            padding-block: 60px !important;
+        }
+
+        .container.third-container {
+            padding-top: 0 !important;
+        }
+
+        .second-container .first-column {
+            margin-bottom: 40px;
+        }
+
+        .third-container .row {
+            flex-direction: column-reverse;
+        }
+
+        .third-container .second-column {
+            margin-bottom: 40px;
+        }
+
         .section-top-container {
             flex-direction: column;
             gap: 0px;
@@ -259,15 +258,15 @@
     </section>
 
     <main>
-        <div class="container-fluid" style="padding-block: 120px 60px; background-color: #f0f0f0;">
+        <div class="container-fluid first-container" style="padding-block: 120px 60px; background-color: #f0f0f0;">
             <div class="container top-container">
                 <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="col-lg-5 col-sm-12 section-left">
+                    <div class="col-lg-5 col-sm-12 first-column">
                         <figure>
                             <img src="img/platform-visual.png" class="img-fluid" alt="image">
                         </figure>       
                     </div>
-                    <div class="col-lg-7 col-sm-12 section-right" style="text-align: left; margin: auto;">
+                    <div class="col-lg-7 col-sm-12 second-columnd text-start my-auto px-lg-5 pe-lg-0">
                         <h2 id="stress-1">The Code4Pro Platform</h2>
                         <p>
                             The focal point of the Code4Pro platform is the end user. This might be a police officer, surgeon, athlete, etc. They wear an off-the-shelf heart rate monitor which is connected to our proprietary iOS/Android App wear they can monitor their stress levels. All end user data is encrypted and securely stored in our cloud environment where propriety AI enhances the data, user feedback, etc. Our web based portal allows admin users to monitor all end users who have provided permission. This allows them to make better staffing decisions, see trends and themes that can be addressed, and work with the end users to manage and improve their stress levels.
@@ -277,15 +276,14 @@
             </div>
         </div>
 
-
-        <div class="container first-container" style="padding-block: 120px 60px;">
+        <div class="container second-container" style="padding-block: 120px 60px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
-                <div class="col-lg-4 col-sm-12 section-left">
+                <div class="col-lg-4 col-sm-12 first-column">
                     <figure>
                         <img src="img/mobile-slide-0.png" class="img-fluid" alt="image">
                     </figure>       
                 </div>
-                <div class="col-lg-8 col-sm-12 section-right" style="text-align: left; margin: auto;">
+                <div class="col-lg-8 col-sm-12 second-columnd text-start my-auto px-lg-5 pe-lg-0">
                     <h2 id="stress-1">Stress Testing at its Best</h2>
                     <p>
                         The first to use A.I. to manage and predict stress levels, Code 4 Pro is an extremely
@@ -303,9 +301,9 @@
             </div>
         </div>
 
-        <div class="container second-container" style="padding-block: 0 60px;">
+        <div class="container third-container" style="padding-block: 0 60px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
-                <div class="col-lg-8 col-sm-12 section-left" style="text-align: left; margin: auto;">
+                <div class="col-lg-8 col-sm-12 first-column text-start my-auto pe-lg-5">
                     <h2 id="stress-2">
                         A Valuable ‘Co-Pilot’</h2>
 
@@ -326,7 +324,7 @@
                         difficult task.
                     </p>
                 </div>
-                <div class="col-lg-4 col-sm-12 section-right remove">
+                <div class="col-lg-4 col-sm-12 second-columnd remove">
                     <figure>
                         <img src="img/co-pilotPlatform.png" class="img-fluid" alt="image">
                     </figure>
@@ -334,14 +332,14 @@
             </div>
         </div>
         
-        <div class="container first-container" style="padding-block: 0 120px;">
+        <div class="container fourth-container" style="padding-block: 0 120px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
-                <div class="col-lg-5 col-sm-12 section-left d-flex align-items-center">
+                <div class="col-lg-5 col-sm-12 first-column d-flex align-items-center">
                     <figure>
                         <img src="assets/images/dashboard-code4.png" class="img-fluid" alt="image">
                     </figure>       
                 </div>
-                <div class="col-lg-7 col-sm-12 section-right" style="text-align: left; margin: auto;">
+                <div class="col-lg-7 col-sm-12 second-columnd text-start my-auto px-lg-5 pe-lg-0">
                     <h2 id="stress-1">A unique window into stress</h2>
                     <p>
                         With over 50 million data captures so far, Code4Pro is collecting a wealth of data across a wide cross-section of end users including first responders. Although stress impacts everyone differently, knowing how stress affects the individual can be used to forecast how they may react in a stressful situation.
@@ -398,22 +396,20 @@
             </div>
         </div> -->
 
-        <div class="container fourth-container" style="padding-block: 0 120px;">
+        <div class="container fifth-container" style="padding-block: 0 120px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
-                <div class="col-lg-4 col-sm-12 section-right mobile">
-                </div>
-                <div class="section-top-container" style="text-align: left; margin: auto;">
-                    <div class="section-left-col-1"><h2 id="stress-3">Labeling Stressors</h2>
-                    </div>
-                    
-                    <div class="section-left-col-2">
-                        <p>
-                            Combine biometric data and Heart Rate Variability (HRV) with individual labeling of stressors, incidents, triggers, interventions, calming techniques, etc.  Allowing Artificial Intelligence to provide more insight into your world of personal stressors and recovery
 
-                        </p>
-                    </div>
+                <div class="first-column col-lg-6 col-m-12">
+                    <h2 id="stress-3">Labeling Stressors</h2>
                 </div>
-                <div class="section-bottom-container">
+
+                <div class="second-columnd col-lg-6 col-m-12 text-start">
+                    <p>
+                        Combine biometric data and Heart Rate Variability (HRV) with individual labeling of stressors, incidents, triggers, interventions, calming techniques, etc.  Allowing Artificial Intelligence to provide more insight into your world of personal stressors and recovery
+                    </p>
+                </div>
+
+                <div class="section-bottom col-lg-12">
                     <figure>
                         <img src="img/Screenshot_213.png" class="img-fluid" alt="image">
                     </figure>
@@ -427,7 +423,7 @@
                 <div class="wrapper d-flex align-items-center opacity-mask banner colored">
                     <div>
                         <h3>Code 4 Pro <br>Leads the Way</h3>
-                        <p class="mb-3">	By pairing biometric HRV sensors with sophisticated A.I.-based tools <br> our unique solution can be used in any job setting.</p>
+                        <p class="mb-3">By pairing biometric HRV sensors with sophisticated A.I.-based tools <br> our unique solution can be used in any job setting.</p>
                         <a href="single_tour.html" class="btn_1 white" style="border-radius: 30px; position: static;">Read more</a>
                     </div>
                 </div>

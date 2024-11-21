@@ -41,14 +41,14 @@
 </script>
 
 <style>
-    .justify-content-center{
+    .justify-content-center {
         justify-content: start !important;
     }
 
-    p{
+    p {
         font-size: 20px;
     }
-    /* Left column (tabs) */
+
     .tabs-container {
         width: 100%;
     }
@@ -75,7 +75,7 @@
         color: #fff;
     }
 
-    /* Tab content */
+
     .tab-content {
         display: none;
         margin-top: 5px;
@@ -88,21 +88,75 @@
         display: block;
     }
 
+    /* White Papers - Key Research */
+    .section-title {
+        background-color: #023047;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .white-papers, .key-research {
+        margin-top: 20px;
+    }
+
+    .white-papers ul, .key-research ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .white-papers ul li, .key-research ul li {
+        background-color: white;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .summary {
+        color: #555;
+    }
+
+    .white-papers a, .key-research a {
+        color: #023047;
+        text-decoration: none;
+    }
+    
+    .white-papers a:hover, .key-research a:hover {
+        text-decoration: underline;
+    }
+
+    section.white-papers {
+        width: 100%;
+        max-width: 1400px;
+        margin: auto;
+        padding: 0px 50px 100px 50px;
+    }
+
+    section.key-research {
+        width: 100%;
+        max-width: 1400px;
+        margin: auto;
+        padding: 0px 50px 100px 50px;
+    }
+
     @media (max-width: 991px) {
         .container {
             padding-block: 60px !important;
         }
 
-        .container.second-container {
+        .container.second-container,
+        .container.third-container,
+        .container.fourth-container {
             padding-top: 0 !important;
+        }
+
+        .container.fifth-container {
+            padding-bottom: 0 !important;
         }
 
         .first-container .first-column {
             margin-bottom: 40px;
-        }
-        
-        .first-container .second-column {
-            padding-left: 0 !important;
         }
 
         .second-container .row {
@@ -112,82 +166,29 @@
         .second-container .second-column {
             margin-bottom: 40px;
         }
-    }
 
-
-        /* White Papers - Key Research */
-        .section-title {
-            background-color: #023047;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .white-papers, .key-research {
-            margin-top: 20px;
-        }
-
-        .white-papers ul, .key-research ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .white-papers ul li, .key-research ul li {
-            background-color: white;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .summary {
-            color: #555;
-        }
-
-        .white-papers a, .key-research a {
-            color: #023047;
-            text-decoration: none;
-        }
-        
-        .white-papers a:hover, .key-research a:hover {
-            text-decoration: underline;
+        .sticky .container {
+            padding: 30px 20px !important;
         }
 
         section.white-papers {
             width: 100%;
             max-width: 1400px;
             margin: auto;
-            padding: 0px 50px 100px 50px;
+            padding: 0px 20px 50px 20px;
         }
-
+        
         section.key-research {
             width: 100%;
             max-width: 1400px;
             margin: auto;
-            padding: 0px 50px 100px 50px;
+            padding: 0px 20px 50px 20px;
+        }   
+
+        p {
+            font-size: 17px;
         }
-
-        @media only screen and (max-width: 767px) and (min-width: 200px){
-            section.white-papers {
-                width: 100%;
-                max-width: 1400px;
-                margin: auto;
-                padding: 0px 20px 50px 20px;
-            }
-            
-            section.key-research {
-                width: 100%;
-                max-width: 1400px;
-                margin: auto;
-                padding: 0px 20px 50px 20px;
-            }   
-
-            p {
-                font-size: 17px;
-            }
-        }
-
-   /* White Papers - Key Research */
+    }
 </style>
 </head>
 
@@ -289,7 +290,7 @@
                 <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center first-column">
                     <img src="img/a-woman-appears-distressed.jpg" class="img-fluid" style="border-radius: 20px;">
                 </div> 
-                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center second-column" style="padding-left: 40px;">
+                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center second-column my-auto px-lg-5 pe-lg-0">
                     <h2 class="mt-0 mb-5">Understanding HRV</h2>
                     <p>Heart Rate Variability (HRV) measures the variation in time between consecutive heartbeats. It reflects the balance between the sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) branches of the autonomic nervous system (ANS). Unlike heart rate, which focuses on beats per minute, HRV focuses on the millisecond fluctuations between heartbeats, revealing the adaptability of the nervous system to physiological or environmental changes.
                     </p>
@@ -309,9 +310,7 @@
                         </li>
                         <li><b style="color: #000;"> Stress management:</b> Real-time stress detection and biofeedback.
                         </li>
-                        <li><b style="color: #000;">Health monitoring:</b> Predicting cardiovascular risk, chronic disease management, and mental health assessments.
-
-                        </li>
+                        <li><b style="color: #000;">Health monitoring:</b> Predicting cardiovascular risk, chronic disease management, and mental health assessments.</li>
                     </ul>
                 </div> 
             </div>
@@ -320,7 +319,7 @@
     
         <div class="container second-container" style="padding-block: 0 120px;">
             <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
-                <div class="col-lg-7 col-md-12 text-start my-auto" style="padding-right: 20px;">
+                <div class="col-lg-7 col-md-12 text-start my-auto my-auto pe-lg-5">
                     <h2>AI and HRV: A New Frontier</h2>
                     <p>Integrating Artificial Intelligence (AI) with HRV analysis opens a wealth of new possibilities, thanks to AI’s ability to handle complex data patterns and make predictions. AI enhances HRV-based solutions by personalizing recommendations, identifying trends, and automating real-time responses.</p>
                     <p><b style="color: #000;">Potential Applications of AI-Enhanced HRV</b></p>
@@ -361,7 +360,7 @@
                         <img class="img-fluid" style="border-radius: 20px;" src="img/labeling-stressor-83.png" alt="image">
                     </figure>
                 </div>
-                <div class="col-lg-7 col-md-12 text-start my-auto" style="padding-left: 20px;">
+                <div class="col-lg-7 col-md-12 text-start my-auto px-lg-5 pe-lg-0">
                     <h2>Challenges and Future Directions</h2>
                     <p>While AI and HRV offer immense potential, several challenges need addressing:</p>
                     <ul>
@@ -369,11 +368,13 @@
                         <li><b style="color: #000;">Privacy and Security:</b> With continuous HRV monitoring, protecting user data is paramount to ensure trust in AI-driven health platforms.</li>
                         <li><b style="color: #000;">Regulatory Hurdles:</b> Ensuring AI-powered HRV solutions comply with medical regulations and provide clinically validated insights.Prevent costly and deadly mistakes</li>
                     </ul>
-                    <p>The future promises advancements like integrating HRV data with other physiological markers (e.g., sleep, movement) to enhance predictive capabilities further. AI will also enable new real-time feedback mechanisms—transforming HRV into a key component of preventive care, wellness, and performance solutions across industries. Platforms like Code 4 Pro are already leveraging these synergies, paving the way for a new era of personalized health and performance management.
-                      <br><br>
-                      In summary, the convergence of HRV and AI is a game-changer in wellness, healthcare, and performance fields. With predictive, real-time capabilities, these systems are poised to unlock deeper insights into human physiology, transforming how stress, health, and recovery are managed on both individual and organizational levels.
-                      <br><br>
-                      For more literature and citations and their summaries please click here.</p>
+                    <p>
+                        The future promises advancements like integrating HRV data with other physiological markers (e.g., sleep, movement) to enhance predictive capabilities further. AI will also enable new real-time feedback mechanisms—transforming HRV into a key component of preventive care, wellness, and performance solutions across industries. Platforms like Code 4 Pro are already leveraging these synergies, paving the way for a new era of personalized health and performance management.
+                        <br><br>
+                        In summary, the convergence of HRV and AI is a game-changer in wellness, healthcare, and performance fields. With predictive, real-time capabilities, these systems are poised to unlock deeper insights into human physiology, transforming how stress, health, and recovery are managed on both individual and organizational levels.
+                        <br><br>
+                        For more literature and citations and their summaries please click here.
+                    </p>
                 </div>
             </div>
         </div>
@@ -436,7 +437,7 @@
             </div>
         </div> -->
 
-        <div class="container third-container" style="padding-block: 0 120px;">
+        <div class="container fourth-container" style="padding-block: 0 120px;">
             <!-- Section for White Papers -->
             <div class="white-papers">
                 <h2 class="section-title">Our White Papers</h2>
@@ -459,7 +460,7 @@
                 
                 <ul class="row">
                     <!-- Example research link, replace with actual data -->
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-sm-12">
                         <li>
                             <h3><a href="https://researchlink1.com" target="_blank">A Review of Methods and Applications for a Heart Rate Variability Analysis</a></h3>
                             <p class="summary">This comprehensive review discusses various HRV analysis methods and their applications in understanding cardiac autonomic function.</p>
@@ -482,7 +483,7 @@
                         </li>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-sm-12">
                         <li>
                             <h3><a href="https://researchlink2.com" target="_blank">Functional Assessment of Heart Rate Variability: Physiological Basis and Practical Applications</a></h3>
                             <p class="summary">This article discusses the physiological basis of HRV and its practical applications in various health assessments.</p>
