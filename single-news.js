@@ -44,7 +44,7 @@ fetch('news.json')
                     }
                 </style>
                 <div class="post nopadding">
-                    <!-- <img src="${post.image}" alt="Image" class="img-fluid"> -->
+                    <!-- <img loading="lazy" src="${post.image}" alt="blog image" class="img-fluid"> -->
                     <div class="post_info clearfix">
                         <h1>${post.title}</h1>
                         <p class="author">${post.author} | ${post.date}</p>
