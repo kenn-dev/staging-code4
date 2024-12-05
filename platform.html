@@ -109,19 +109,23 @@
             margin: 20px;
         }
 
+        .container.leads-way-section {
+            padding-top: 0 !important;
+        }
+
         .sticky .container {
             padding: 30px 20px !important;
         }
 
-        .container-fluid.first-container {
-            padding-block: 60px !important;
+        .container-fluid.first-container{
+            padding: 0px !important;
         }
 
         .container.second-container,
         .container.third-container,
         .container.fourth-container,
         .container.fifth-container {
-            padding-bottom: 60px !important;
+            padding-bottom: 0px !important;
         }
 
         .second-container .first-column,
@@ -130,8 +134,13 @@
         }
 
         .third-container .row,
-        .fourth-container .row {
+        .fifth-container .row {
             flex-direction: column-reverse;
+        }
+
+
+        .fifth-container .first-column {
+            order: 1;
         }
 
         .third-container .second-column,
@@ -153,10 +162,6 @@
 
         .third-container .row {
             flex-direction: column-reverse;
-        }
-
-        .third-container .second-column {
-            margin-bottom: 40px;
         }
 
         .section-top-container {
@@ -259,16 +264,16 @@
 
     <main>
         <div class="container-fluid first-container" style="padding-block: 120px 60px; background-color: #f0f0f0;">
-            <div class="container top-container">
-                <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+            <div class="container top-container p-0">
+                <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
                     <div class="col-lg-8 col-sm-12 first-column mx-auto mb-5">
                         <figure>
                             <img loading="lazy" src="img/platform-visual.png" class="img-fluid" alt="platform visual">
                         </figure>       
                     </div>
-                    <div class="col-lg-12 col-sm-12 second-columnd text-center mx-auto">
+                    <div class="col-lg-12 col-sm-12 second-column text-center mx-auto">
                         <h2 id="stress-1">The Code4Pro Platform</h2>
-                        <p>
+                        <p class="m-0 p-0">
                             The focal point of the Code4Pro platform is the end user. This might be a police officer, surgeon, athlete, etc. They wear an off-the-shelf heart rate monitor which is connected to our proprietary iOS/Android App where they can monitor their stress levels. All end user data is encrypted and securely stored in our cloud environment where proprietary AI enhances the data, user feedback, etc. Our web based portal allows admin users to monitor all end users who have provided permission. This allows them to make better staffing decisions, see trends and themes that can be addressed, and work with the end users to manage and improve their stress levels.
                         </p>
                     </div>
@@ -283,7 +288,7 @@
                         <img loading="lazy" src="img/mobile-slide-0.png" class="img-fluid" alt="image">
                     </figure>       
                 </div>
-                <div class="col-lg-8 col-sm-12 second-columnd text-start my-auto px-lg-5 pe-lg-0">
+                <div class="col-lg-8 col-sm-12 second-column text-start my-auto px-lg-5 pe-lg-0">
                     <h2 id="stress-1">Stress Testing at its Best</h2>
                     <p>
                         The first to use A.I. to manage and predict stress levels, Code 4 Pro is an extremely
@@ -302,7 +307,7 @@
         </div>
 
         <div class="container third-container" id="a-valuable-co-pilot" style="padding-block: 0 60px;">
-            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+            <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
                 <div class="col-lg-8 col-sm-12 first-column text-start my-auto pe-lg-5">
                     <h2 id="stress-2">A Valuable ‘Co-Pilot’</h2>
 
@@ -318,12 +323,12 @@
                         Pro establishes a baseline stress index and then predicts the individual’s stress level
                         several minutes ahead.
                     </p>
-                    <p>
+                    <p class="p-0 m-0">
                         Thus, the wearer is aware of their stress level before making a tough call or tackling a
                         difficult task.
                     </p>
                 </div>
-                <div class="col-lg-4 col-sm-12 second-columnd remove">
+                <div class="col-lg-4 col-sm-12 second-column remove">
                     <figure>
                         <img loading="lazy" src="img/mobile-slide-2.png" class="img-fluid" alt="image">
                     </figure>
@@ -332,15 +337,15 @@
         </div>
         
         <div class="container fourth-container" id="a-unique-window-into-stress" style="padding-block: 0 120px;">
-            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+            <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
                 <div class="col-lg-5 col-sm-12 first-column d-flex align-items-center">
                     <figure>
                         <img loading="lazy" src="assets/images/dashboard-code4.png" class="img-fluid" alt="image">
                     </figure>       
                 </div>
-                <div class="col-lg-7 col-sm-12 second-columnd text-start my-auto px-lg-5 pe-lg-0">
+                <div class="col-lg-7 col-sm-12 second-column text-start my-auto px-lg-5 pe-lg-0">
                     <h2 id="stress-1">A unique window into stress</h2>
-                    <p>
+                    <p class="m-0 p-0">
                         With over 50 million data captures so far, Code4Pro is collecting a wealth of data across a wide cross-section of end users including first responders. Although stress impacts everyone differently, knowing how stress affects the individual can be used to forecast how they may react in a stressful situation.
                         <br /><br />
                         In our web based dashboard, this data can also help command staff, supervisors, etc. make informed decisions regarding their team. Code4Pro can also be used as a key component in training activities. Trainers can use our system to help address the triggers for each end user that create the most stress, arming them with techniques that help them recover more quickly.
@@ -396,13 +401,13 @@
         </div> -->
 
         <div class="container fifth-container" style="padding-block: 0 120px;">
-            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
+            <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
 
                 <div class="first-column col-lg-6 col-m-12">
                     <h2 id="stress-3">Labeling Stressors</h2>
                 </div>
 
-                <div class="second-columnd col-lg-6 col-m-12 text-start">
+                <div class="second-column col-lg-6 col-m-12 text-start">
                     <p>
                         Combine biometric data and Heart Rate Variability (HRV) with individual labeling of stressors, incidents, triggers, interventions, calming techniques, etc.  Allowing Artificial Intelligence to provide more insight into your world of personal stressors and recovery.
                     </p>
@@ -417,9 +422,9 @@
             </div>
         </div>
   
-        <div class="container" style="padding-block: 0 120px;">
-            <div class="banner_2">
-                <div class="wrapper d-flex align-items-center opacity-mask banner colored">
+        <div class="container leads-way-section" style="padding-bottom: 120px;">
+            <div class="banner_2 mb-0">
+                <div class="wrapper d-flex align-items-center opacity-mask banner colored mb-0">
                     <div>
                         <h3>Code 4 Pro <br>Leads the Way</h3>
                         <p class="mb-3">By pairing biometric HRV sensors with sophisticated A.I.-based tools <br> our unique solution can be used in any job setting.</p>

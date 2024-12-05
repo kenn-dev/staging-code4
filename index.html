@@ -93,27 +93,22 @@
             padding-top: 0px !important;
         }
 
-        @media (min-width: 992px){
-            .banner_2 {
-                margin-top: 120px;
-            }
-        }
-
         @media (max-width: 991px) {
+            .container,
+            .container-fluid {
+                padding-block: 60px !important;
+            }
+
+            .second-container {
+                padding-top: 0 !important;
+            }
+
             .second-container .row .col-md-12.col-lg-6.my-auto.px-5 {
                 padding: 0 !important;
             }
 
-            .second-container .container .row:nth-child(1) {
-                margin-bottom: 3rem !important;
-            }
-
             .second-container .container .row:nth-child(2) {
                 flex-direction: column-reverse !important;
-            }
-
-            div#ai-driven-platform {
-                padding: 50px 20px !important;
             }
 
             .col-lg-4 {
@@ -139,11 +134,7 @@
             .sticky .container {
                 padding: 30px 20px !important;
             }
-
-            .container {
-                padding: 50px 20px !important;
-            }
-
+            
             .feature {
                 padding-top: 90px;
                 padding-right: 30px;
@@ -164,10 +155,6 @@
 
             .laptop {
                 display: block !important;
-            }
-
-            .banner_2 {
-                margin-top: 75px;
             }
 
             .slider .slide h1, 
@@ -264,7 +251,7 @@
             <div class="slide active" style="background-image: url(assets/images/breakaway.png);">
                 <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
                     <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
-                        <h1 class="text-light fw-normal custom-font-size" style="font-size: 60px;">Al + HRV: The Future of Stress Management is Here</h1>
+                        <h1 class="text-light fw-normal custom-font-size" style="font-size: 42px;">Al + HRV: The Future of Stress Management is Here</h1>
                         <div class="button-btn">
                             <a href="platform.html" class="" style="border-radius: 30px; background: #023047;">Learn More</a>
                         </div>
@@ -274,7 +261,7 @@
             <div class="slide " style="background-image: url(assets/images/doctoratoperatingroom.jpg);">
                 <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
                     <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
-                        <h2 class="text-light fw-normal custom-font-size" style="font-size: 60px;">Al + HRV: The Future of Stress Management is Here</h2>
+                        <h2 class="text-light fw-normal custom-font-size" style="font-size: 42px;">Al + HRV: The Future of Stress Management is Here</h2>
                         <div class="button-btn">
                             <a href="platform.html" class="" style="border-radius: 30px; background: #023047;">Learn More</a>
                         </div>
@@ -284,7 +271,7 @@
             <div class="slide" style="background-image: url(assets/images/teacherteachingstudents.jpg);">
                 <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
                     <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
-                        <h2 class="text-light fw-normal custom-font-size" style="font-size: 60px;">Al + HRV: The Future of Stress Management is Here</h2>
+                        <h2 class="text-light fw-normal custom-font-size" style="font-size: 42px;">Al + HRV: The Future of Stress Management is Here</h2>
                         <div class="button-btn">
                             <a href="platform.html" class="" style="border-radius: 30px; background: #023047;">Learn More</a>
                         </div>
@@ -294,7 +281,7 @@
             <div class="slide" style="background-image: url(assets/images/professionalgolfer.jpg);">
                 <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
                     <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
-                        <h2 class="text-light fw-normal custom-font-size" style="font-size: 60px;">Al + HRV: The Future of Stress Management is Here</h2>
+                        <h2 class="text-light fw-normal custom-font-size" style="font-size: 42px;">Al + HRV: The Future of Stress Management is Here</h2>
                         <div class="button-btn">
                             <a href="platform.html" class="" style="border-radius: 30px; background: #023047;">Learn More</a>
                         </div>
@@ -315,7 +302,7 @@
                 <h2>Decision-Making and <span>Stress</span></h2>
             </div>
 
-            <div class="row pb-5">
+            <div class="row">
 				<div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
 					<div class="feature h-100">
 						<i class="icon-lightbulb-3"></i>
@@ -355,7 +342,7 @@
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.2s">
                     <div class="feature_home h-100 d-flex justify-content-between flex-column" style="border-radius: 10px;">
                         <div class="card-img d-flex mb-5" style="height: 250px;">
-                            <img loading="lazy" src="img/mobile-slide-0.png" alt="mobile" class="img-fluid laptop my-auto" width="250">
+                            <img loading="lazy" src="img/mobile-slide-0.png" alt="mobile" class="img-fluid m-0 laptop my-auto" width="250">
                         </div>
                         <div class="card-content">
                             <h3>Stress Testing at its<span> Best</span></h3>
@@ -370,7 +357,7 @@
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.2s">
                     <div class="feature_home h-100 d-flex justify-content-between flex-column" style="border-radius: 10px;">
                         <div class="card-img d-flex mb-5" style="height: 250px;">
-                            <img loading="lazy" src="img/co-pilot.jpg" alt="mobile" class="img-fluid laptop my-auto" width="250">
+                            <img loading="lazy" src="img/co-pilot.jpg" alt="mobile" class="img-fluid m-0 laptop my-auto" width="250">
                         </div>
                         <div class="card-content">
                             <h3>A Valuable<span> ‘Co-Pilot’</span></h3>
@@ -385,7 +372,7 @@
                 <div class="col-lg-4 wow zoomIn" data-wow-delay="0.2s">
                     <div class="feature_home h-100 d-flex justify-content-between flex-column" style="border-radius: 10px;">
                         <div class="card-img d-flex mb-5" style="height: 250px;">
-                            <img loading="lazy" src="img/labeling-stressor.png" alt="mobile app" class="img-fluid laptop my-auto" width="250">
+                            <img loading="lazy" src="img/labeling-stressor.png" alt="mobile app" class="img-fluid m-0 laptop my-auto" width="250">
                         </div>
                         <div class="card-content">
                             <h3>Labeling Stressors</h3>
@@ -404,39 +391,39 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-md-12 col-lg-6 my-auto p-0">
-                        <img loading="lazy" src="assets/images/appdescription.png" alt="mobile app" class="img-fluid laptop" style="border-radius: 30px;">
+                        <img loading="lazy" src="assets/images/appdescription.png" alt="mobile app" class="img-fluid m-0 laptop" style="border-radius: 30px;">
                     </div>
                     <div class="col-md-12 col-lg-6 my-auto px-lg-5 pe-lg-0">
                         <h2 class="text-light mb-3">HRV & Stress Management</h2>
 						<p class="text-light">Heart Rate Variability (HRV) is an essential biomarker for understanding an individual's stress levels and overall well-being. By monitoring HRV, individuals and professionals can gain insights into how the body responds to stress and how effectively it recovers. Implementing HRV tracking as part of a stress management program allows for personalized approaches to improving mental and physical health. Stress management techniques, such as meditation, breathing exercises, and lifestyle adjustments, can be fine-tuned based on HRV data, helping users maintain balance and improve their resilience to stress. This data-driven approach empowers users to take control of their health, fostering long-term well-being.
                         </p>
-						<p><a href="science.html#understanding-hrv" class=" btn_1 white" style="border-radius: 30px;">Read more</a>
-                    </div>
-                </div>
-                <!-- End row -->
-
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 my-auto pe-lg-5">
-                        <h2 class="text-light mb-3">Multi-User View Dashboard</h2>
-						<p class="text-light">A Multi-User View Dashboard is essential for teams that require real-time collaboration and data transparency. With a unified platform, multiple users can access key metrics, visualize data, and track project progress simultaneously. The dashboard enables personalized views for different user roles, offering tailored insights for decision-makers, managers, and team members. By having all critical information in one place, users can monitor KPIs, deadlines, and milestones effortlessly, promoting accountability and informed decision-making. The multi-user functionality ensures that everyone stays on the same page, improving efficiency and teamwork across the organization.
-                        </p>
-						<p><a href="science.html#ai-and-hrv" class=" btn_1 white" style="border-radius: 30px;">Read more</a>
-                    </div>
-                    <div class="col-md-12 col-lg-6 my-auto p-0">
-                        <img loading="lazy" src="assets/images/dashboard.png" alt="dashboard" class="img-fluid laptop" style="border-radius: 30px;">
+						<a href="science.html#understanding-hrv" class=" btn_1 white" style="border-radius: 30px;">Read more</a>
                     </div>
                 </div>
                 <!-- End row -->
 
                 <div class="row mb-5">
+                    <div class="col-md-12 col-lg-6 my-auto pe-lg-5">
+                        <h2 class="text-light mb-3">Multi-User View Dashboard</h2>
+						<p class="text-light">A Multi-User View Dashboard is essential for teams that require real-time collaboration and data transparency. With a unified platform, multiple users can access key metrics, visualize data, and track project progress simultaneously. The dashboard enables personalized views for different user roles, offering tailored insights for decision-makers, managers, and team members. By having all critical information in one place, users can monitor KPIs, deadlines, and milestones effortlessly, promoting accountability and informed decision-making. The multi-user functionality ensures that everyone stays on the same page, improving efficiency and teamwork across the organization.
+                        </p>
+						<a href="science.html#ai-and-hrv" class=" btn_1 white" style="border-radius: 30px;">Read more</a>
+                    </div>
                     <div class="col-md-12 col-lg-6 my-auto p-0">
-                        <img loading="lazy" src="assets/images/map1.png" alt="map" class="img-fluid laptop" style="border-radius: 30px;">
+                        <img loading="lazy" src="assets/images/dashboard.png" alt="dashboard" class="img-fluid m-0 laptop" style="border-radius: 30px;">
+                    </div>
+                </div>
+                <!-- End row -->
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 my-auto p-0">
+                        <img loading="lazy" src="assets/images/map1.png" alt="map" class="img-fluid m-0 laptop" style="border-radius: 30px;">
                     </div>
                     <div class="col-md-12 col-lg-6 my-auto px-lg-5 pe-lg-0">
                         <h2 class="text-light mb-3">Geospatial and Geolocation Integrations</h2>
 						<p class="text-light">Integration with Computer-Aided Design (CAD) software is a game-changer for industries that rely on precise design and engineering processes. By integrating CAD tools directly into your workflow, you can streamline operations, improve collaboration, and reduce costly errors. Whether you are working with mechanical designs, architectural plans, or electrical schematics, CAD integration allows for real-time design updates, enhanced version control, and better project management. This integration fosters smoother communication between designers, engineers, and stakeholders, ensuring that every aspect of a project aligns with the original vision.
                         </p>
-						<p><a href="science.html#challenges-and-future-directions" class=" btn_1 white" style="border-radius: 30px;">Read more</a>
+						<a href="science.html#challenges-and-future-directions" class=" btn_1 white" style="border-radius: 30px;">Read more</a>
                     </div>
                 </div>
                 <!-- End row -->
@@ -444,9 +431,9 @@
             </div>
     	</div><!-- End container -->
 
-        <div class="container third-container">
-            <div class="banner_2">
-                <div class="wrapper d-flex align-items-center opacity-mask banner colored">
+        <div class="container third-container" style="padding-top: 120px;">
+            <div class="banner_2 mb-0">
+                <div class="wrapper d-flex align-items-center opacity-mask banner colored mb-0">
                     <div>
                         <h3>Code 4 Pro <br>Leads the Way</h3>
                         <p class="mb-3">By pairing biometric HRV sensors with sophisticated A.I.-based tools <br> our unique solution can be used in any job setting.</p>
@@ -460,7 +447,7 @@
 
 			<div class="main_title">
 				<h2>What <span>customers </span>says</h2>
-				<p>Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p>
+				<p>Officers share how stress management with Code4Pro enhances recovery, awareness, and decision-making in the field.</p>
 			</div>
 
 			<div class="row">

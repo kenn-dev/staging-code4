@@ -1605,6 +1605,15 @@ a.dropdown-toggle.icon-search {
 		background-color: #333;
 	}
 
+	header {
+		padding: 0 !important;
+	}
+	
+	header .container {
+		padding: 20px !important;
+	}
+
+
 	/* Header plain */
 	header#plain .cmn-toggle-switch span::before,
 	header#plain .cmn-toggle-switch span::after,
@@ -1837,6 +1846,23 @@ a.dropdown-toggle.icon-search {
 		height: 480px !important;
 		background: #ddd url(../img/header_bg.jpg) no-repeat center center;
 		background-size: cover;
+	}
+
+	footer h3,
+	footer li,
+	footer a {
+		text-align: center;
+	}
+
+	footer a#email_footer {
+		display: flex;
+	}
+	
+	footer .col-md-4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
