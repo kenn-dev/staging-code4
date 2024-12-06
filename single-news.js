@@ -59,10 +59,10 @@ fetch('news.json')
                 const postElement = document.createElement('article');
                 postElement.innerHTML = `
                     <li>
-                        <i class="icon-calendar-empty"></i> ${post.date}
-                        <div><a href="single-news.html?id=${post.id}">${post.title}</a>
+                        <i class="icon-calendar-empty"></i> <span class="text-black fw-bold h6">${post.date}</span>
+                        <div class="mt-3"><a class="text-dark" href="single-news.html?id=${post.id}">${post.title}</a>
                         </div>
-                    </li><hr >
+                    </li><hr>
                 `;
                 recentPosts.appendChild(postElement);
             });

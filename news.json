@@ -14,7 +14,7 @@
             },
             {
                 "heading": "About Code 4 Pro",
-                "paragraph": "The mission of Code 4 Pro Inc. is to help workers improve performance, increase safety and reduce stress for workers in a wide variety of careers and particularly those in any dangerous, complex and/or stressful job. By pairing biometric sensors with A.I.-based tools, Code 4 Pro helps workers optimize decision-making and reduce both the short-term and long-term effects of stress such as PTSD. For more information, visit <a href='index.html'> www.code4pro.com</a>."
+                "paragraph": "The mission of Code 4 Pro Inc. is to help workers improve performance, increase safety and reduce stress for workers in a wide variety of careers and particularly those in any dangerous, complex and/or stressful job. By pairing biometric sensors with A.I.-based tools, Code 4 Pro helps workers optimize decision-making and reduce both the short-term and long-term effects of stress such as PTSD. For more information, visit <a class='text-primary' href='index.html'> www.code4pro.com</a>."
             }
         ],
         "image": "img/2151003745 (1).jpg"

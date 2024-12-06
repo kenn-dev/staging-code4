@@ -11,7 +11,7 @@ fetch('news.json')
                         <div class="post_info clearfix">
                             <div class="post-left">
                                 <ul>
-                                    <li><i class="icon-calendar-empty"></i> On <span class="text-primary">${post.date}</span>
+                                    <li><i class="icon-calendar-empty"></i> On  <span class="text-black fw-bold h6">${post.date}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -29,10 +29,10 @@ fetch('news.json')
             const postElement = document.createElement('article');
             postElement.innerHTML = `
                 <li>
-                    <i class="icon-calendar-empty"></i> <span class="text-primary">${post.date}</span>
-                    <div><a class="text-dark" href="single-news.html?id=${post.id}">${post.title}</a>
+                    <i class="icon-calendar-empty"></i> <span class="text-black fw-bold h6">${post.date}</span>
+                    <div class="mt-3"><a class="text-dark" href="single-news.html?id=${post.id}">${post.title}</a>
                     </div>
-                </li><hr >
+                </li><hr>
             `;
             recentPosts.appendChild(postElement);
         });
