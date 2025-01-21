@@ -20,11 +20,18 @@
     <meta property="og:image" content="https://www.code4pro.com/assets/images/appdescription.png" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
+    <!-- <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://www.code4pro.com/" />
     <meta property="twitter:title" content="Enhance performance in stressful incidents by regulating your physiology | Code4Pro" />
     <meta property="twitter:description" content="Code4pro" />
-    <meta property="twitter:image" content="https://www.code4pro.com/assets/images/appdescription.png" />
+    <meta property="twitter:image:src" content="https://www.code4pro.com/assets/images/appdescription.png" /> -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@nytimes" />
+    <meta property="twitter:url" content="https://www.code4pro.com/" />
+    <meta name="twitter:title" content="Enhance performance in stressful incidents by regulating your physiology | Code4Pro" />
+    <meta name="twitter:description" content="Code4pro" />
+    <meta name="twitter:image" content="https://www.code4pro.com/assets/images/appdescription.png" />
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -560,6 +567,7 @@
                         <li><a href="teams.html">Team</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
@@ -862,7 +870,7 @@
         // Parse the query string to extract query parameters
         let searchParams = new URLSearchParams(queryString);
         let sitemaps = searchParams.get('create-sitemap');
-        console.log(sitemaps)
+        // console.log(sitemaps)
         if (sitemaps) {
             function formatDate(date) {
                 let year = date.getFullYear();

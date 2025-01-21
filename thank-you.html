@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Code4pro">
     <meta name="author" content="Code4pro">
-    <title>News - Code4Pro</title>
+    <title>Thank You | Code4Pro</title>
     <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
@@ -22,15 +22,14 @@
     <!-- COMMON CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	<link href="css/blog.css" rel="stylesheet">
     <link href="css/vendors.css" rel="stylesheet">
     <!-- CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
-    <link rel="canonical" href="https://www.code4pro.com/new-ai-powered-tool-designed-to-enhance-first-responders-decision-making-and-improve-public-safety.html">
+    <link rel="canonical" href="https://www.code4pro.com/getting-started.html">
     <meta property="og:site_name" content="Code4Pro" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.code4pro.com/getting-started.html" />
-    <meta name="description" content="News | Code4Pro">
+    <meta name="description" content="Thank You | Code4Pro">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBWQ28KR6S"></script>
@@ -54,17 +53,27 @@
             color: #333333;
         }
 
-        @media (max-width: 991px) {
-            .parallax-window-new, .parallax-content-1 {
-                height: 60vh !important;
-            }
+        .parallax-mirror {
+            width: 100% !important;
+        }
+
+        .button-btn a {
+            padding: 12px 20px 10px 20px;
+            color: #fff;
+        }
         
+        @media (max-width: 991px) {
             .sticky .container {
                 padding: 30px 20px !important;
             }
 
             .container {
                 padding-block: 60px !important;
+            }
+
+            .parallax-window-new,
+            .parallax-content-1 {
+                height: 60vh !important;
             }
         }
     </style>
@@ -153,38 +162,20 @@
 
     </header><!-- End Header -->
 
-    <section class="parallax-window-new" data-parallax="scroll" data-image-src="assets/images/get-started.jpg">
-        <div class="parallax-content-1 opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.4)">
+    <section class="parallax-window-new" data-parallax="scroll" data-image-src="assets/images/officer-image-1.jpg" style="height: 60vh;">
+        <div class="parallax-content-1 opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.8)">
             <div class="animated fadeInDown">
-                <h1>News</h1>
+                <h1 class="mb-3">Thank You!</h1>
+                <p class="text-white mb-5">
+                    We appreciate you taking the time to connect with us. <br /> Your message has been successfully received, and our team will review it shortly.
+                </p>
+                <div class="button-btn">
+                    <a href="index.html" class="" style="border-radius: 30px; background: #023047;">Return to Home</a>
+                </div>
             </div>
         </div>
     </section>
-    
-    <main>
-        <div class="container first-container" style="padding-block: 120px;">
-			<div class="row">
 
-				<div class="col-lg-9">
-					<div class="box_style_1" id="post-list">
-						
-					</div>
-				</div>
-
-				<aside class="col-lg-3">
-					<div class="widget">
-						<h4 class="mb-5">Recent post</h4>
-						<ul class="recent_post" id="recent-posts">
-
-						</ul>
-					</div>
-				</aside>
-
-			</div>
-		</div>
-    </main>
-
-    <!-- End main -->
     <footer class="revealed">
         <div class="container">
             <div class="row">
@@ -234,63 +225,11 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/common_scripts_min.js"></script>
     <script src="js/functions.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>                                   
+	<script src="js/map_contact.js"></script>
     <!-- Video header scripts -->
     <script src="js/modernizr.js"></script>
     <script src="js/video_header.js"></script>
-    <script src="news.js"></script>
-    <script>
-        function toggleSend() {
-            name = document.getElementById('contact-name').value;
-            email = document.getElementById('contact-email').value;
-            message = document.getElementById('contact-message').value;
-            console.log(name, email, message)
-            if (name !== '' && email !== '' && message !== '') {
-                $("#submitButton").parent().removeClass("disabled")
-            } else {
-                $("#submitButton").parent().addClass("disabled")
-
-            }
-        }
-
-        document.getElementById('contact-name').addEventListener('input', toggleSend)
-        document.getElementById('contact-email').addEventListener('input', toggleSend)
-        document.getElementById('contact-message').addEventListener('input', toggleSend)
-
-        document.getElementById('submitButton').addEventListener('click', function (event) {
-            event.preventDefault();
-            this.classList.add("loading");
-
-            var formData = {
-                name: document.getElementById('contact-name').value,
-                email: document.getElementById('contact-email').value,
-                message: document.getElementById('contact-message').value
-            };
-
-            fetch('https://api.code4pro.com/provicta-service/email', {
-                method: 'POST',
-                body: JSON.stringify(formData)
-            })
-                .then(response => response.json())
-                .then(data => {
-                    $('.success.submit-success').css({
-                        "display": "block"
-                    })
-                    $('#contact-name').val('');
-                    $('#contact-email').val('');
-                    $('#contact-message').val('');
-                    $("#submitButton").parent().addClass("remove")
-
-                })
-                .catch(error => {
-                    $('.error.submit-error').css({
-                        "display": "block",
-                        "color": "red"
-                    })
-                    this.classList.remove("loading");
-                });
-
-        });
-    </script>
 </body>
 
 </html>
