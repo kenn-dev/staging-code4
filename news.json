@@ -1,6 +1,43 @@
 [
     {
         "id": 1,
+        "title": "The Origins of Code 4 Pro: Addressing Stress and Burnout in High-Stakes Professions",
+        "date": "February 04, 2025",
+        "author": "Code 4 Pro",
+        "content": [
+            {
+                "heading": "Addressing Stress and Burnout in High-Stakes Professions"  
+            },
+            {
+                "paragraph" : "Seven years ago, Mike Goldstein, then Chief of Police in a suburb of Minneapolis, Minnesota, attended a retirement party for one of his officers. During the event, he was approached by the officer’s wife, who shared a heartfelt concern:",
+                "paragraph2": "<i>“You have to do something. The life of a police officer is filled with stress and eventual burnout. My husband is not the same man I married, and I fear his retirement will be painful.”</i>",
+                "paragraph3": "This conversation deeply resonated with Mike. Combined with other observations and incidents, it inspired him to take action. Recognizing the toll that stress and burnout were taking on his officers, he sharply reinvigorated the department’s wellness program, making it the top priority to improve their mental, physical, and spiritual health. The program was a resounding success, prompting Mike to collaborate with others to expand its reach. This effort led to the founding of Provicta, an organization focused on establishing wellness programs within local police departments.</i>",
+                "paragraph4": "Provicta quickly gained traction, with participation exceeding 20 police departments. Seeing its potential for a broader impact, the organization was integrated with a regional healthcare conglomerate that aimed to scale the program to a larger audience. Before the integration, Provicta spun off a separate technology company, Code 4 Pro, tasked with creating a digital platform to understand, measure, and manage stress—the key component of PTSD and officer burnout.</i>"
+            },
+            {
+                "heading": "The Evolution of Code 4 Pro",
+                "paragraph": "What began as a wellness initiative for police officers evolved into a mission to develop cutting-edge technology to better understand, measure, and mitigate stress. Following Provicta’s integration, Code 4 Pro shifted its focus entirely to capturing and analyzing biometric data. By leveraging heart rate variability (HRV) analytics and artificial intelligence (AI), the company aimed to uncover deeper insights into stress management and develop solutions to mitigate its effects.",
+                "paragraph2": "As part of its development phase, Code 4 Pro conducted a groundbreaking large-scale study involving 500 stress simulations with active-duty police officers. These simulations were designed to replicate high-stakes scenarios officers face daily, providing a robust dataset on stress responses. The study’s findings, peer-reviewed and published in a leading scientific journal, validated the platform’s ability to accurately measure and analyze stress using HRV metrics. The study not only strengthened Code 4 Pro’s scientific foundation but also positioned it as a leader in stress management innovation.",
+                "paragraph3": "Code 4 Pro moved through its startup phase by assembling a small, experienced team dedicated to refining its technology. While its initial focus was on supporting police officers, the platform was designed to serve broader markets, including the military, high-stakes professions like physicians, and complex sports environments."
+            },
+            {
+                "heading": "The Team Behind Code 4 Pro",
+                "paragraph": "The success of Code 4 Pro is driven by a team of seasoned professionals with diverse expertise:",
+                "paragraph2": "<strong>Mike Goldstein, Founder and Wellness Expert:</stron><br /> With years of experience in law enforcement and wellness program development, Mike brings unparalleled insight into the challenges faced by those in high-stress professions. Mike’s contributions to this focused effort have reached public safety organizations and their personnel in numerous locations across the country.",
+                "paragraph3": "<strong>Danish Shrestha, Chief Technology Officer (CTO):</stron><br /> Danish leads the technological development of Code 4 Pro, ensuring the platform is innovative, robust, and scalable. He holds a master’s degree in computer science, which underpins his expertise in driving technology innovation. With a career dedicated to building scalable, high-performance solutions, Danish plays a pivotal role in ensuring the platform meets the needs of high-stakes industries while maintaining the flexibility to scale across broader applications.",
+                "paragraph4": "<strong>Paul Wetzel, Chief Product Officer (CPO):</stron><br /> Paul oversees the design and delivery of user-focused solutions, ensuring that Code 4 Pro meets the needs of its diverse clients. Paul has led Product for a variety of B2B/B2B2C software companies in travel, ecommerce, and financial services. Paul enjoys most any type of outdoor activity, including mountain biking, fat biking, sailing, camping, and hiking.",
+                "paragraph5": "<strong>Steve Mase, Chief Executive Officer (CEO):</stron><br /> Steve has over 40 years of experience developing technology for financial markets and has founded more than five companies. A graduate of the University of Minnesota, where he earned a B.S. in Mathematics and an MBA, Steve’s diverse career spans roles such as CIO of a Fortune 500 company, head of an operations research group, and founder of analytics firms serving financial and commodities markets. A former rugby player for the University of Minnesota, Steve combines his leadership experience with a passion for solving complex challenges."
+            },
+            {
+                "heading": "A Broader Mission",
+                "paragraph" : "Code 4 Pro continues to innovate, aiming to redefine stress management and resilience-building across industries. By combining biometric data, HRV analytics, and AI, the platform is setting new standards in understanding and mitigating stress, enabling individuals and organizations to perform at their best, even in the most demanding environments.",
+                "paragraph2": "Driven by a shared vision, the team is committed to developing software applications that leverage advanced analytics and artificial intelligence to make a meaningful impact on society. Their mission is particularly focused on supporting individuals in high-risk, high-value, and critically important professions, such as public safety, healthcare, military, and other demanding roles. Through their innovative solutions, the team seeks to empower these professionals to manage stress effectively, improve their well-being, and enhance their performance in roles that are vital to the fabric of society."
+            }
+        ],
+        "image": "assets/images/officer-image-1.jpg"
+    },
+    {
+        "id": 2,
         "title": "New AI-Powered Tool Designed to Enhance First Responders’ Decision Making and Improve Public Safety",
         "date": "July 12, 2024",
         "author": "Pasco, Wash",
@@ -20,7 +57,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "AI-Backed HRV Tools Transform Policing, Boosting Officer Well-Being and Community",
         "date": "October 24, 2024",
         "author": "Stephen Mase, CEO Code 4 Pro",
@@ -89,7 +126,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "AI in Public Safety: Balancing Potential with Practicality",
         "date": "November 15, 2024",
         "author": "Stephen Mase",
@@ -147,7 +184,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "How AI is Transforming Physician Health: Addressing Burnout, Enhancing Performance, and Strengthening Healthcare Communication",
         "date": "October 24, 2024",
         "author": "Stephen Mase, CEO Code 4 Pro",
@@ -182,7 +219,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "AI Startups: The Promise, Challenges, and Societal Impact of Emerging Technologies",
         "date": "October 24, 2024",
         "author": "Stephen Mase",
