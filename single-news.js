@@ -19,7 +19,8 @@ fetch('news.json')
                     ${item.paragraph3 ? `<p>${item.paragraph3}</p>` : ''}
                     ${item.paragraph4 ? `<p>${item.paragraph4}</p>` : ''}
                     ${item.paragraph5 ? `<p>${item.paragraph5}</p>` : ''}
-                    ${item.paragraph6 ? `<p>${item.paragraph6}</p>` : ''} 
+                    ${item.paragraph6 ? `<p>${item.paragraph6}</p>` : ''}
+                    ${item.list ? `${item.list}` : ''}
                 `;
             });
 
@@ -52,7 +53,6 @@ fetch('news.json')
                     ${contentHtml} <!-- Include the structured content here -->
                 </div>
             `;
-
 
             const recentPosts = document.getElementById('recent-posts');
             posts.forEach(post => {
