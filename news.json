@@ -1,6 +1,6 @@
 [
     {
-    "id": 8,
+    "id": 1,
     "title": "Code 4 Pro: The Future of Wellness and Performance — Powered by AI, Built for High-Stakes",
     "date": "March 27, 2025",
     "author": "Code 4 Pro",
@@ -64,7 +64,7 @@
         ]
     },
     {
-        "id": 1,
+        "id": 2,
         "title": "AI, HRV, and the Business of Saving Lives: The Next Healthcare Gold Rush",
         "date": "March 27, 2025",
         "author": "Code 4 Pro",
@@ -137,7 +137,7 @@
         ]
     } ,
     {
-        "id": 2,
+        "id": 3,
         "title": "The Origins of Code 4 Pro: Addressing Stress and Burnout in High-Stakes Professions",
         "date": "February 04, 2025",
         "author": "Code 4 Pro",
@@ -174,7 +174,7 @@
         "image": "assets/images/officer-image-1.jpg"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "New AI-Powered Tool Designed to Enhance First Responders’ Decision Making and Improve Public Safety",
         "date": "July 12, 2024",
         "author": "Pasco, Wash",
@@ -194,7 +194,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "AI-Backed HRV Tools Transform Policing, Boosting Officer Well-Being and Community",
         "date": "October 24, 2024",
         "author": "Stephen Mase, CEO Code 4 Pro",
@@ -263,7 +263,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "AI in Public Safety: Balancing Potential with Practicality",
         "date": "November 15, 2024",
         "author": "Stephen Mase",
@@ -321,7 +321,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "How AI is Transforming Physician Health: Addressing Burnout, Enhancing Performance, and Strengthening Healthcare Communication",
         "date": "October 24, 2024",
         "author": "Stephen Mase, CEO Code 4 Pro",
@@ -356,7 +356,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 6,
+        "id": 8,
         "title": "AI Startups: The Promise, Challenges, and Societal Impact of Emerging Technologies",
         "date": "October 24, 2024",
         "author": "Stephen Mase",
