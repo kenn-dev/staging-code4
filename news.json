@@ -7,10 +7,7 @@
     "content":
          [
             {
-                "heading": "<h1>Code 4 Pro Wellness Series</h1>"
-            },
-            {
-                "heading": "<h2>Code 4 Pro: The Future of Wellness and Performance — Powered by AI, Built for High-Stakes</h2><br><h3>The Growing Problem in Demanding Environments</h3>",
+                "heading": "<h3>The Growing Problem in Demanding Environments</h3>",
                 "paragraph": "<p>In high-risk, high-stakes industries — healthcare, aviation, transportation, military, and law enforcement — stress, fatigue, and burnout-induced cognitive failure are leading causes of critical errors, accidents, and fatalities.</p>",
                 "paragraph2": "<p>Traditional monitoring systems rely on subjective reporting or lagging indicators, failing to detect the real-time physiological shifts that precede performance breakdowns. This leaves organizations vulnerable to sudden performance drops and catastrophic errors when lives, missions, and multi-million-dollar assets are at stake.</p>"
             },
