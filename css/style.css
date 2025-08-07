@@ -107,14 +107,14 @@ Author URI: http://themeforest.net/user/Ansonika/
 
 @font-face {
 	font-family: 'Eina';
-	src: url('../assets/Eina03-SemiBold.ttf') format('ttf'),
+	src: url('../assets/Eina03-SemiBold.ttf') format('ttf');
 		font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Eina';
-	src: url('../assets/Eina03-Bold.ttf') format('ttf'),
+	src: url('../assets/Eina03-Bold.ttf') format('ttf');
 		font-weight: 700;
 	font-style: normal;
 }
@@ -1801,7 +1801,8 @@ a.dropdown-toggle.icon-search {
 	margin-top: 40%;
 	height: 100%;
 	text-align: center;
-	line-height: 90px;
+	/*line-height: 90px;*/
+	line-height:1.4em;
 	font-weight: 300;
 }
 
@@ -9051,3 +9052,44 @@ only screen and (min-device-pixel-ratio: 2) and (max-width: 991px) {
 	margin: auto;
 	margin-top:5rem;
 }
+
+
+
+
+/*=============================================
+index.html 
+
+1.1: Bannerstyle
+===============================================*/
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    line-height: 24px;
+	flex-wrap: wrap;
+	margin-top:30px;
+}
+section#hero p{
+	max-width: 600px;
+	margin:0 auto 20px;
+	padding-top:20px;
+	font-size:18px;
+	line-height: 1.4em;
+}
+
+
+
+/*============================================================================================*/
+/* index.html Responsive  */
+/*============================================================================================*/
+@media only screen and (max-width: 767px){
+	section#hero p{
+	font-size:16px;
+}
+}
+
+/*============================================================================================*/
+/* Ends here*/
+/*============================================================================================*/
+
