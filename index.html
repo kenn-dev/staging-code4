@@ -70,6 +70,36 @@
     </script>
 
     <style>
+        .hero-banner {
+        position: relative;
+        min-height: 80vh; /* adjust as needed */
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(178, 128, 255, 1), rgba(134, 230, 255, 1));
+        padding:245px 50px 175px;
+        }
+        .hero-bg-gif {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: screen; 
+        object-fit: cover;
+        opacity: 0.3; /* GIF at 30% opacity */
+        z-index: 0;
+        }
+        .hero-intro_title {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+        }
+        .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        }
         .custom-font-size{
             font-size: 2.625rem;
         }
@@ -83,10 +113,6 @@
             color: #023047;
         }
 
-        #hero {
-            position: relative;
-            overflow: hidden;
-        }
 
         .slider {
             position: relative;
@@ -112,10 +138,7 @@
             z-index: 2;
         }
 
-        .button-btn a{
-            padding: 12px 20px 10px 20px;
-            color: #fff;
-        }
+      
 
         div#ai-driven-platform {
             padding-top: 0px !important;
@@ -275,11 +298,11 @@
     </header><!-- End Header -->
 
     <section id="hero" style="height: 80vh;">
-        <div class="slider">
+        <!-- <div class="slider">
             <div class="slide active" style="background-image: url(assets/images/breakaway.png);">
                 <div class="opacity-mask d-flex justify-content-center" style="background: rgba(0, 0, 0, 0.6);">
                     <div class="intro_title d-flex justify-content-center flex-column mt-0 container pt-5">
-                        <img loading="lazy" src="img/Frame.png" alt="mobile" class="img-fluid m-0 laptop my-auto" width="250">
+                        <img loading="lazy" src="img/Frame.png" alt="mobile" class="img-fluid m-0 laptop my-auto" width="80">
                         <h1 class="text-light fw-normal custom-font-size" style="font-size: 42px;"><strong>Meet Seren</strong></h1>
                         <p><i>The first AI-driven HRV platform designed to protect physician well-being—before burnout begins.</i></p>
                         <div class="button-container">
@@ -353,6 +376,32 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="hero-banner">
+        <!-- GIF background -->
+        <img src="assets/images/d676c0a2f8d3c8c4019753afb478727e8bfee40a.gif" 
+            alt="" 
+            class="hero-bg-gif" 
+            loading="eager">
+
+        <!-- Content -->
+        <div class="hero-intro_title container">
+            <img loading="lazy" src="img/Frame.png" alt="mobile" class="img-fluid m-0 laptop mx-auto" width="174">
+            <h1 class="font-family:Verdana; fw-normal custom-font-size" style="font-size: 48px;"><strong>Meet Seren</strong></h1>
+            <p style="max-width:100%; text-transform: math-auto; color:rgba(2, 48, 71, 0.8);">The first AI-driven HRV platform designed to protect physician well-being—before burnout begins.</p>
+
+            <div class="button-container" style="margin-top:60px;">
+            <div class="button-btn">
+                <a href="platform.html" style="padding: 12px 40px; color: #fff; border-radius: 30px; background: #023047;">Learn More</a>
+            </div>
+            <div class="button-btn">
+                <a href="platform.html" style="padding: 12px 40px; color: #023047; border:1px solid rgba(2, 48, 71, 0.3); border-radius: 30px; background:#FFFFFF;">For Physicians</a>
+            </div>
+            <div class="button-btn">
+                <a href="platform.html" style="padding: 12px 40px; color: #023047; border:1px solid #B280FF; border-radius: 30px; background: #DEC9FF;">For Health Systems</a>
+            </div>
+            </div>
+        </div>
         </div>
     </section>
     
