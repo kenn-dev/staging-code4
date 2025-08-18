@@ -158,6 +158,8 @@
             background-color: #000;
             border-radius: 50%;
             margin-top: 6px;
+
+            
             flex-shrink: 0;
         }
         .physician {
@@ -291,6 +293,196 @@
             font-size: 18px !important;
             color: rgba(2, 48, 71, 0.8) !important;
         }
+
+
+
+
+        .our-science-section {
+      background: linear-gradient(to bottom, #f4f3ff, #d9eff1); /* gradient similar to screenshot */
+      padding: 60px 0;
+        }
+
+        .our-science-section .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+        }
+
+        .section-title {
+         font-size: 36px;
+        text-align: left;
+        font-weight: 600;
+        color: #092A3F;
+        margin-bottom: 10px;
+        }
+
+        .section-title span {
+        margin-right: 5px;
+        }
+
+        .section-subtitle {
+         text-align: left;
+        font-size: 16px;
+        color: #465B69;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        }
+
+        .metrics-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-top: 1px solid #E0E6EA;
+        border-bottom: 1px solid #E0E6EA;
+        padding: 30px 0;
+        margin-bottom: 40px;
+        }
+
+        .metric-item {
+        flex: 1;
+        padding: 0 15px;
+        }
+
+        .metric-item h3 {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+        color: #092A3F;
+        }
+
+        .metric-item p {
+        font-size: 16px;
+        color: rgba(2,48,71, 0.8);
+        margin-top: 5px;
+        }
+
+        /* Dividers */
+        .metric-item:not(:last-child) {
+        border-right: 1px solid #E0E6EA;
+        }
+
+        .research-box {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 30px;
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .research-left {
+        flex: 0 0 250px; /* Fixed width for left side like image */
+        text-align: left;;
+        }
+
+        .research-left h4 {
+        margin-top: 0;
+        font-size: 20px;
+        color: #092A3F;
+        }
+
+        .research-left p {
+        font-size: 14px;
+        color: #465B69;
+        }
+
+        .research-right {
+        flex: 1;
+        text-align: left;;
+        }
+
+        .research-list {
+        columns: 2; /* 2 columns layout */
+        column-gap: 40px;
+        list-style: disc;
+        padding-left: 20px;
+        margin: 0;
+        color: #465B69;
+        }
+
+        .research-list li {
+        break-inside: avoid;
+        margin-bottom: 8px;
+        font-size: 14px;
+}
+
+        .learn-btn {
+        display: inline-block;
+        background: #092A3F;
+        color: #ffffff;
+        padding: 12px 28px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background 0.3s;
+        }
+
+        .learn-btn:hover {
+        background: #0c3c57;
+        }
+        .features-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #092A3F;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #465B69;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.icon-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #EAF3FF; /* light subtle bg */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #092A3F;
+  margin-bottom: 10px;
+}
+
+.feature-card ul {
+  padding-left: 18px;
+  color: #465B69;
+}
+
+.feature-card li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
 
     </style>
 </head>
@@ -746,11 +938,11 @@
   <div class="container text-center">
 
     <!-- Heading -->
-     <h5 class="mb-2"><img src="img/Frame 7 (2).png">  For Health Systems &amp; Leadership</h5>
+     <h5 class="mb-2"><img src="img/Frame 7 (2).png">  The Story Behind Seren</h5>
     <p class="fw-semibold text-primary">A name with purpose. A signal with meaning.</p>
     <p class="text-muted mb-5">
-      Seren comes from the Welsh word for “star”—a symbol of calm, guidance, and quiet strength.  
-      It was chosen with intention.
+      Seren comes from the Welsh word for "star"—a symbol of calm, guidance, and quiet strength.
+It was chosen with intention.
     </p>
 
     <!-- Three Cards -->
@@ -815,14 +1007,118 @@
 
   </div>
 </section>
-      
-       
+<section class="our-science-section">
+    <div class="container">
+      <h2 class="section-title"><img src="img/Frame 7 (2).png">  Our Science</h2>
+      <p class="section-subtitle">Built on over 120 million HRV data points from physicians,<br>
+        tactical professionals, and emergency responders.</p>
+
+      <div class="metrics-row">
+        <div class="metric-item">
+          <h3>120M+</h3>
+          <p>HRV Data Points</p>
+        </div>
+        <div class="metric-item">
+          <h3>ECG, PPG</h3>
+          <p>Signal Processing</p>
+        </div>
+        <div class="metric-item">
+          <h3>1 Second</h3>
+          <p>Data Resolution</p>
+        </div>
+        <div class="metric-item">
+          <h3>AI, ML, LLM</h3>
+          <p>Proprietary Models</p>
+        </div>
+      </div>
+
+      <div class="research-box">
+        <div class="research-left">
+            <h4>Research Foundation</h4>
+            <p>Our models have been trained on biometric data from:</p>
+        </div>
+        <div class="research-right">
+            <ul class="research-list">
+            <li>Emergency medicine physicians</li>
+            <li>Trauma surgeons during critical procedures</li>
+            <li>Tactical professionals in high-stress environments</li>
+            <li>Emergency responders during extended shifts</li>
+            </ul>
+        </div>
+        </div>
+
+      <a href="#" class="learn-btn">LEARN MORE ABOUT THE RESEARCH</a>
+    </div>
+  </section>
+  <section class="features-section">
+  <div class="container">
+    <h2 class="section-title">✶ What's Under the Hood?</h2>
+    <p class="section-subtitle">
+      An intelligent physiological insight engine that turns biometric signals into real-time awareness,<br>
+      guidance, and prediction.
+    </p>
+
+    <div class="features-grid">
+      <!-- Card #1 -->
+      <div class="feature-card">
+        <div class="icon-circle">
+          <img src="icon1.png" alt="">
+        </div>
+        <h3>Biometric Data Capture</h3>
+        <ul>
+          <li>High-resolution ECG devices (wearables or patches)</li>
+          <li>Continuous heart rate variability (HRV) monitoring</li>
+          <li>Time-aligned to context (shifts, events, routines)</li>
+        </ul>
+      </div>
+
+      <!-- Card #2 -->
+      <div class="feature-card">
+        <div class="icon-circle">
+          <img src="icon2.png" alt="">
+        </div>
+        <h3>Analytics & AI Layer</h3>
+        <ul>
+          <li>Detects stress, fatigue, cognitive drift, burnout risk</li>
+          <li>Multi-dimensional scoring: resilience, recovery capacity</li>
+          <li>Time-series analysis and pattern recognition</li>
+        </ul>
+      </div>
+
+      <!-- Card #3 -->
+      <div class="feature-card">
+        <div class="icon-circle">
+          <img src="icon3.png" alt="">
+        </div>
+        <h3>Mobile-First Experience</h3>
+        <ul>
+          <li>Phone apps and tablet dashboards</li>
+          <li>Real-time feedback and trend tracking</li>
+          <li>Passive data collection, active insight delivery</li>
+        </ul>
+      </div>
+
+      <!-- Card #4 -->
+      <div class="feature-card">
+        <div class="icon-circle">
+          <img src="icon4.png" alt="">
+        </div>
+        <h3>Learning System</h3>
+        <ul>
+          <li>ML models detect evolving physiological patterns</li>
+          <li>Natural language insights and feedback</li>
+          <li>Grows smarter with every user interaction</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       
     </main>
 	<!-- End main -->
 
-    <!-- End main -->
     <footer class="revealed">
         <div class="container">
             <div class="row">
