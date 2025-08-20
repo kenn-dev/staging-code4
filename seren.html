@@ -387,6 +387,7 @@
         .research-left p {
         font-size: 14px;
         color: #465B69;
+        margin-bottom:0px;
         }
 
         .research-right {
@@ -410,6 +411,7 @@
 }
 
         .learn-btn {
+        margin-top:60px;
         display: inline-block;
         background: #092A3F;
         color: #ffffff;
@@ -480,8 +482,115 @@
 }
 
 .feature-card li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.features-grid .fs-2.mb-3 {
+    display: flex
+;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Section Styles */
+.seren-section {
+  background: #F4F6FE;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-sub {
+  color: #555;
+  margin-bottom: 40px;
   font-size: 14px;
-  margin-bottom: 6px;
+}
+
+/* Cards Layout */
+.seren-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.seren-card {
+    background: white;
+    width: 412px;
+    padding: 25px 25px 75px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+.seren-card h4 {
+    font-size: 18px;
+    color: rgba(2, 48, 71, 1);
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.seren-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.middle, .left, .right {
+    position: relative;
+}
+/* Button Style */
+.left .btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 20px;
+    background: transparent;
+    width: 85%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid rgba(2, 48, 71, 0.3);
+    font-weight: normal;
+    font-size: 16px;
+}
+.middle .btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 20px;
+    background: rgba(2, 48, 71, 1);
+    width: 85%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    border: 1px solid rgba(2, 48, 71, 0.3);
+    font-weight: normal;
+    font-size: 16px;
+}
+.right .btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 20px;
+    background: rgba(222, 201, 255, 1);
+    width: 85%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: rgba(2, 48, 71, 1);
+    text-decoration: none;
+    border: 1px solid rgba(2, 48, 71, 0.3);
+    font-weight: normal;
+    font-size: 16px;
 }
 
     </style>
@@ -949,7 +1058,8 @@ It was chosen with intention.
     <div class="row g-4 mb-5">
       <div class="col-md-4">
         <div class="p-4 bg-white border rounded shadow-sm h-100">
-        <div class="fs-2 mb-3"><img src="img/streamline-emojis_fire (3).png"> <h6 class="fw-bold">Born from stillness. Built for pressure.</h6></div>
+        <div class="fs-2 mb-3"><img src="img/streamline-emojis_fire (3).png"> <h6 class="fw-bold">Born from stillness.
+Built for pressure.</h6></div>
           
           <p class="small text-muted">
             In its original form, Seren evokes clarity and direction—an anchor above the noise.
@@ -1051,68 +1161,138 @@ It was chosen with intention.
     </div>
   </section>
   <section class="features-section">
-  <div class="container">
-    <h2 class="section-title">✶ What's Under the Hood?</h2>
-    <p class="section-subtitle">
-      An intelligent physiological insight engine that turns biometric signals into real-time awareness,<br>
-      guidance, and prediction.
+  <div class="container text-center">
+    <h5 class="mb-2"><img src="img/Frame 7 (2).png">  What's Under the Hood?</h5>
+    <p class="section-subtitle text-center">
+      An intelligent physiological insight engine that turns biometric signals into real-time awareness, guidance, and prediction.
     </p>
 
     <div class="features-grid">
       <!-- Card #1 -->
       <div class="feature-card">
-        <div class="icon-circle">
-          <img src="icon1.png" alt="">
-        </div>
-        <h3>Biometric Data Capture</h3>
-        <ul>
-          <li>High-resolution ECG devices (wearables or patches)</li>
-          <li>Continuous heart rate variability (HRV) monitoring</li>
-          <li>Time-aligned to context (shifts, events, routines)</li>
-        </ul>
+        
+        <div class="fs-2 mb-3"><img src="img/streamline-emojis_fire (6).png"> <h6 style="font-size: 24px;">Biometric Data Capture</h6></div>
+          
+          <ul class="small text-start">
+            <li>High-resolution ECG devices (wearables or patches)</li>
+            <li>Continuous heart rate variability (HRV) monitoring</li>
+            <li>Time-aligned to context (shifts, events, routines)</li>
+          </ul>
       </div>
 
       <!-- Card #2 -->
       <div class="feature-card">
-        <div class="icon-circle">
-          <img src="icon2.png" alt="">
-        </div>
-        <h3>Analytics & AI Layer</h3>
-        <ul>
-          <li>Detects stress, fatigue, cognitive drift, burnout risk</li>
-          <li>Multi-dimensional scoring: resilience, recovery capacity</li>
-          <li>Time-series analysis and pattern recognition</li>
-        </ul>
+        
+        <div class="fs-2 mb-3"><img src="img/streamline-emojis_fire (7).png"> <h6 style="font-size: 24px;">Analytics & AI Layer</h6></div>
+          
+          <ul class="small text-start">
+            <li>Detects stress, fatigue, cognitive drift, burnout risk</li>
+            <li>Multi-dimensional scoring: resilience, recovery capacity</li>
+            <li>Time-series analysis and pattern recognition</li>
+          </ul>
       </div>
 
       <!-- Card #3 -->
       <div class="feature-card">
-        <div class="icon-circle">
-          <img src="icon3.png" alt="">
-        </div>
-        <h3>Mobile-First Experience</h3>
-        <ul>
-          <li>Phone apps and tablet dashboards</li>
-          <li>Real-time feedback and trend tracking</li>
-          <li>Passive data collection, active insight delivery</li>
-        </ul>
+        
+        <div class="fs-2 mb-3"><img src="img/streamline-emojis_fire (8).png"> <h6 style="font-size: 24px;">Mobile-First Experience</h6></div>
+          
+          <ul class="small text-start">
+            <li>Phone apps and tablet dashboards</li>
+            <li>Real-time feedback and trend tracking</li>
+            <li>Passive data collection, active insight delivery</li>
+          </ul>
       </div>
 
       <!-- Card #4 -->
       <div class="feature-card">
-        <div class="icon-circle">
-          <img src="icon4.png" alt="">
-        </div>
-        <h3>Learning System</h3>
-        <ul>
-          <li>ML models detect evolving physiological patterns</li>
-          <li>Natural language insights and feedback</li>
-          <li>Grows smarter with every user interaction</li>
-        </ul>
+        
+        <div class="fs-2 mb-3"><img src="img/streamline-emojis_fire (9).png"> <h6 style="font-size: 24px;">Learning System</h6></div>
+          
+          <ul class="small text-start">
+            <li>ML models detect evolving physiological patterns</li>
+            <li>Natural language insights and feedback</li>
+            <li>Grows smarter with every user interaction</li>
+          </ul>
       </div>
     </div>
   </div>
 </section>
+<section class="seren-section text-center">
+  <h5 class="mb-2"><img src="img/Frame 7 (2).png"> Accessing Seren</h5>
+  <p class="section-sub">Three Levels of Participation<br>Code 4 Pro’s Physician Wellness Initiative</p>
+
+  <div class="seren-cards">
+    <!-- Card 1 -->
+    <div class="seren-card left">
+        <img src="img/streamline-emojis_fire (10).png">
+      <h4>Level 1</h4>
+      <h3>Proof of Concept (POC)</h3>
+      <p style="font-size: 16px; color: rgba(2, 48, 71, 0.8);">For individual physicians and small departmental teams</p>
+      <p class="fw-bold" style="text-align: left;">Goal</p>
+      <p style="text-align: left;"> Collect real-world, on-the-job physiological data to continue refining Code 4 Pro's AI models.</p>
+      <p class="fw-bold" style="text-align: left;">Status</p>
+      <p style="text-align: left;"> Active — currently over 125 million biometric data points collected.
+Target: Capped at 500 million data points.</p>
+      <p class="fw-bold" style="text-align: left;">Eligibility</p>
+      <p style="text-align: left;"> Open by application; limited availability.</p>
+      <p class="fw-bold" style="text-align: left;">Cost</p>
+      <p style="text-align: left;"> No cost to participants.</p>
+      <p class="fw-bold" style="text-align: left;">Ideal for</p>
+      <p style="text-align: left;"> Early adopters, innovators, and wellness champions.</p>
+      <p class="fw-bold" style="text-align: left;">Benefits</p>
+      <p style="text-align: left;"> Early access, personalized insights, contribution to AI development.</p>
+
+      <a href="#" class="btn">APPLY FOR POC</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="seren-card middle">
+       <img src="img/streamline-emojis_fire (10).png">
+      <h4>Level 2</h4>
+      <h3>Development Partner</h3>
+      <p style="font-size: 16px; color: rgba(2, 48, 71, 0.8);">For physician groups, healthcare organizations, and professional associations</p>
+      <p class="fw-bold" style="text-align: left;">Commitment</p>
+      <p style="text-align: left;"> Participate in a 90-day no-cost trial with structured milestones.</p>
+      <p class="fw-bold" style="text-align: left;">Goal</p>
+      <p style="text-align: left;"> Co-develop and validate Seren's AI-powered wellness insights in a clinical context.</p>
+      <p class="fw-bold" style="text-align: left;">Path Forward</p>
+      <ul>
+        <li style="text-align: left;"> If milestones are met, convert to a Preferred Customer agreement</li>
+        <li style="text-align: left;"> Includes privileged pricing, ongoing incentives</li>
+        <li style="text-align: left;"> Option to white-label Seren</li>
+      </ul>
+      
+      <p class="fw-bold" style="text-align: left;">Cost</p>
+      <p style="text-align: left;"> No cost during trial; pricing negotiated upon conversion.</p>
+      <p class="fw-bold" style="text-align: left;">Ideal for</p>
+      <p style="text-align: left;"> Organizations seeking early strategic advantage and tailored integration.</p>
+
+      <a href="#" class="btn">Become a Development Partner</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="seren-card right">
+      <img src="img/streamline-emojis_fire (10).png">
+      <h4>Level 3</h4>
+      <h3>Customer Subscription</h3>
+      <p style="font-size: 16px; color: rgba(2, 48, 71, 0.8);">For health systems, clinics, and medical groups ready to deploy at scale</p>
+      <p class="fw-bold" style="text-align: left;">Model</p>
+      <p style="text-align: left;"> SaaS-based subscription (per-user or site-based)</p>
+      <p class="fw-bold" style="text-align: left;">Includes</p>
+      <p style="text-align: left;"> Full access to Seren's AI wellness dashboard, reporting, API integrations, and administrative insights.</p>
+      <p class="fw-bold" style="text-align: left;">Customization</p>
+      <p style="text-align: left;"> Branding and deployment options available.</p>
+      <p class="fw-bold" style="text-align: left;">Pricing</p>
+      <p style="text-align: left;"> Available upon request.</p>
+      <p class="fw-bold" style="text-align: left;">Ideal for</p>
+      <p style="text-align: left;"> Organizations ready to implement at operational scale with ongoing support.</p>
+
+      <a href="#" class="btn">Request Enterprise Demo</a>
+    </div>
+  </div>
+</section>
+
 
 
       
