@@ -593,6 +593,76 @@
     font-size: 16px;
 }
 
+
+    .faq-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 50px;
+      max-width: 1000px;
+      margin: 50px auto;
+    }
+
+    .faq-header {
+      flex: 1;
+    }
+
+    .faq-header h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .faq-header p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .faq-container {
+      flex: 2;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .faq-question {
+      padding: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f9f9f9;
+    }
+
+    .faq-question:hover {
+      background: #f1f1f1;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 15px;
+      font-size: 16px;
+      background: #fff;
+      color: #555;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: "−";
+      font-size: 20px;
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 20px;
+    }
+
     </style>
 </head>
 
@@ -1292,6 +1362,70 @@ Target: Capped at 500 million data points.</p>
     </div>
   </div>
 </section>
+ <section class="faq-section">
+    <!-- Left side header -->
+    <div class="faq-header">
+      <h5 class="mb-2"><img src="img/Frame 7 (2).png"> Is This for Me?</h5>
+      <p>Common questions about Seren</p>
+    </div>
+
+    <!-- Right side FAQ -->
+    <div class="faq-container">
+      <div class="faq-item active">
+        <div class="faq-question">Is this another app to manage?</div>
+        <div class="faq-answer">
+          No. Seren runs in the background and only shows you insights when you choose.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Will this data be used to evaluate me?</div>
+        <div class="faq-answer">
+          Your data is private and only used to provide you with insights, not for evaluation.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What wearable do I need?</div>
+        <div class="faq-answer">
+          Seren works with most modern wearables that support HRV tracking.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How accurate is the HRV measurement?</div>
+        <div class="faq-answer">
+          HRV accuracy depends on the wearable, but Seren optimizes results for consistency.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How long before I see meaningful insights?</div>
+        <div class="faq-answer">
+          Most users notice meaningful insights within 1–2 weeks of consistent use.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I use this if I work irregular shifts?</div>
+        <div class="faq-answer">
+          Yes, Seren adapts to irregular schedules to provide personalized insights.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      item.querySelector(".faq-question").addEventListener("click", () => {
+        // Close all items except the clicked one
+        faqItems.forEach(el => el.classList.remove("active"));
+        item.classList.add("active");
+      });
+    });
+  </script>
 
 
 
