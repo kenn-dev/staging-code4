@@ -495,9 +495,14 @@
 
 /* Section Styles */
 .seren-section {
-  background: #F4F6FE;
-  padding: 50px 0;
-  text-align: center;
+    background: linear-gradient(45deg, rgba(222, 201, 255, 0.2), rgba(134, 230, 255, 0.2));
+    padding: 120px 50px;
+    text-align: center;
+}
+.seren-card.middle {
+    border: 2px solid rgba(2, 48, 71, 1);
+    box-shadow: 0px 0px 15px 0px rgba(0, 131, 196, 0.2);
+    background: linear-gradient(180deg, rgba(222, 201, 255, 1), rgba(134, 230, 255, 1));
 }
 
 .section-title {
@@ -618,23 +623,25 @@
 
     .faq-container {
       flex: 2;
-      border: 1px solid #ccc;
-      border-radius: 5px;
       overflow: hidden;
     }
 
     .faq-item {
-      border-bottom: 1px solid #ddd;
+          margin: 15px;
     }
 
     .faq-question {
-      padding: 15px;
-      font-size: 20px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #f9f9f9;
+        padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 15px;
+    border: 1px solid rgba(2, 48, 71, 0.15);
+    position: relative;
     }
 
     .faq-question:hover {
@@ -642,11 +649,14 @@
     }
 
     .faq-answer {
-      display: none;
-      padding: 15px;
-      font-size: 16px;
-      background: #fff;
-      color: #555;
+          display: none;
+    padding: 30px 15px 15px;
+    font-size: 16px;
+    margin-top: -15px;
+    background: rgba(2, 48, 71, 0.03);
+    color: #555;
+    border: 1px solid rgba(2, 48, 71, 0.15);
+    border-radius: 0px 0px 15px 15px;
     }
 
     .faq-item.active .faq-answer {
@@ -662,7 +672,126 @@
       content: "+";
       font-size: 20px;
     }
+    @media screen and (max-width:1024px) and (min-width:768px) {
+      .hero-banner {
+        padding:120px 50px;
+      }
+      .hero-banner h1 {
+        font-size:40px !important;
+      }
+      #problem-solving, .introducting-seren, .physician, section.Leadership, .Health {
+        padding:80px 50px !important;
+      }
+       section.Leadership .row.g-4, .Health .row.g-4.mb-5 {
+          flex-direction: column;
+      }
+      section.Leadership .col-md-4, .Health .col-md-4 {
+        width:100%
+      }
+      .metric-item {
+        width: 48% !important;
+        flex: unset;
+      }
+      .our-science-section {
+        padding: 60px 50px;
+      }
+      .research-left {
+          flex: unset;
+          
+      }
+      .seren-card {
+            width: 320px;
+      }
+      .seren-cards {
+        gap:20px;
+      }
+      .research-box {
+          flex-direction: column;
+          gap:20px;
+      }
+      .faq-section {
+        padding: 80px 50px;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    @media screen and (max-width:767px)
+     {
+        .research-box {
+    flex-direction: column;
+    gap: 20px;
+      }
+      .hero-banner h1 {
+    font-size: 32px !important;
+}
+      .research-left {
+          flex: unset;
+      }
 
+      ul.research-list {
+          columns: 1;
+      }
+
+      .features-grid {
+          grid-template-columns: 1fr;
+      }
+
+      .hero-banner {
+          padding: 120px 20px 60px;
+      }
+
+      div#problem-solving {
+          padding: 60px 20px !important;
+      }
+
+      section.faq-section {
+          flex-direction: column;
+          gap: 20px;
+          padding: 60px 20px !important;
+          margin: 0px;
+      }
+
+      section.seren-section {
+          padding: 60px 20px;
+      }
+
+      section.features-section {
+          padding: 60px 20px;
+      }
+
+      section.Health {
+          padding: 60px 20px;
+      }
+
+      section.Leadership {
+          padding: 60px 20px;
+      }
+
+      .mt-5.p-5.rounded.shadow-sm {
+          padding: 10px !important;
+      }
+
+      h5 {
+          font-size: 28px !important;
+      }
+     section.introducting-seren {
+          padding: 60px 20px !important;
+      }
+
+      section.physician {
+          padding: 60px 20px !important;
+      }
+
+      .row.g-3.my-4 {
+          flex-direction: column;
+      }
+
+      .physician .col-md-6 {
+          width: 100% !important;
+          margin: 0px !important;
+      }
+
+     }
     </style>
 </head>
 
@@ -1318,7 +1447,7 @@ Target: Capped at 500 million data points.</p>
 
     <!-- Card 2 -->
     <div class="seren-card middle">
-       <img src="img/streamline-emojis_fire (10).png">
+       <img src="img/streamline-emojis_fire (11).png">
       <h4>Level 2</h4>
       <h3>Development Partner</h3>
       <p style="font-size: 16px; color: rgba(2, 48, 71, 0.8);">For physician groups, healthcare organizations, and professional associations</p>
@@ -1343,7 +1472,7 @@ Target: Capped at 500 million data points.</p>
 
     <!-- Card 3 -->
     <div class="seren-card right">
-      <img src="img/streamline-emojis_fire (10).png">
+      <img src="img/streamline-emojis_fire (12).png">
       <h4>Level 3</h4>
       <h3>Customer Subscription</h3>
       <p style="font-size: 16px; color: rgba(2, 48, 71, 0.8);">For health systems, clinics, and medical groups ready to deploy at scale</p>
