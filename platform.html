@@ -108,7 +108,101 @@
         display: flex;
         gap: 60px;
     }
+    .insights-section {
+    z-index: 3;
+    position: relative;
+    background: linear-gradient(90deg, rgba(178, 128, 255, 1), rgba(134, 230, 255, 1));
+    padding: 158px 20px 60px;
+    }
 
+    .insights-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 40px;
+    }
+
+    .insights-text {
+    flex: 1;
+    color: #000;
+    font-family: Arial, sans-serif;
+    }
+
+    .insights-text h1 {
+    font-size: 48px;
+    line-height: 1.4;
+    font-weight: 400;
+    }
+
+    .insights-images {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    }
+
+    .phone-img img,
+    .graph-img img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .user-section {
+    background: linear-gradient(90deg, rgba(222, 201, 255, 0.2), rgba(134, 230, 255, 0.2));
+    padding: 120px 50px;
+    }
+    .info-card {
+        background: #fff;
+        margin-left: -200px;
+        border-radius: 30px ;
+        padding: 50px 50px 50px 250px;
+    }
+    .info-card h3 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .info-card p {
+        font-size: 18px !important;
+    }
+    .content-box h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    }
+    .content-box p {
+        font-size: 18px !important;
+    }
+    .content-box h5 {
+        font-size: 24px !important;
+    }
+    .feature-box {
+    background: linear-gradient(to right bottom, #e6f0ff, #dff7ff);
+    }
+    .feature-box ul {
+        list-style: none;
+        padding: 0;
+    }
+    .feature-box ul li {
+        font-size: 18px !important;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        padding-left: 20px;
+    }
+    .feature-box ul li::before {
+        content: "●";
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #003366;
+    }
+    .feature-box {
+        padding: 30px 20px !important;
+        border-radius: 15px !important;
+    }
     @media (min-width: 992px){
         .anchor{
             margin: 50px;
@@ -262,104 +356,151 @@
 
     </header><!-- End Header -->
 
-    <section class="parallax-window-new" data-parallax="scroll" data-image-src="assets/images/appdescription.jpg">
-        <div class="parallax-content-1 opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-            <div class="animated fadeInDown">
-                <h1>Real-Time Stress Insights and AI-Driven Performance Support</h1>
-            </div>
-        </div>
-    </section>
+    <section class="insights-section">
+  <div class="insights-container">
+    <!-- Left Content -->
+    <div class="insights-text col-6">
+      <h1>
+        Real-Time Stress Insights and
+        AI-Driven Performance Support
+      </h1 >
+    </div>
+
+    <!-- Right Content -->
+    <div class="insights-images col-6">
+      
+        <img src="img/Group 15.png" alt="Phone showing stress insights">
+      
+    </div>
+  </div>
+</section>
+
 
     <main>
-        <div class="container-fluid first-container" style="padding-block: 120px 60px; background-color: #f0f0f0;">
-            <div class="container top-container p-0">
-                <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
-                    <div class="col-lg-8 col-sm-12 first-column mx-auto mb-5">
-                        <figure>
-                            <img loading="lazy" src="img/platform-visual.png" class="img-fluid" alt="platform visual">
-                        </figure>       
-                    </div>
-                    <div class="col-lg-12 col-sm-12 second-column text-center mx-auto">
-                        <h2 id="stress-1">Built Around the User</h2>
-                        <p class="m-0 p-0">
-                            Whether you’re in healthcare, public safety, or any high-stakes role, Seren centers the experience around the individual. Using wearable HRV sensors and our mobile app, users gain real-time visibility into stress and recovery. AI enhances the data, providing predictions and insights, while the secure web portal gives leaders and teams the ability to track trends and support better decisions.</p>
-                    </div>
-                </div>
-            </div>
+<section class="user-section">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Column (Image) -->
+      <div class="col-md-6 text-center" style="z-index: 3;">
+        <img src="img/Group 18.png" alt="User Diagram" class="img-fluid circle-img">
+      </div>
+      
+      <!-- Right Column (Text Card) -->
+      <div class="col-md-6">
+        <div class="info-card shadow">
+          <h3>Built Around the User</h3>
+          <p>
+            Whether you’re in healthcare, public safety, or any high-stakes role, Seren centers 
+            the experience around the individual. Using real-time visibility into stress and recovery.  
+          </p>
+          <p>
+            AI enhances the data, providing predictions and insights, while the secure web portal 
+            gives leaders and teams the ability to track trends and support better decisions.
+          </p>
         </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- Stress Testing Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center py-5 g-5">
+      
+      <!-- Left Content -->
+      <div class="col-md-6 content-box">
+        <h2>Stress Testing at its Best</h2>
+        <p>
+          The first to use A.I. to manage and predict stress levels, Seren is an extremely 
+          accurate and versatile tool for stress management and mitigation.
+        </p>
 
-        <div class="container second-container" id="stress-testing-at-its-best" style="padding-block: 120px 60px;">
-            <div class="row flat-row main_title wow fadeInUp" data-wow-delay="0.4s">
-                <div class="col-lg-4 col-sm-12 first-column">
-                    <figure>
-                        <img loading="lazy" src="img/mobile-slide-0.png" class="img-fluid" alt="image">
-                    </figure>       
-                </div>
-                <div class="col-lg-8 col-sm-12 second-column text-start my-auto px-lg-5 pe-lg-0">
-                    <h2 id="stress-1">Stress Testing at its Best</h2>
-                    <p>
-                        The first to use A.I. to manage and predict stress levels, Seren is an extremely
-                        accurate and versatile tool for stress management and mitigation.
-                    </p>
-                    <p>Our unique solution:
-                    <ul class="main_li">
-                        <li>Objectively measures stress via heart rate variability (HRV)</li>
-                        <li>Classifies the results in terms of good (green), neutral (yellow), or bad (red)</li>
-                        <li>Predicts the direction, duration, and strength of stress using Machine Learning</li>
-                        <li>Manages and mitigates the effects of stress with A.I. large language model</li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
+        <h5 class="mt-4">Our unique solution:</h5>
+        <div class="feature-box mt-3 p-3 rounded-3">
+          <ul class="mb-0">
+            <li>Objectively measures stress via heart rate variability (HRV)</li>
+            <li>Classifies the results in terms of good (green), neutral (yellow), or bad (red)</li>
+            <li>Predicts the direction, duration, and strength of stress using Machine Learning</li>
+            <li>Manages and mitigates the effects of stress with A.I. large language model</li>
+          </ul>
         </div>
+      </div>
 
-        <div class="container third-container" id="a-valuable-co-pilot" style="padding-block: 0 60px;">
-            <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
-                <div class="col-lg-8 col-sm-12 first-column text-start my-auto pe-lg-5">
-                    <h2 id="stress-2">A Valuable ‘Co-Pilot’</h2>
-
-                    <p>
-                        Seren operates like a ‘co-pilot,’ helping workers understand how they respond to
-                        various stress triggers.
-                    </p>
-                    <p>
-                        A body sensor collects and charts every heartbeat, offering a unique window into a
-                        worker’s
-                        HRV over time and during various incidents. Code 4
-
-                        Pro establishes a baseline stress index and then predicts the individual’s stress level
-                        several minutes ahead.
-                    </p>
-                    <p class="p-0 m-0">
-                        Thus, the wearer is aware of their stress level before making a tough call or tackling a
-                        difficult task.
-                    </p>
-                </div>
-                <div class="col-lg-4 col-sm-12 second-column remove">
-                    <figure>
-                        <img loading="lazy" src="img/mobile-slide-2.png" class="img-fluid" alt="image">
-                    </figure>
-                </div>
-            </div>
-        </div>
+      <!-- Right Images -->
+      <div class="col-md-6 text-center">
+        <img src="img/Group 16.png" alt="Phone Mockup" class="phone-mockup img-fluid">
         
-        <div class="container fourth-container" id="a-unique-window-into-stress" style="padding-block: 0 120px;">
-            <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
-                <div class="col-lg-5 col-sm-12 first-column d-flex align-items-center">
-                    <figure>
-                        <img loading="lazy" src="assets/images/dashboard-code4.png" class="img-fluid" alt="image">
-                    </figure>       
-                </div>
-                <div class="col-lg-7 col-sm-12 second-column text-start my-auto px-lg-5 pe-lg-0">
-                    <h2 id="stress-1">A unique window into stress</h2>
-                    <p class="m-0 p-0">
-                        With over 50 million data captures so far, Seren is collecting a wealth of data across a wide cross-section of end users including first responders. Although stress impacts everyone differently, knowing how stress affects the individual can be used to forecast how they may react in a stressful situation.
-                        <br /><br />
-                        In our web based dashboard, this data can also help command staff, supervisors, etc. make informed decisions regarding their team. Seren can also be used as a key component in training activities. Trainers can use our system to help address the triggers for each end user that create the most stress, arming them with techniques that help them recover more quickly.
-                    </p>
-                </div>
-            </div>
-        </div>
+      </div>
+
+    </div>
+    <div class="row align-items-center py-5 g-5">
+      
+      <!-- Left Content -->
+        <div class="col-md-6 text-center">
+        <img src="img/Group 17.png" alt="Phone Mockup" class="phone-mockup img-fluid">
+        
+      </div>
+      <!-- Right Images -->
+      <div class="col-md-6 content-box">
+        <h2>A Valuable ‘Co-Pilot’</h2>
+        <p>
+          Seren operates like a ‘co-pilot,’ helping workers understand how they respond to various stress triggers.
+        </p>
+        <p>A body sensor collects and charts every heartbeat, offering a unique window into a worker’s HRV over time and during various incidents. Code 4 Pro establishes a baseline stress index and then predicts the individual’s stress level several minutes ahead.</p>
+        <p>Thus, the wearer is aware of their stress level before making a tough call or tackling a difficult task.</p>
+        
+      </div>
+
+      
+     
+
+    </div>
+  </div>
+</section>
+<!-- Unique Window Into Stress Section -->
+<section class="g-5 unique-stress-section">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Content -->
+      <div class="col-md-6">
+        <h2>A Unique Window<br>Into Stress</h2>
+        <p class="mt-3">
+          With over 50 million data captures so far, Seren is collecting a wealth of data 
+          across a wide cross-section of end users including first responders. Although 
+          stress impacts everyone differently, knowing how stress affects the individual 
+          can be used to forecast how they may react in a stressful situation.
+        </p>
+        <p>
+          In our web based dashboard, this data can also help command staff, supervisors, 
+          etc. make informed decisions regarding their team. Seren can also be used as a 
+          key component in training activities. Trainers can use our system to help 
+          address the triggers for each end user that create the most stress, arming them 
+          with techniques that help them recover more quickly.
+        </p>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-6 text-center">
+        <img src="img/imgi_6_dashboard-code4 1.png" 
+             alt="Dashboard Screenshot" 
+             class="img-fluid dashboard-mockup">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+  .unique-stress-section {
+    background: linear-gradient(to right bottom, #f5f7ff, #e8faff);
+  }
+
+</style>
+
 
         <div class="container fifth-container" style="padding-block: 0 120px;">
             <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
