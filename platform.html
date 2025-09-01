@@ -112,7 +112,7 @@
     z-index: 3;
     position: relative;
     background: linear-gradient(90deg, rgba(178, 128, 255, 1), rgba(134, 230, 255, 1));
-    padding: 158px 20px 60px;
+    padding: 158px 50px 60px;
     }
 
     .insights-container {
@@ -203,6 +203,12 @@
         padding: 30px 20px !important;
         border-radius: 15px !important;
     }
+    .unique-stress-section p {
+        font-size: 18px !important;
+    }
+     .leads p {
+            font-size:18px !important;
+        }
     @media (min-width: 992px){
         .anchor{
             margin: 50px;
@@ -272,6 +278,110 @@
             flex-direction: column;
             gap: 0px;
         }   
+    }
+    @media screen and (max-width:1024px) {
+        .insights-text h1 {
+            font-size: 32px;
+        }
+        .user-section {
+            padding: 80px 50px;
+        }
+        .info-card h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .info-card p, .content-box p, .feature-box ul li, .unique-stress-section p, .main_title p  {
+            font-size: 16px !important;
+        }
+        .info-card {
+            padding: 40px 50px 40px 220px;
+        }
+        .content-box h2, .main_title h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content-box h5 {
+            font-size: 20px !important;
+        }
+        .unique-stress-section, .fifth-container {
+            padding: 80px 50px !important;
+        }
+        .custom-section {
+            padding:60px 40px !important;
+        }
+        
+    }
+    @media screen and (max-width:767px) {
+        .insights-text h1 {
+            font-size: 28px;
+        }
+        .info-card h3, .content-box h2, .main_title h2, .leads h4  {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        .insights-section {
+            padding: 158px 20px 60px;
+        }
+        .insights-container {
+            flex-direction: column-reverse;
+        }
+        .insights-text, .insights-images {
+            width:100% !important;
+        }
+        .user-section {
+            padding: 60px 20px !important;
+        }
+        .user-section .container {
+            padding:0px !important;
+        }
+        section.py-5.stress-testing {
+            padding: 60px 20px;
+        }
+
+        section.py-5.stress-testing .container {
+            padding: 0px !important;
+        }
+
+        .stress-testing .col-md-6.content-box {
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+
+        .stress-testing .row-1 {
+            margin: 0px auto !important;
+            flex-direction: column-reverse;
+            padding: 0px !important;
+        }
+
+        .col-md-6.text-center {
+            padding: 0px !important;
+        }
+         .stress-testing .row-2 {
+            margin: 0px auto !important;
+            padding: 0px !important;
+        }
+        .unique-stress-section, .fifth-container {
+            padding: 60px 20px !important;
+        }
+
+        .unique-stress-section .row {
+            flex-direction: column-reverse;
+        }
+        .leads {
+            padding: 0px 20px 60px !important;
+            margin: 0px auto !important;
+        }
+        .leads p {
+            font-size:16px !important;
+        }
+
+        .leads h4.fw-bold {
+            font-size: 28px !important;
+        }
+
+        .custom-section {
+            padding: 40px 20px !important;
+        }
     }
 </style>
 </head>
@@ -359,7 +469,7 @@
     <section class="insights-section">
   <div class="insights-container">
     <!-- Left Content -->
-    <div class="insights-text col-6">
+    <div class="insights-text col-md-6 col-sm-12">
       <h1>
         Real-Time Stress Insights and
         AI-Driven Performance Support
@@ -367,9 +477,9 @@
     </div>
 
     <!-- Right Content -->
-    <div class="insights-images col-6">
+    <div class="insights-images col-md-6 col-sm-12">
       
-        <img src="img/Group 15.png" alt="Phone showing stress insights">
+        <img src="img/Group 15.png" alt="Phone showing stress insights" style="width:100%;">
       
     </div>
   </div>
@@ -405,9 +515,9 @@
   </div>
 </section>
 <!-- Stress Testing Section -->
-<section class="py-5">
+<section class="py-5 stress-testing">
   <div class="container">
-    <div class="row align-items-center py-5 g-5">
+    <div class="row row-1 align-items-center py-5 g-5">
       
       <!-- Left Content -->
       <div class="col-md-6 content-box">
@@ -435,7 +545,7 @@
       </div>
 
     </div>
-    <div class="row align-items-center py-5 g-5">
+    <div class="row row-2 align-items-center py-5 g-5">
       
       <!-- Left Content -->
         <div class="col-md-6 text-center">
@@ -461,26 +571,29 @@
 </section>
 <!-- Unique Window Into Stress Section -->
 <section class="g-5 unique-stress-section">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row align-items-center">
       
       <!-- Left Content -->
-      <div class="col-md-6">
-        <h2>A Unique Window<br>Into Stress</h2>
-        <p class="mt-3">
-          With over 50 million data captures so far, Seren is collecting a wealth of data 
-          across a wide cross-section of end users including first responders. Although 
-          stress impacts everyone differently, knowing how stress affects the individual 
-          can be used to forecast how they may react in a stressful situation.
-        </p>
-        <p>
-          In our web based dashboard, this data can also help command staff, supervisors, 
-          etc. make informed decisions regarding their team. Seren can also be used as a 
-          key component in training activities. Trainers can use our system to help 
-          address the triggers for each end user that create the most stress, arming them 
-          with techniques that help them recover more quickly.
-        </p>
-      </div>
+      <div class="col-md-6" >
+        <div style="max-width: 500px; margin: auto;">
+            <h2>A Unique Window<br>Into Stress</h2>
+            <p class="mt-3">
+            With over 50 million data captures so far, Seren is collecting a wealth of data 
+            across a wide cross-section of end users including first responders. Although 
+            stress impacts everyone differently, knowing how stress affects the individual 
+            can be used to forecast how they may react in a stressful situation.
+            </p>
+            <p>
+            In our web based dashboard, this data can also help command staff, supervisors, 
+            etc. make informed decisions regarding their team. Seren can also be used as a 
+            key component in training activities. Trainers can use our system to help 
+            address the triggers for each end user that create the most stress, arming them 
+            with techniques that help them recover more quickly.
+            </p>
+        </div>
+        
+        </div>
 
       <!-- Right Image -->
       <div class="col-md-6 text-center">
@@ -496,13 +609,17 @@
 <!-- Custom CSS -->
 <style>
   .unique-stress-section {
-    background: linear-gradient(to right bottom, #f5f7ff, #e8faff);
+    background-image: url(img/Group\ 19.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 120px 50px;
   }
 
 </style>
 
 
-        <div class="container fifth-container" style="padding-block: 0 120px;">
+        <div class="container fifth-container" style="padding:120px 50px">
             <div class="row flat-row main_title wow fadeInUp mb-0" data-wow-delay="0.4s">
 
                 <div class="first-column col-lg-12 col-m-12 mb-3">
@@ -517,24 +634,55 @@
 
                 <div class="section-bottom col-lg-12">
                     <figure>
-                        <img loading="lazy" src="img/Screenshot_213.png" class="img-fluid" alt="image">
+                        <img loading="lazy" src="img/imgi_7_Screenshot_213 1.png" class="img-fluid" alt="image" style="box-shadow: 0px 0px 15px 0px rgba(2, 48, 71, 0.1); border-radius: 15px;">
                     </figure>
                 </div>
 
             </div>
         </div>
-  
-        <div class="container leads-way-section" style="padding-bottom: 120px;">
-            <div class="banner_2 mb-0">
-                <div class="wrapper d-flex align-items-center opacity-mask banner colored mb-0">
-                    <div>
-                        <h3>Seren <br>Leads the Way</h3>
-                        <p class="mb-3 text-white">By pairing biometric HRV sensors with sophisticated A.I.-based tools <br> our unique solution can be used in any job setting.</p>
-                        <a href="occupations.html#high-value-occupations" class="btn_1 white" style="border-radius: 30px; position: static;">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="container leads my-5" style="padding: 0px 50px  120px;">
+  <div class="custom-section d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <!-- Left Content -->
+    <div class="col-md-6">
+      <h4 class="fw-bold" style="font-size: 36px; font-weight: 400 !important;">Seren Leads The Way</h4>
+      <p class="text-muted mb-0" style="margin-top: 30px;">
+        By pairing biometric HRV sensors with sophisticated A.I.-based tools our unique solution can be used in any job setting.
+      </p>
+    </div>
+    <!-- Right Button -->
+    <div class="col-md-6 mt-3 mt-md-0" style="text-align: right;">
+      <button class="custom-btn">READ MORE</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-section {
+    background-image: url(img/Frame\ 33\ \(1\).png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .custom-btn {
+    background-color: #012d44;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 60px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .custom-btn:hover {
+    background-color: #03486a;
+  }
+</style>
         
     </main>
     <!-- End main -->
