@@ -4546,7 +4546,9 @@ ul.list_order li span {
 .banner.colored h4 span {
 	color: #FFC;
 }
-
+.submenu ul {
+    flex-direction: column;
+}
 /*Preloading*/
 #preloader {
 	position: fixed;
