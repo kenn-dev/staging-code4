@@ -456,6 +456,7 @@
 }
 
 .parallax-window-new {
+  z-index: 2;
   min-height: 55vh;
   background: transparent;
   position: relative;
