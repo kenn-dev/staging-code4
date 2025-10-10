@@ -1,6 +1,34 @@
 [
     {
-    "id": 1,
+        "id": 1,
+        "title": "Press Release: Code 4 Pro Launches Seren™ and Sidekick™ AI + HRV Platform Tackling Physician Stress, Burnout, and Performance",
+        "date": "MINNEAPOLIS, MN — October 2025",
+        "author": "Stephen Mase, CEO Code 4 Pro",
+        "content": [
+            {
+                "paragraph": "Code 4 Pro proudly introduces <strong>Seren™</strong>, a next-generation, data-driven solution created to address one of healthcare’s most critical and human challenges—<strong>physician stress, burnout, and performance sustainability.</strong>  <hr>" 
+            },
+            {
+                "paragraph": "By combining professional-grade <strong>Heart Rate Variability (HRV)</strong> analytics, biometric monitoring, and <strong>AI-powered insights</strong>, Seren delivers real-time, objective data that empowers health systems to recognize strain early, respond compassionately, and foster lasting resilience across their teams.",
+                "paragraph2": "At its core is <strong>Sidekick™</strong>, Seren’s intelligent in-app AI companion that transforms complex biometric streams into meaningful, personalized guidance. Sidekick interprets HRV signals, behavioral trends, and environmental context—merging stress, recovery, activity, and sleep data into an adaptive model that learns from every individual. It engages conversationally, remembers patterns, and offers timely validation, encouragement, and micro-nudges toward recovery and balance.", 
+                "paragraph3": "Through this seamless integration of data and dialogue, clinicians gain a trusted guide that not only heightens awareness but empowers them to take control of their own well-being. The result is a continuous loop of understanding, adaptation, and support—helping clinicians thrive in the moments that matter most<hr>",
+                "paragraph4": "At scale, Seren and Sidekick provide <strong>de-identified aggregate insights</strong> to caregivers, wellness officers, and administrators—informing better policies, smarter scheduling, and more resilient healthcare operations. For hospitals, physician groups, and insurers, this means that Seren is more than wellness—it’s a <strong>strategic investment in workforce stability, patient safety, and organizational excellence.</strong>",
+                "paragraph5": "“Sidekick listens, learns, and guides—turning data into understanding and understanding into action,” said <strong>Steve Mase</strong>, CEO of Code 4 Pro. “It personalizes resilience at scale, helping every individual find balance in chaos and giving organizations the insight to care better, lead wiser, and perform stronger.”",
+                "paragraph6": "“I know from my years as an ER doctor that physicians are trained to take care of their patients in high-stakes clinical situations,” added <strong>Dr. Joel Carter</strong>, Code 4 Pro’s Chief Medical Innovation Officer. “Too often their own well-being is an afterthought. We intend to change that with Seren—because reducing physician burnout is not only in the doctor’s best interest, but also in the patient’s best interest as well.”",
+                "paragraph7": "With this release, <strong>Code 4 Pro</strong> takes a major step toward the <strong>personalization of AI at scale</strong>—a world in which intelligent, empathetic technology supports human resilience in real time. Seren represents a new kind of healthcare innovation: one that listens, learns, and leads with compassion."
+                
+
+            },
+            {
+                "heading": "About Code 4 Pro",
+                "paragraph": "Code 4 Pro is a pioneer in AI-driven heart-rate-variability analytics and biometric intelligence. Its mission is to enhance resilience, performance, and mental well-being across high-value professions—from healthcare and law enforcement to aviation and tactical operations.",
+                "paragraph2": "For more information, visit www.code4pro.com or contact steve@code4pro.com"
+            }
+        ],
+        "image": "img/2151003745 (1).jpg"
+    },
+    {
+    "id": 2,
     "title": "Code 4 Pro: The Future of Wellness and Performance — Powered by AI, Built for High-Stakes",
     "date": "March 27, 2025",
     "author": "Code 4 Pro",
@@ -58,7 +86,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "The Origins of Code 4 Pro: Addressing Stress and Burnout in High-Stakes Professions",
         "date": "February 04, 2025",
         "author": "Code 4 Pro",
@@ -95,7 +123,7 @@
         "image": "assets/images/officer-image-1.jpg"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "AI in Public Safety: Balancing Potential with Practicality",
         "date": "November 15, 2024",
         "author": "Stephen Mase",
@@ -153,7 +181,7 @@
         "image": "img/2151003745 (1).jpg"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "How AI is Transforming Physician Health: Addressing Burnout, Enhancing Performance, and Strengthening Healthcare Communication",
         "date": "October 24, 2024",
         "author": "Stephen Mase, CEO Code 4 Pro",
@@ -186,35 +214,8 @@
             }
         ],
         "image": "img/2151003745 (1).jpg"
-    },
-    {
-        "id": 5,
-        "title": "Press Release: Code 4 Pro Launches Seren™ and Sidekick™ AI + HRV Platform Tackling Physician Stress, Burnout, and Performance",
-        "date": "MINNEAPOLIS, MN — October 2025",
-        "author": "Stephen Mase, CEO Code 4 Pro",
-        "content": [
-            {
-                "paragraph": "Code 4 Pro proudly introduces <strong>Seren™</strong>, a next-generation, data-driven solution created to address one of healthcare’s most critical and human challenges—<strong>physician stress, burnout, and performance sustainability.</strong>  <hr>" 
-            },
-            {
-                "paragraph": "By combining professional-grade <strong>Heart Rate Variability (HRV)</strong> analytics, biometric monitoring, and <strong>AI-powered insights</strong>, Seren delivers real-time, objective data that empowers health systems to recognize strain early, respond compassionately, and foster lasting resilience across their teams.",
-                "paragraph2": "At its core is <strong>Sidekick™</strong>, Seren’s intelligent in-app AI companion that transforms complex biometric streams into meaningful, personalized guidance. Sidekick interprets HRV signals, behavioral trends, and environmental context—merging stress, recovery, activity, and sleep data into an adaptive model that learns from every individual. It engages conversationally, remembers patterns, and offers timely validation, encouragement, and micro-nudges toward recovery and balance.", 
-                "paragraph3": "Through this seamless integration of data and dialogue, clinicians gain a trusted guide that not only heightens awareness but empowers them to take control of their own well-being. The result is a continuous loop of understanding, adaptation, and support—helping clinicians thrive in the moments that matter most<hr>",
-                "paragraph4": "At scale, Seren and Sidekick provide <strong>de-identified aggregate insights</strong> to caregivers, wellness officers, and administrators—informing better policies, smarter scheduling, and more resilient healthcare operations. For hospitals, physician groups, and insurers, this means that Seren is more than wellness—it’s a <strong>strategic investment in workforce stability, patient safety, and organizational excellence.</strong>",
-                "paragraph5": "“Sidekick listens, learns, and guides—turning data into understanding and understanding into action,” said <strong>Steve Mase</strong>, CEO of Code 4 Pro. “It personalizes resilience at scale, helping every individual find balance in chaos and giving organizations the insight to care better, lead wiser, and perform stronger.”",
-                "paragraph6": "“I know from my years as an ER doctor that physicians are trained to take care of their patients in high-stakes clinical situations,” added <strong>Dr. Joel Carter</strong>, Code 4 Pro’s Chief Medical Innovation Officer. “Too often their own well-being is an afterthought. We intend to change that with Seren—because reducing physician burnout is not only in the doctor’s best interest, but also in the patient’s best interest as well.”",
-                "paragraph7": "With this release, <strong>Code 4 Pro</strong> takes a major step toward the <strong>personalization of AI at scale</strong>—a world in which intelligent, empathetic technology supports human resilience in real time. Seren represents a new kind of healthcare innovation: one that listens, learns, and leads with compassion."
-                
-
-            },
-            {
-                "heading": "About Code 4 Pro",
-                "paragraph": "Code 4 Pro is a pioneer in AI-driven heart-rate-variability analytics and biometric intelligence. Its mission is to enhance resilience, performance, and mental well-being across high-value professions—from healthcare and law enforcement to aviation and tactical operations.",
-                "paragraph2": "For more information, visit www.code4pro.com or contact steve@code4pro.com"
-            }
-        ],
-        "image": "img/2151003745 (1).jpg"
     }
+    
 ]
 
 
