@@ -186,6 +186,28 @@
             }
         ],
         "image": "img/2151003745 (1).jpg"
+    },
+    {
+        "id": 5,
+        "title": "Press Release: Code 4 Pro Launches Seren™ and Sidekick™ AI + HRV Platform Tackling Physician Stress, Burnout, and Performance",
+        "date": "MINNEAPOLIS, MN — October 2025",
+        "author": "Stephen Mase, CEO Code 4 Pro",
+        "content": [
+            {
+                "paragraph": "Code 4 Pro proudly introduces <strong>Seren™</strong>, a next-generation, data-driven solution created to address one of healthcare’s most critical and human challenges—<strong>physician stress, burnout, and performance sustainability.</strong>  <hr>" 
+            },
+            {
+                "paragraph": "By combining professional-grade <strong>Heart Rate Variability (HRV)</strong> analytics, biometric monitoring, and <strong>AI-powered insights</strong>, Seren delivers real-time, objective data that empowers health systems to recognize strain early, respond compassionately, and foster lasting resilience across their teams.",
+                "paragraph2": "At its core is <strong>Sidekick™</strong>, Seren’s intelligent in-app AI companion that transforms complex biometric streams into meaningful, personalized guidance. Sidekick interprets HRV signals, behavioral trends, and environmental context—merging stress, recovery, activity, and sleep data into an adaptive model that learns from every individual. It engages conversationally, remembers patterns, and offers timely validation, encouragement, and micro-nudges toward recovery and balance.", 
+                "paragraph3": "Through this seamless integration of data and dialogue, clinicians gain a trusted guide that not only heightens awareness but empowers them to take control of their own well-being. The result is a continuous loop of understanding, adaptation, and support—helping clinicians thrive in the moments that matter most<hr>"
+            },
+            {
+                "heading": "Conclusion: A Transformative Step for Healthcare",
+                "paragraph": "The AI-led HRV platform is transforming healthcare by addressing the critical issues of stress, burnout, and performance optimization among physicians. Through real-time monitoring, adaptive resilience training, and data-driven insights, the platform equips physicians with tools to take charge of their own wellness while enhancing communication and collaboration with healthcare management. This technology represents more than just an innovation in stress management—it’s an investment in the future of healthcare, where both providers and patients benefit from healthier, more resilient professionals.",
+                "paragraph2": "As the healthcare industry continues to embrace digital transformation, the AI-driven HRV platform stands out as a pivotal development, redefining what it means to support physician wellness. For hospitals, clinics, and healthcare systems, this platform provides a valuable solution that not only improves individual well-being but also fosters a culture of empathy, support, and sustainability in one of the most demanding professions. This advancement represents a critical shift toward a healthcare model where high-quality patient care and physician wellness go hand in hand, setting a new standard for resilience and efficiency in medicine."
+            }
+        ],
+        "image": "img/2151003745 (1).jpg"
     }
 ]
 
